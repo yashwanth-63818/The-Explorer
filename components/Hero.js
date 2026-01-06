@@ -82,29 +82,10 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Slanted Divider */}
-            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-                <svg
-                    className="relative block w-full h-[60px] lg:h-[100px]"
-                    data-name="Layer 1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120"
-                    preserveAspectRatio="none"
-                >
-                    <path
-                        d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-                        className="fill-transparent"
-                    ></path>
-                    {/* The dark section rising: */}
-                    <path
-                        d="M0,120L1200,120L1200,0L0,80Z"
-                        className="fill-gray-900"
-                    ></path>
-                    {/* Actually, let's just do a simple polygon to match standard "Slant" */}
-                    <path
-                        d="M0,120 L1200,120 L1200,20 L0,120 Z"
-                        className="fill-gray-900"
-                    ></path>
+            {/* Curved Divider */}
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="block w-full h-16 md:h-24 fill-[#121212]">
+                    <path d="M0,0 C150,100 350,0 600,60 C850,120 1050,20 1200,80 L1200,120 L0,120 Z"></path>
                 </svg>
             </div>
         </section>
