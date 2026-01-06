@@ -29,6 +29,28 @@ export default function Navbar() {
         };
     }, [activeMenu]);
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === "Escape") {
+                setActiveMenu(null);
+                setIsOpen(false);
+            }
+        };
+
+        const handleClickOutside = (e) => {
+            if (!e.target.closest("header")) {
+                setActiveMenu(null);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        window.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     const navItems = [
         { name: "Planning", href: "/planning", hasDropdown: true },
         { name: "Destinations", href: "/destinations", hasDropdown: true },
@@ -60,7 +82,7 @@ export default function Navbar() {
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         {/* Logo Section */}
-                        <Link href="/" className="flex items-center gap-3 group">
+                        <Link href="/" onClick={() => { setActiveMenu(null); setIsOpen(false); }} className="flex items-center gap-3 group">
                             <div className="w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-[#ffed4a] transition-colors">
                                 <Flag size={20} className="text-black fill-black" />
                             </div>
@@ -92,7 +114,7 @@ export default function Navbar() {
                         {/* Mobile Menu Toggle */}
                         <button
                             className="lg:hidden p-2 text-white"
-                            onClick={() => setIsOpen(!isOpen)}
+                            onClick={() => { setIsOpen(!isOpen); setActiveMenu(null); }}
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -139,7 +161,7 @@ export default function Navbar() {
                             <h3 className="text-center font-bold tracking-[0.2em] uppercase text-gray-400 mb-8 text-sm">Plan a Trip</h3>
                             <div className="grid grid-cols-4 gap-x-6 gap-y-8 max-w-5xl mx-auto">
                                 {planningItems.map((tool) => (
-                                    <a key={tool.name} href="#" className="flex items-start gap-4 group/item hover:bg-white/5 p-3 rounded-lg transition-colors text-left">
+                                    <a key={tool.name} href="#" onClick={() => setActiveMenu(null)} className="flex items-start gap-4 group/item hover:bg-white/5 p-3 rounded-lg transition-colors text-left">
                                         <div className="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center flex-shrink-0 text-white group-hover/item:border-[#FFD700] group-hover/item:text-[#FFD700] transition-colors">
                                             <tool.icon size={22} strokeWidth={1.5} />
                                         </div>
@@ -160,7 +182,7 @@ export default function Navbar() {
                 {/* Destinations Mega Menu */}
                 {activeMenu === "Destinations" && (
                     <div className="absolute top-full left-0 w-full z-50">
-                        <DestinationsMegaMenu />
+                        <DestinationsMegaMenu onClose={() => setActiveMenu(null)} />
                     </div>
                 )}
             </div>

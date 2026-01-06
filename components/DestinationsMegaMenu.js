@@ -128,7 +128,7 @@ const topRegions = [
     "Patagonia"
 ];
 
-export default function DestinationsMegaMenu() {
+export default function DestinationsMegaMenu({ onClose }) {
     return (
         <div className="bg-[#1a1a1a] text-white w-full border-t-2 border-[#FFD700] shadow-2xl animate-in fade-in slide-in-from-top-2 duration-300 h-[calc(100vh-80px)] overflow-y-auto custom-scrollbar overscroll-contain">
             {/* Inner Content Container */}
@@ -139,7 +139,12 @@ export default function DestinationsMegaMenu() {
                     <div className="flex flex-wrap items-center gap-4">
                         <span className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] mr-2">Top Destinations</span>
                         {topDestinations.map(dest => (
-                            <Link key={dest.name} href={`/destinations/${dest.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FFD700] px-3 py-1.5 rounded-md transition-all group">
+                            <Link
+                                key={dest.name}
+                                href={`/destinations/${dest.name.toLowerCase().replace(/ /g, '-')}`}
+                                onClick={onClose}
+                                className="flex items-center gap-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FFD700] px-3 py-1.5 rounded-md transition-all group"
+                            >
                                 <img
                                     src={`https://flagcdn.com/w40/${dest.code}.png`}
                                     srcSet={`https://flagcdn.com/w80/${dest.code}.png 2x`}
@@ -157,7 +162,12 @@ export default function DestinationsMegaMenu() {
                     <div className="flex flex-wrap items-center gap-4">
                         <span className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] mr-2">Top Regions</span>
                         {topRegions.map(region => (
-                            <Link key={region} href={`/region/${region.toLowerCase().replace(' ', '-')}`} className="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FFD700] px-4 py-1.5 rounded-md transition-all">
+                            <Link
+                                key={region}
+                                href={`/region/${region.toLowerCase().replace(' ', '-')}`}
+                                onClick={onClose}
+                                className="flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FFD700] px-4 py-1.5 rounded-md transition-all"
+                            >
                                 <span className="text-sm font-medium text-gray-300 hover:text-white">{region}</span>
                             </Link>
                         ))}
@@ -165,10 +175,9 @@ export default function DestinationsMegaMenu() {
                 </div>
 
                 {/* Main Content: Continents Grid */}
-                {/* Responsive Columns: 1 on mobile, 2 on tablet, 4 on desktop */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12">
 
-                    {/* Column 1: Africa (Longest list) */}
+                    {/* Column 1: Africa */}
                     <div>
                         <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
                             <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[0].name}</h3>
@@ -176,7 +185,12 @@ export default function DestinationsMegaMenu() {
                         </div>
                         <div className="grid grid-cols-1 gap-y-2.5">
                             {continents[0].countries.map(country => (
-                                <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                <Link
+                                    key={country.name}
+                                    href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                    onClick={onClose}
+                                    className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                >
                                     <img
                                         src={`https://flagcdn.com/w40/${country.code}.png`}
                                         alt={country.name}
@@ -196,7 +210,12 @@ export default function DestinationsMegaMenu() {
                         </div>
                         <div className="grid grid-cols-1 gap-y-2.5">
                             {continents[1].countries.map(country => (
-                                <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                <Link
+                                    key={country.name}
+                                    href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                    onClick={onClose}
+                                    className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                >
                                     <img
                                         src={`https://flagcdn.com/w40/${country.code}.png`}
                                         alt={country.name}
@@ -216,7 +235,12 @@ export default function DestinationsMegaMenu() {
                         </div>
                         <div className="grid grid-cols-1 gap-y-2.5">
                             {continents[2].countries.map(country => (
-                                <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                <Link
+                                    key={country.name}
+                                    href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                    onClick={onClose}
+                                    className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                >
                                     <img
                                         src={`https://flagcdn.com/w40/${country.code}.png`}
                                         alt={country.name}
@@ -238,7 +262,12 @@ export default function DestinationsMegaMenu() {
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
                                 {continents[3].countries.map(country => (
-                                    <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                    <Link
+                                        key={country.name}
+                                        href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                        onClick={onClose}
+                                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                    >
                                         <img
                                             src={`https://flagcdn.com/w40/${country.code}.png`}
                                             alt={country.name}
@@ -258,7 +287,12 @@ export default function DestinationsMegaMenu() {
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
                                 {continents[4].countries.map(country => (
-                                    <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                    <Link
+                                        key={country.name}
+                                        href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                        onClick={onClose}
+                                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                    >
                                         <img
                                             src={`https://flagcdn.com/w40/${country.code}.png`}
                                             alt={country.name}
@@ -278,7 +312,12 @@ export default function DestinationsMegaMenu() {
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
                                 {continents[5].countries.map(country => (
-                                    <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                    <Link
+                                        key={country.name}
+                                        href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                        onClick={onClose}
+                                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                    >
                                         <img
                                             src={`https://flagcdn.com/w40/${country.code}.png`}
                                             alt={country.name}
@@ -298,7 +337,12 @@ export default function DestinationsMegaMenu() {
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
                                 {continents[6].countries.map(country => (
-                                    <Link key={country.name} href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all">
+                                    <Link
+                                        key={country.name}
+                                        href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
+                                        onClick={onClose}
+                                        className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
+                                    >
                                         <img
                                             src={`https://flagcdn.com/w40/${country.code}.png`}
                                             alt={country.name}
@@ -316,7 +360,11 @@ export default function DestinationsMegaMenu() {
             </div>
             {/* Footer of Menu */}
             <div className="bg-[#151515] py-4 border-t border-white/5 text-center shrink-0">
-                <Link href="/destinations" className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] hover:text-[#FFD700] transition-colors flex items-center justify-center gap-2">
+                <Link
+                    href="/destinations"
+                    onClick={onClose}
+                    className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] hover:text-[#FFD700] transition-colors flex items-center justify-center gap-2"
+                >
                     View All Destinations <ChevronRight size={12} />
                 </Link>
             </div>

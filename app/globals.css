@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --nav-height: 180px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 100px;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
