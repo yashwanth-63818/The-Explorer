@@ -1,0 +1,126 @@
+{
+  "slug": "germany",
+  "name": "Germany",
+  "facts": {
+    "officialName": "Federal Republic of Germany",
+    "capital": "Berlin",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": "8,34,91,249",
+    "currency": "Euro (€)",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "languages": "German",
+    "code": "DE"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1708778827202-e9f33eb6fc58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxHZXJtYW55JTIwdHJhdmVsJTIwbGFuZG1hcmtzfGVufDB8MHx8fDE3Njc3NzUzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a snowy street with buildings and a clock tower in the background",
+      "author": "Felix Hanspach",
+      "link": "https://unsplash.com/photos/a-snowy-street-with-buildings-and-a-clock-tower-in-the-background-tUBfWiM7bvA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1708778827243-b71ecb2b457d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxHZXJtYW55JTIwdHJhdmVsJTIwbGFuZG1hcmtzfGVufDB8MHx8fDE3Njc3NzUzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large building with a statue in front of it",
+      "author": "Felix Hanspach",
+      "link": "https://unsplash.com/photos/a-large-building-with-a-statue-in-front-of-it-sc0voGwHSY0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1708778802772-8e44814838b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxHZXJtYW55JTIwdHJhdmVsJTIwbGFuZG1hcmtzfGVufDB8MHx8fDE3Njc3NzUzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large building with statues in front of it",
+      "author": "Felix Hanspach",
+      "link": "https://unsplash.com/photos/a-large-building-with-statues-in-front-of-it-8m6dZJS1X94"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1658119332292-30289d95887d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxHZXJtYW55JTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a building with windows",
+      "author": "Justin Lindemann",
+      "link": "https://unsplash.com/photos/a-building-with-windows-BiA9dOnPwLY"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1544625696-c6a810b4ce57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxHZXJtYW55JTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "grayscale photography of man inside concrete room",
+      "author": "Alessandro Bellone",
+      "link": "https://unsplash.com/photos/grayscale-photography-of-man-inside-concrete-room-exRyBY3MbdI"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1713264195090-7fa80511758b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxHZXJtYW55JTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large yellow building with black roof and windows",
+      "author": "Anatol Rurac",
+      "link": "https://unsplash.com/photos/a-large-yellow-building-with-black-roof-and-windows-fjLPacGNnmM"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1683041133891-613b76cbebc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxHZXJtYW55JTIwbmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3Njc3NzUzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a lake surrounded by trees and mountains under a cloudy sky",
+      "author": "Sergei Gussev",
+      "link": "https://unsplash.com/photos/a-lake-surrounded-by-trees-and-mountains-under-a-cloudy-sky-Y-rrgKyNArs"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1472156871248-64f7fb851012?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxHZXJtYW55JTIwbmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3Njc3NzUzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "top view photo of lake",
+      "author": "Karsten Würth",
+      "link": "https://unsplash.com/photos/top-view-photo-of-lake-RybwUAJ6EMA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1674691489467-c5eee18a6f41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxHZXJtYW55JTIwbmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3Njc3NzUzODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a lake surrounded by mountains and trees",
+      "author": "Sei",
+      "link": "https://unsplash.com/photos/a-lake-surrounded-by-mountains-and-trees-NO34g95d9ms"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1637451752123-ab2c3020816b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxHZXJtYW55JTIwY3VsdHVyZSUyMHBlb3BsZXxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a man and a woman standing in front of a wall",
+      "author": "Zalfa Imani",
+      "link": "https://unsplash.com/photos/a-man-and-a-woman-standing-in-front-of-a-wall-5M7R90-98Cc"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1707934464569-67711483c49b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxHZXJtYW55JTIwY3VsdHVyZSUyMHBlb3BsZXxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a crowd of people watching a man on a horse drawn carriage",
+      "author": "Walter Martin",
+      "link": "https://unsplash.com/photos/a-crowd-of-people-watching-a-man-on-a-horse-drawn-carriage-4huV8RERF0s"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1708020459660-1f5fb3331058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxHZXJtYW55JTIwY3VsdHVyZSUyMHBlb3BsZXxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a horse drawn carriage carrying a large group of people",
+      "author": "Walter Martin",
+      "link": "https://unsplash.com/photos/a-horse-drawn-carriage-carrying-a-large-group-of-people-sEHLFoqiRY0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1641976712924-3f3380c5b31d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxHZXJtYW55JTIwc3RyZWV0JTIwZm9vZHxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a couple of people standing outside of a store at night",
+      "author": "Serj Sakharovskiy",
+      "link": "https://unsplash.com/photos/a-couple-of-people-standing-outside-of-a-store-at-night-7l4eVVvKSmU"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1508928807352-24a4adbb6795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxHZXJtYW55JTIwc3RyZWV0JTIwZm9vZHxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "shallow focus photography of produce stand",
+      "author": "Mohammad Saifullah",
+      "link": "https://unsplash.com/photos/shallow-focus-photography-of-produce-stand-J_7lZpUAFWU"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1641976641068-f5b7f1455cc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxHZXJtYW55JTIwc3RyZWV0JTIwZm9vZHxlbnwwfDB8fHwxNzY3Nzc1Mzg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a group of people standing in front of a restaurant",
+      "author": "Serj Sakharovskiy",
+      "link": "https://unsplash.com/photos/a-group-of-people-standing-in-front-of-a-restaurant-YiBja4HSh6M"
+    }
+  ],
+  "content": {
+    "tagline": "Exploring Germany",
+    "intro": "Germany is a beautiful destination.",
+    "bestPlaces": [
+      {
+        "city": "Berlin",
+        "reason": "The capital.",
+        "category": "Mandatory"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local bus.",
+      "budget": "Varies.",
+      "bestTime": "Anytime.",
+      "stay": "Booking.com"
+    }
+  },
+  "updatedAt": "2026-01-07T08:43:24.506Z"
+}
