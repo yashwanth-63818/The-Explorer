@@ -2,6 +2,8 @@ import { getVideos } from "@/lib/videoService";
 import SafeImage from "@/components/SafeImage";
 import VideoCard from "@/components/VideoCard";
 
+export const revalidate = 86400;
+
 export const metadata = {
     title: "Travel Videos | The Explorer",
     description: "Cinematic travel vlogs and motorcycle exploration stories from across the globe.",

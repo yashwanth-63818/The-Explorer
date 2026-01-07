@@ -1,4 +1,4 @@
-import { getVideoBySlug, getRelatedVideos, getVideosByCountry } from "@/lib/videoService";
+import { getVideos, getVideoBySlug, getRelatedVideos } from "@/lib/videoService";
 import { getComments } from "@/lib/commentService";
 import VideoCard from "@/components/VideoCard";
 import CommentSection from "@/components/CommentSection";
@@ -7,6 +7,8 @@ import SafeImage from "@/components/SafeImage";
 import { Clock, Calendar, User, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+export const revalidate = 86400;
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
