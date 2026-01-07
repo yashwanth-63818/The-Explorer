@@ -63,7 +63,7 @@ export default function Navbar() {
         { name: "Planning", href: "/planning", hasDropdown: true },
         { name: "Destinations", href: "/destinations", hasDropdown: true },
         { name: "About", href: "/about", hasDropdown: true },
-        { name: "Video", href: "/video", hasDropdown: false },
+        { name: "Video", href: "/videos", hasDropdown: false },
         { name: "Inspiration", href: "/inspiration", hasDropdown: false },
         { name: "Resources", href: "/resources", hasDropdown: false },
         { name: "Shop", href: "/shop", hasDropdown: true, hasBadge: true },
