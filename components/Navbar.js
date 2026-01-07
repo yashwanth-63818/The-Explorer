@@ -2,12 +2,20 @@
 import Link from "next/link";
 import { Search, Menu, X, ChevronDown, Flag, Instagram, Youtube, Twitter, Plane, Bed, Home, Bus, Train, Car, Compass, Ticket, Shield, Smartphone, Lock } from "lucide-react";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import DestinationsMegaMenu from "./DestinationsMegaMenu";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [activeMenu, setActiveMenu] = useState(null);
+    const pathname = usePathname();
+
+    // Close menus on route change
+    useEffect(() => {
+        setIsOpen(false);
+        setActiveMenu(null);
+    }, [pathname]);
 
     useEffect(() => {
         const handleScroll = () => {

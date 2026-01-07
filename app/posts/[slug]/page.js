@@ -63,7 +63,10 @@ export default async function BlogPostPage({ params }) {
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-black/20"></div>
                     </div>
 
-                    <div className="relative z-10 container mx-auto px-4 text-center pt-20">
+                    <div
+                        className="relative z-10 container mx-auto px-4 text-center"
+                        style={{ paddingTop: 'var(--nav-height)' }}
+                    >
                         <nav className="flex justify-center items-center gap-2 text-[10px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-10">
                             <Link href="/" className="hover:text-white transition-colors">Explorer</Link>
                             <ChevronRight size={12} className="opacity-40" />

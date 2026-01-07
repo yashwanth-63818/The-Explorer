@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function SafeImage({
     src,
     alt,
-    fallbackSrc = "/fallback-image.jpg",
+    fallbackSrc = "https://images.unsplash.com/photo-1469442232812-5503c13bc726?q=80&w=2070&auto=format&fit=crop",
     className = "",
     width,
     height,

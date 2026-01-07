@@ -1,0 +1,101 @@
+{
+  "slug": "cabo-verde",
+  "name": "Cabo Verde",
+  "facts": {
+    "officialName": "Republic of Cabo Verde",
+    "capital": "Praia",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": "4,91,233",
+    "currency": "Cape Verdean escudo (Esc)",
+    "flag": "https://flagcdn.com/w320/cv.png",
+    "languages": "Portuguese",
+    "code": "CV"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1672855603501-64421fe6b4a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYWJvJTIwVmVyZGUlMjB0cmF2ZWwlMjBsYW5kbWFya3N8ZW58MHwwfHx8MTc2Nzc3MDQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a mural on the side of a building next to the ocean",
+      "author": "Dominique Josse",
+      "link": "https://unsplash.com/photos/a-mural-on-the-side-of-a-building-next-to-the-ocean-zuVJG6qv5X8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1672856084136-24bb57cfeb53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYWJvJTIwVmVyZGUlMjB0cmF2ZWwlMjBsYW5kbWFya3N8ZW58MHwwfHx8MTc2Nzc3MDQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "the sun shines brightly on a rocky coastline",
+      "author": "Dominique Josse",
+      "link": "https://unsplash.com/photos/the-sun-shines-brightly-on-a-rocky-coastline-_rPm8UO68iw"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1678285316987-ea8be4088e19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYWJvJTIwVmVyZGUlMjB0cmF2ZWwlMjBsYW5kbWFya3N8ZW58MHwwfHx8MTc2Nzc3MDQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a group of boats sitting on top of a sandy beach",
+      "author": "Florian K.",
+      "link": "https://unsplash.com/photos/a-group-of-boats-sitting-on-top-of-a-sandy-beach-TgdsM0j_zsY"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1672855144584-71d7154e4683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYWJvJTIwVmVyZGUlMjBjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3Njc3NzA0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a group of people standing on top of a tarmac",
+      "author": "Dominique Josse",
+      "link": "https://unsplash.com/photos/a-group-of-people-standing-on-top-of-a-tarmac-p2zlP9aydfo"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1672855428296-3979091bdd83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYWJvJTIwVmVyZGUlMjBjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3Njc3NzA0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a man standing on top of a bridge next to the ocean",
+      "author": "Dominique Josse",
+      "link": "https://unsplash.com/photos/a-man-standing-on-top-of-a-bridge-next-to-the-ocean-zt1jlIggYh0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1591870408955-9f5f749d396c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYWJvJTIwVmVyZGUlMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc2Nzc3MDQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "brown sand and green grass field near mountain under white clouds and blue sky during daytime",
+      "author": "Nick Fewings",
+      "link": "https://unsplash.com/photos/brown-sand-and-green-grass-field-near-mountain-under-white-clouds-and-blue-sky-during-daytime-hbYYS7-72os"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1667886546609-cf5e79363b5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYWJvJTIwVmVyZGUlMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc2Nzc3MDQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a structure on a beach",
+      "author": "Kevin Delval",
+      "link": "https://unsplash.com/photos/a-structure-on-a-beach-1k6M-wP19g8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1672856181212-b5b5a0065a08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYWJvJTIwVmVyZGUlMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc2Nzc3MDQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a scenic view of the ocean and mountains",
+      "author": "Dominique Josse",
+      "link": "https://unsplash.com/photos/a-scenic-view-of-the-ocean-and-mountains-i010CaxDLEM"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1564076263935-fa4e59894f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYWJvJTIwVmVyZGUlMjBjdWx0dXJlJTIwcGVvcGxlfGVufDB8MHx8fDE3Njc3NzA0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "three woman carrying basket over their heads",
+      "author": "Belinda Fewings",
+      "link": "https://unsplash.com/photos/three-woman-carrying-basket-over-their-heads-znbWNyxfUn0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1581536678606-3a35fecc8fc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYWJvJTIwVmVyZGUlMjBjdWx0dXJlJTIwcGVvcGxlfGVufDB8MHx8fDE3Njc3NzA0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "woman in blue and white floral dress sitting on brown dried leaves during daytime",
+      "author": "Kristin Wilson",
+      "link": "https://unsplash.com/photos/woman-in-blue-and-white-floral-dress-sitting-on-brown-dried-leaves-during-daytime-MAy3I838uNg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1551706001-5f486f70154e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYWJvJTIwVmVyZGUlMjBjdWx0dXJlJTIwcGVvcGxlfGVufDB8MHx8fDE3Njc3NzA0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "woman in black dress",
+      "author": "Nick Fewings",
+      "link": "https://unsplash.com/photos/woman-in-black-dress--LOEswy6V8k"
+    }
+  ],
+  "content": {
+    "tagline": "Exploring Cabo Verde",
+    "intro": "Cabo Verde is waiting for you.",
+    "bestPlaces": [
+      {
+        "city": "Praia",
+        "reason": "The capital.",
+        "category": "Mandatory"
+      }
+    ],
+    "sections": {
+      "transport": "Local taxi/bus.",
+      "budget": "Varies.",
+      "bestTime": "Anytime.",
+      "stay": "Check Booking.com"
+    }
+  },
+  "updatedAt": "2026-01-07T07:26:04.943Z"
+}
