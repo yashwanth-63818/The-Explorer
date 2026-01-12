@@ -1,4 +1,4 @@
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Libre_Baskerville } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -15,6 +15,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const baskerville = Libre_Baskerville({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-baskerville",
+  display: "swap",
+});
+
 export const metadata = {
   title: "The Explorer | Travel Magazine",
   description: "A travel blog inspired by Bucketlistly, featuring immersive stories and guides.",
@@ -22,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${baskerville.variable}`}>
       <body className="font-sans antialiased bg-white text-gray-900 min-h-screen relative">
         <Navbar />
         <main>

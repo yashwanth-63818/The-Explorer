@@ -7,7 +7,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                serif: ["var(--font-playfair)", "serif"],
+                serif: ["var(--font-baskerville)", "var(--font-playfair)", "serif"],
                 sans: ["var(--font-inter)", "sans-serif"],
             },
             colors: {
