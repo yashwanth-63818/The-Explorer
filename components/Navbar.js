@@ -70,17 +70,17 @@ export default function Navbar() {
     ];
 
     const planningItems = [
-        { name: "Find Cheap Flights", sub: "via Skyscanner", icon: Plane },
-        { name: "Find Hotels", sub: "via Booking.com", icon: Bed },
-        { name: "Find Hostels", sub: "via Hostelworld", icon: Home },
-        { name: "Find Buses", sub: "via Omio", icon: Bus },
-        { name: "Find Trains", sub: "via Omio", icon: Train },
-        { name: "Rent a Car", sub: "via DiscoverCars", icon: Car },
-        { name: "Find Things to Do", sub: "via Viator", icon: Compass },
-        { name: "Find Ticket Deals", sub: "via GetYourGuide", icon: Ticket },
-        { name: "Find Travel Insurance", sub: "via Heymondo", icon: Shield },
-        { name: "Find Sim Cards", sub: "via Airalo", icon: Smartphone },
-        { name: "Download VPN", sub: "via ProtonVPN", icon: Lock },
+        { name: "Find Cheap Flights", sub: "via Skyscanner", icon: Plane, href: "https://www.skyscanner.com" },
+        { name: "Find Hotels", sub: "via Booking.com", icon: Bed, href: "https://www.booking.com" },
+        { name: "Find Hostels", sub: "via Hostelworld", icon: Home, href: "https://www.hostelworld.com" },
+        { name: "Find Buses", sub: "via Omio", icon: Bus, href: "https://www.omio.com" },
+        { name: "Find Trains", sub: "via Omio", icon: Train, href: "https://www.omio.com" },
+        { name: "Rent a Car", sub: "via DiscoverCars", icon: Car, href: "https://www.discovercars.com" },
+        { name: "Find Things to Do", sub: "via Viator", icon: Compass, href: "https://www.viator.com" },
+        { name: "Find Ticket Deals", sub: "via GetYourGuide", icon: Ticket, href: "https://www.getyourguide.com" },
+        { name: "Find Travel Insurance", sub: "via Heymondo", icon: Shield, href: "https://www.heymondo.com" },
+        { name: "Find SIM Cards", sub: "via Airalo", icon: Smartphone, href: "https://www.airalo.com" },
+        { name: "Download VPN", sub: "via ProtonVPN", icon: Lock, href: "https://protonvpn.com" },
     ];
 
     return (
@@ -169,7 +169,15 @@ export default function Navbar() {
                             <h3 className="text-center font-bold tracking-[0.2em] uppercase text-gray-400 mb-8 text-sm">Plan a Trip</h3>
                             <div className="grid grid-cols-4 gap-x-6 gap-y-8 max-w-5xl mx-auto">
                                 {planningItems.map((tool) => (
-                                    <a key={tool.name} href="#" onClick={() => setActiveMenu(null)} className="flex items-start gap-4 group/item hover:bg-white/5 p-3 rounded-lg transition-colors text-left">
+                                    <a
+                                        key={tool.name}
+                                        href={tool.href}
+                                        target={tool.href.startsWith("http") ? "_blank" : "_self"}
+                                        rel={tool.href.startsWith("http") ? "noopener noreferrer" : ""}
+                                        onClick={() => setActiveMenu(null)}
+                                        className="flex items-start gap-4 group/item hover:bg-white/5 p-3 rounded-lg text-left transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)]"
+                                        aria-label={tool.name}
+                                    >
                                         <div className="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center flex-shrink-0 text-white group-hover/item:border-[#FFD700] group-hover/item:text-[#FFD700] transition-colors">
                                             <tool.icon size={22} strokeWidth={1.5} />
                                         </div>
