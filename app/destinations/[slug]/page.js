@@ -17,6 +17,7 @@ import {
 import Link from "next/link";
 import SafeImage from "@/components/SafeImage";
 import CountryHero from "@/components/CountryHero";
+import { EXTERNAL_PARTNERS, getPartnerRedirectUrl } from "@/lib/navigationService";
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -52,14 +53,14 @@ export default async function CountryPage({ params }) {
         };
 
         const utilityButtons = [
-            { label: `Find Cheap Flights To ${name}`, icon: Plane, sub: "Skyscanner" },
-            { label: `Find Hotels In ${name}`, icon: Bed, sub: "Booking.com" },
-            { label: `Find Buses In ${name}`, icon: Bus, sub: "Omio" },
-            { label: `Find Trains In ${name}`, icon: Train, sub: "Omio" },
-            { label: `Rent A Car In ${name}`, icon: Car, sub: "DiscoverCars" },
-            { label: `Find Things To Do In ${name}`, icon: Compass, sub: "Viator" },
-            { label: `Find Ticket Deals In ${name}`, icon: Ticket, sub: "GetYourGuide" },
-            { label: `Find Travel Insurance For ${name}`, icon: Shield, sub: "Heymondo" },
+            { label: `Find Cheap Flights To ${name}`, icon: Plane, sub: EXTERNAL_PARTNERS.SKYSCANNER },
+            { label: `Find Hotels In ${name}`, icon: Bed, sub: EXTERNAL_PARTNERS.BOOKING },
+            { label: `Find Buses In ${name}`, icon: Bus, sub: EXTERNAL_PARTNERS.OMIO },
+            { label: `Find Trains In ${name}`, icon: Train, sub: EXTERNAL_PARTNERS.OMIO },
+            { label: `Rent A Car In ${name}`, icon: Car, sub: EXTERNAL_PARTNERS.DISCOVERCARS },
+            { label: `Find Things To Do In ${name}`, icon: Compass, sub: EXTERNAL_PARTNERS.VIATOR },
+            { label: `Find Ticket Deals In ${name}`, icon: Ticket, sub: EXTERNAL_PARTNERS.GETYOURGUIDE },
+            { label: `Find Travel Insurance For ${name}`, icon: Shield, sub: EXTERNAL_PARTNERS.HEYMONDO },
         ];
 
         return (
@@ -80,8 +81,10 @@ export default async function CountryPage({ params }) {
                             {utilityButtons.map((btn, i) => (
                                 <a
                                     key={i}
-                                    href="#"
-                                    className="flex flex-col sm:flex-row items-center gap-4 p-6 bg-[#18181b] rounded-xl border border-white/5 hover:border-white/30 transition-all group hover:bg-[#1c1c21] hover:shadow-[0_0_40px_rgba(255,255,255,0.03)]"
+                                    href={getPartnerRedirectUrl(btn.sub, { countryName: name })}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex flex-col sm:flex-row items-center gap-4 p-6 bg-[#18181b] rounded-xl border border-white/5 hover:border-white/30 transition-all group hover:bg-[#1c1c21] hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:-translate-y-1"
                                 >
                                     <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#FFD700] group-hover:bg-[#FFD700]/5 transition-all">
                                         <btn.icon size={20} className="text-white/40 group-hover:text-[#FFD700]" />

@@ -23,6 +23,8 @@ import {
     Map
 } from "lucide-react";
 import SafeImage from "@/components/SafeImage";
+import { EXTERNAL_PARTNERS, getPartnerRedirectUrl } from "@/lib/navigationService";
+import { Plane, Bed, Bus, Train, Car, Compass, Ticket, Shield } from "lucide-react";
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -97,7 +99,37 @@ export default async function BlogPostPage({ params }) {
                     </div>
                 </header>
 
-                <div className="container mx-auto px-4 py-40">
+                <div className="container mx-auto px-4 py-32">
+                    {/* B. UTILITY CARDS GRID (Context Aware) */}
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-32">
+                        {[
+                            { label: `Flights to ${cityName}`, icon: Plane, sub: EXTERNAL_PARTNERS.SKYSCANNER },
+                            { label: `Hotels in ${cityName}`, icon: Bed, sub: EXTERNAL_PARTNERS.BOOKING },
+                            { label: `Buses to ${cityName}`, icon: Bus, sub: EXTERNAL_PARTNERS.OMIO },
+                            { label: `Trains to ${cityName}`, icon: Train, sub: EXTERNAL_PARTNERS.OMIO },
+                            { label: `Rent a car in ${cityName}`, icon: Car, sub: EXTERNAL_PARTNERS.DISCOVERCARS },
+                            { label: `Activities in ${cityName}`, icon: Compass, sub: EXTERNAL_PARTNERS.VIATOR },
+                            { label: `Ticket Deals`, icon: Ticket, sub: EXTERNAL_PARTNERS.GETYOURGUIDE },
+                            { label: `Travel Insurance`, icon: Shield, sub: EXTERNAL_PARTNERS.HEYMONDO },
+                        ].map((btn, i) => (
+                            <a
+                                key={i}
+                                href={getPartnerRedirectUrl(btn.sub, { cityName, countryName })}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex flex-col sm:flex-row items-center gap-4 p-5 bg-[#151515] rounded-2xl border border-white/5 hover:border-[#FFD700]/30 transition-all group hover:bg-[#1a1a1a] hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:-translate-y-1"
+                            >
+                                <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#FFD700] group-hover:bg-[#FFD700]/5 transition-all">
+                                    <btn.icon size={18} className="text-white/40 group-hover:text-[#FFD700]" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-[9px] font-black text-white/90 uppercase tracking-[0.2em] group-hover:text-white leading-tight">{btn.label}</span>
+                                    <span className="text-[8px] font-bold text-white/30 uppercase tracking-widest mt-1">via {btn.sub}</span>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 relative">
 
                         {/* LEFT: TABLE OF CONTENTS (Sticky) */}
