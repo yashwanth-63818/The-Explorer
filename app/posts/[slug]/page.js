@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { getDynamicPostData } from "@/lib/destinationService";
+import fs from "fs/promises";
+import path from "path";
 import {
     ChevronRight,
     Clock,
@@ -20,11 +22,26 @@ import {
     Twitter,
     Instagram,
     User,
-    Map
+    Map,
+    Plane,
+    Bus,
+    Ticket
 } from "lucide-react";
 import SafeImage from "@/components/SafeImage";
 import { EXTERNAL_PARTNERS, getPartnerRedirectUrl } from "@/lib/navigationService";
-import { Plane, Bed, Bus, Train, Car, Compass, Ticket, Shield } from "lucide-react";
+
+export async function generateStaticParams() {
+    const citiesDir = path.join(process.cwd(), "data", "stored", "cities");
+    try {
+        const files = await fs.readdir(citiesDir);
+        return files.map((file) => ({
+            slug: file.replace(".json", ""),
+        }));
+    } catch (err) {
+        console.warn("[Build] No stored cities found for static generation.");
+        return [];
+    }
+}
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;

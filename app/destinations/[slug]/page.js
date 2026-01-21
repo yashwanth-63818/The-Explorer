@@ -1,5 +1,6 @@
 import { getDynamicDestinationData } from "@/lib/destinationService";
-import { destinations as editorialData } from "@/lib/destinationData";
+import fs from "fs/promises";
+import path from "path";
 import {
     ChevronRight,
     ArrowRight,
@@ -19,6 +20,20 @@ import Link from "next/link";
 import SafeImage from "@/components/SafeImage";
 import CountryHero from "@/components/CountryHero";
 import { EXTERNAL_PARTNERS, getPartnerRedirectUrl } from "@/lib/navigationService";
+
+export async function generateStaticParams() {
+    const editorialPath = path.join(process.cwd(), "data", "stored", "countries-editorial.json");
+    try {
+        const content = await fs.readFile(editorialPath, "utf-8");
+        const allEditorial = JSON.parse(content);
+        return Object.keys(allEditorial).map((slug) => ({
+            slug: slug,
+        }));
+    } catch (err) {
+        console.warn("[Build] Failed to read countries-editorial.json for static generation.");
+        return [];
+    }
+}
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -47,13 +62,9 @@ export default async function CountryPage({ params }) {
         const { name, facts, images, content } = data;
 
         // Pick a random image from the first 3 Unsplash results for variety, or fallback
-        const dynamicHero = images.length > 0
+        const heroImage = images.length > 0
             ? images[Math.floor(Math.random() * Math.min(images.length, 3))]?.url
-            : null;
-
-        const editorialHero = editorialData[slug]?.heroImage;
-
-        const heroImage = dynamicHero || editorialHero || "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800";
+            : "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800";
 
         const getPostSlug = (cityName) => {
             const cityPart = cityName.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]/g, '');

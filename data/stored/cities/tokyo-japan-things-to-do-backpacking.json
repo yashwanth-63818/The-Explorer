@@ -1,0 +1,67 @@
+{
+    "slug": "tokyo-japan-things-to-do-backpacking",
+    "cityName": "Tokyo",
+    "countryName": "Japan",
+    "images": [
+        {
+            "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+            "alt": "Shibuya Crossing at night",
+            "author": "The Explorer Editorial"
+        },
+        {
+            "url": "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+            "alt": "Traditional temple in Tokyo",
+            "author": "The Explorer Editorial"
+        }
+    ],
+    "content": {
+        "title": "Neon Dreams and Ancient Echoes: The Ultimate Tokyo Backpacking Guide",
+        "introduction": "Tokyo is not just a city; it is an entire universe contained within a metropolis. From the chaotic energy of Shibuya Crossing to the profound stillness of the Meiji Shrine, it rewards those who explore its layered neighborhoods with endless surprises and world-class culinary experiences.",
+        "author": {
+            "name": "The Explorer Editorial",
+            "bio": "Specializing in immersive city guides for modern adventurers."
+        },
+        "readingTime": "12 Min Read",
+        "sections": [
+            {
+                "title": "Things to Do",
+                "content": "Exploring Tokyo requires a balance of the high-tech and the historical.",
+                "items": [
+                    {
+                        "name": "Shibuya Crossing",
+                        "description": "Witness the world's busiest intersection and find a quiet cafe overlooking the chaos."
+                    },
+                    {
+                        "name": "TeamLab Borderless",
+                        "description": "Immerse yourself in digital art installations that redefine the museum experience."
+                    },
+                    {
+                        "name": "Tsukiji Outer Market",
+                        "description": "Start your day with the freshest sushi and street food in Japan's most iconic market."
+                    }
+                ]
+            },
+            {
+                "title": "Where to Stay",
+                "content": "Choose Shinjuku for nightlife, or Asakusa for a more traditional atmosphere and budget-friendly hostels."
+            },
+            {
+                "title": "Food",
+                "content": "From standing ramen bars in underground stations to Michelin-starred sushi in Ginza."
+            },
+            {
+                "title": "Budget",
+                "content": "Expect to spend $50-70 per day as a backpacker, or $150+ for mid-range comfort."
+            },
+            {
+                "title": "Transport",
+                "content": "The Tokyo Metro is incredibly efficient. Get a Pasmo or Suica card for seamless travel."
+            }
+        ],
+        "practicalTips": {
+            "bestTime": "March (Sakura) or November (Fall Colors)",
+            "connectivity": "Excellent Wi-Fi; pocket Wi-Fi or eSIM is highly recommended.",
+            "hiddenGem": "The miniature bars of Golden Gai in Shinjuku."
+        }
+    }
+}
