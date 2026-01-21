@@ -1,0 +1,114 @@
+{
+  "slug": "croatia",
+  "name": "Croatia",
+  "facts": {
+    "officialName": "Republic of Croatia",
+    "capital": "Zagreb",
+    "region": "Europe",
+    "subregion": "Southeast Europe",
+    "population": "38,66,233",
+    "currency": "Euro (€)",
+    "flag": "https://flagcdn.com/w320/hr.png",
+    "languages": "Croatian",
+    "code": "HR"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1759068491232-4934fde6e401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDcm9hdGlhJTIwdHJhdmVsJTIwbGFuZG1hcmtzfGVufDB8MHx8fDE3Njg5Njk4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "Coastal city with red roofs and harbor on blue sea",
+      "author": "Bikash Guragai",
+      "link": "https://unsplash.com/photos/coastal-city-with-red-roofs-and-harbor-on-blue-sea-qhDRTJdlv3I"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1692204087168-611572d0343a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDcm9hdGlhJTIwdHJhdmVsJTIwbGFuZG1hcmtzfGVufDB8MHx8fDE3Njg5Njk4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "an aerial view of a harbor with a cruise ship in the water",
+      "author": "Emin Huric",
+      "link": "https://unsplash.com/photos/an-aerial-view-of-a-harbor-with-a-cruise-ship-in-the-water-GVl2zfNaVk8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1627827623351-b34fc0153926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDcm9hdGlhJTIwdHJhdmVsJTIwbGFuZG1hcmtzfGVufDB8MHx8fDE3Njg5Njk4MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "aerial view of city buildings near body of water during daytime",
+      "author": "mana5280",
+      "link": "https://unsplash.com/photos/aerial-view-of-city-buildings-near-body-of-water-during-daytime-z_OA6XfnF9s"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1665828796972-9af233dffd11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDcm9hdGlhJTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY4OTY5ODE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a house with a broken window",
+      "author": "Mikolas Voborsky",
+      "link": "https://unsplash.com/photos/a-house-with-a-broken-window-ATM-MwoEtqc"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1660594199049-c4f1c6877ab7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDcm9hdGlhJTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY4OTY5ODE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a body of water with buildings and trees around it",
+      "author": "Bjarn Bronsveld",
+      "link": "https://unsplash.com/photos/a-body-of-water-with-buildings-and-trees-around-it-Qz_zsGc6FyI"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1660594260918-f58e154bd547?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDcm9hdGlhJTIwY2l0eSUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY4OTY5ODE0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a town on a hill",
+      "author": "Bjarn Bronsveld",
+      "link": "https://unsplash.com/photos/a-town-on-a-hill-xVG-u8ssrU4"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1715958645933-b43511bda716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDcm9hdGlhJTIwbmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3Njg5Njk4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large island in the middle of a body of water",
+      "author": "Michaela Challies",
+      "link": "https://unsplash.com/photos/a-large-island-in-the-middle-of-a-body-of-water-j-ZP43Repo4"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1631181912627-14162db83cb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDcm9hdGlhJTIwbmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3Njg5Njk4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "green and brown grass near body of water during daytime",
+      "author": "Federico Di Dio photography",
+      "link": "https://unsplash.com/photos/green-and-brown-grass-near-body-of-water-during-daytime-GwRofiPNa10"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1631181866161-bee7cdb3096f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDcm9hdGlhJTIwbmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8MHx8fDE3Njg5Njk4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "rocky mountain under orange and blue sky",
+      "author": "Federico Di Dio photography",
+      "link": "https://unsplash.com/photos/rocky-mountain-under-orange-and-blue-sky-ZxPaz-1V6R8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1658227409270-367571f7a58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDcm9hdGlhJTIwY3VsdHVyZSUyMHBlb3BsZXxlbnwwfDB8fHwxNzY4OTY5ODEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a group of wooden signs with writing on them in a grassy area",
+      "author": "Platforma za Društveni centar Čakovec",
+      "link": "https://unsplash.com/photos/a-group-of-wooden-signs-with-writing-on-them-in-a-grassy-area-eMeVzelyRM8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1632153604439-2d05cb99d289?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDcm9hdGlhJTIwY3VsdHVyZSUyMHBlb3BsZXxlbnwwfDB8fHwxNzY4OTY5ODEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a flag flying high in the sky on a cloudy day",
+      "author": "Jakob Owens",
+      "link": "https://unsplash.com/photos/a-flag-flying-high-in-the-sky-on-a-cloudy-day-1Vo59t0r64A"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1725304084539-8aa7c7b96187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDcm9hdGlhJTIwY3VsdHVyZSUyMHBlb3BsZXxlbnwwfDB8fHwxNzY4OTY5ODEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "A red, white and blue flag flying in the wind",
+      "author": "Szabolcs Antal",
+      "link": "https://unsplash.com/photos/a-red-white-and-blue-flag-flying-in-the-wind-sRPZ83JPq3A"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1662714211126-272335a71219?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDcm9hdGlhJTIwc3RyZWV0JTIwZm9vZHxlbnwwfDB8fHwxNzY4OTY5ODEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a store with a large display of items",
+      "author": "Bruno Martins",
+      "link": "https://unsplash.com/photos/a-store-with-a-large-display-of-items-vbNIpXzPahs"
+    }
+  ],
+  "content": {
+    "tagline": "Exploring Croatia",
+    "intro": "Croatia is a beautiful destination.",
+    "bestPlaces": [
+      {
+        "city": "Zagreb",
+        "reason": "The capital.",
+        "category": "Mandatory"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local bus.",
+      "budget": "Varies.",
+      "bestTime": "Anytime.",
+      "stay": "Booking.com"
+    }
+  },
+  "updatedAt": "2026-01-21T04:30:48.273Z"
+}

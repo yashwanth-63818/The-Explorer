@@ -1,0 +1,177 @@
+{
+  "slug": "indonesia",
+  "name": "Indonesia",
+  "facts": {
+    "officialName": "Republic of Indonesia",
+    "capital": "Jakarta",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": "28,44,38,782",
+    "currency": "Indonesian rupiah (Rp)",
+    "flag": "https://flagcdn.com/w320/id.png",
+    "languages": "Indonesian",
+    "code": "ID"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1556691951-e9ca75040056?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1556691951-e9ca75040056?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "trees near river",
+      "author": "Bayu Syaits",
+      "link": "https://unsplash.com/photos/trees-near-river-zrg0W-oFuHQ"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1616389286580-ff1e603fb264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1616389286580-ff1e603fb264?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "waterfalls in the middle of the forest",
+      "author": "Adrian Hartanto",
+      "link": "https://unsplash.com/photos/waterfalls-in-the-middle-of-the-forest-EGZ4Th9PUEA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1561045213-71c89550d794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1561045213-71c89550d794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "brown concrete temple",
+      "author": "Bayu Syaits",
+      "link": "https://unsplash.com/photos/brown-concrete-temple-e4hIFfuUibk"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1655543274920-06de452d0d02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1655543274920-06de452d0d02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a river with buildings and trees around it",
+      "author": "Ammar Andiko",
+      "link": "https://unsplash.com/photos/a-river-with-buildings-and-trees-around-it-Yp-mVyl2kH8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1616389601910-6538347b9e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1616389601910-6538347b9e33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "brown and black bear statue",
+      "author": "Adrian Hartanto",
+      "link": "https://unsplash.com/photos/brown-and-black-bear-statue-3wTbLfyv7dY"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1750176742897-d6c21ed48a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1750176742897-d6c21ed48a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Old building stands in front of a modern one.",
+      "author": "Ervin Erviansyah",
+      "link": "https://unsplash.com/photos/old-building-stands-in-front-of-a-modern-one-PFJybvKnIn8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1740500574894-d2c33117f31e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1740500574894-d2c33117f31e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "A view of a city with tall buildings",
+      "author": "Iqro Rinaldi",
+      "link": "https://unsplash.com/photos/a-view-of-a-city-with-tall-buildings-qzNoTDfg-Ms"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1662808792922-91e4c9a7b83a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1662808792922-91e4c9a7b83a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a tall tower in a city",
+      "author": "Affan Fadhlan",
+      "link": "https://unsplash.com/photos/a-tall-tower-in-a-city-cevvKp62fAI"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1624033266827-8d997b3c4b1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1624033266827-8d997b3c4b1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "people walking on street during daytime",
+      "author": "Afif Ramdhasuma",
+      "link": "https://unsplash.com/photos/people-walking-on-street-during-daytime-FTm9yWZWN68"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1637253439266-b02d8d8f5fe3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1637253439266-b02d8d8f5fe3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTkyM3ww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a busy city street with tall buildings in the background",
+      "author": "Yusron El Jihan",
+      "link": "https://unsplash.com/photos/a-busy-city-street-with-tall-buildings-in-the-background-leC5UNK8K4A"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1624204334454-a9ee9a18920b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1624204334454-a9ee9a18920b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "white concrete tower near green trees during daytime",
+      "author": "Dewi Wachyuni",
+      "link": "https://unsplash.com/photos/white-concrete-tower-near-green-trees-during-daytime-cQ_iwbd-S-Y"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1617687611017-48db8d42fd8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1617687611017-48db8d42fd8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "people walking on park near high rise buildings during daytime",
+      "author": "Muhammad Syafi Al - adam",
+      "link": "https://unsplash.com/photos/people-walking-on-park-near-high-rise-buildings-during-daytime-xbaaMKy99xk"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1556019947-8695cb3d4e81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1556019947-8695cb3d4e81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "aerial photo of village beside mountain",
+      "author": "Waranont (Joe)",
+      "link": "https://unsplash.com/photos/aerial-photo-of-village-beside-mountain-d1LoH69_mCY"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1736828172307-237fab644994?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1736828172307-237fab644994?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "A group of people walking up a set of stairs",
+      "author": "Mitchell Soeharsono",
+      "link": "https://unsplash.com/photos/a-group-of-people-walking-up-a-set-of-stairs-wzOH29STTm4"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1736828169864-216124f477e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1736828169864-216124f477e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWElMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "A group of people sitting next to each other",
+      "author": "Mitchell Soeharsono",
+      "link": "https://unsplash.com/photos/a-group-of-people-sitting-next-to-each-other-0enRUEFP7cA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "silhouette photo volcanoes during golden hour",
+      "author": "Pukpik",
+      "link": "https://unsplash.com/photos/silhouette-photo-volcanoes-during-golden-hour-aB46yUmsMp0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1559628233-100c798642d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1559628233-100c798642d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "aerial view of ricefield",
+      "author": "Silas Baisch",
+      "link": "https://unsplash.com/photos/aerial-view-of-ricefield-PvBECXDZw84"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1501179691627-eeaa65ea017c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "bird flying over brown concrete gate during daytime",
+      "author": "Jeremy Bishop",
+      "link": "https://unsplash.com/photos/bird-flying-over-brown-concrete-gate-during-daytime-QUwLZNchflk"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1555043722-4523972f07ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1555043722-4523972f07ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "vehicle beside concrete building during daytime",
+      "author": "Afif Ramdhasuma",
+      "link": "https://unsplash.com/photos/vehicle-beside-concrete-building-during-daytime-XYQPyn4KkiY"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1531975474574-e9d2732e8386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1531975474574-e9d2732e8386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxJbmRvbmVzaWF8ZW58MHx8fHwxNzY4OTcxOTI0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "person standing on green grass field",
+      "author": "Ifan Bima",
+      "link": "https://unsplash.com/photos/person-standing-on-green-grass-field-B04Xpnu5JQ4"
+    }
+  ],
+  "content": {
+    "tagline": "Discover the Wonders of Indonesia",
+    "intro": "Located in South-Eastern Asia, Indonesia is a land defined by its unique Indonesian heritage and the vibrant atmosphere of its capital, Jakarta. From its Asia landscapes to hidden local gems, it remains a captivating chapter in any global journey.",
+    "whyVisit": "Travelers visit Indonesia for its rich South-Eastern Asia atmosphere and the opportunity to explore its unique heritage.",
+    "bestPlaces": [
+      {
+        "city": "Jakarta",
+        "reason": "The cultural and political heart of the nation.",
+        "category": "Capital City"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local infrastructure varies from rail to bus networks.",
+      "budget": "Currency used is Indonesian rupiah (Rp). Costs vary by season.",
+      "bestTime": "Spring and Autumn are generally the most comfortable seasons for exploration.",
+      "stay": "A mix of traditional guesthouses and modern hotels are available."
+    }
+  },
+  "updatedAt": "2026-01-21T05:05:58.774Z"
+}

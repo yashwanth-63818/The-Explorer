@@ -70,7 +70,7 @@ export default function Navbar() {
     ];
 
     const planningItems = [
-        { name: "Find Cheap Flights", sub: "Best Deals", icon: Plane, href: "/flights" },
+        { name: "Find Cheap Flights", sub: "Best Deals", icon: Plane, href: "/planning/find-cheap-flights" },
         { name: "Find Hotels", sub: "via Booking.com", icon: Bed, href: "https://www.booking.com" },
         { name: "Find Hostels", sub: "via Hostelworld", icon: Home, href: "https://www.hostelworld.com" },
         { name: "Find Buses", sub: "via Omio", icon: Bus, href: "https://www.omio.com" },

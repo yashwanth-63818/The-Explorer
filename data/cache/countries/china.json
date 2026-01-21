@@ -1,0 +1,170 @@
+{
+  "slug": "china",
+  "name": "China",
+  "facts": {
+    "officialName": "People's Republic of China",
+    "capital": "Beijing",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": "1,40,82,80,000",
+    "currency": "Chinese yuan (¥)",
+    "flag": "https://flagcdn.com/w320/cn.png",
+    "languages": "Chinese",
+    "code": "CN"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1622377028092-de9f04235164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1622377028092-de9f04235164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "blue sea under blue sky and white clouds during daytime",
+      "author": "knight weixin",
+      "link": "https://unsplash.com/photos/blue-sea-under-blue-sky-and-white-clouds-during-daytime-uNm4TCUkHBM"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1617718029369-c83fc96cd6b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1617718029369-c83fc96cd6b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "aerial view of brown wooden bridge on lake",
+      "author": "Vincent Lin",
+      "link": "https://unsplash.com/photos/aerial-view-of-brown-wooden-bridge-on-lake-kvnvsJisd0Y"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1728419106355-55800f0dc0fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1728419106355-55800f0dc0fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "A large red building with a red door",
+      "author": "Eric Prouzet",
+      "link": "https://unsplash.com/photos/a-large-red-building-with-a-red-door-owTbj2cu8J0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1753712387673-ecc92b169771?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1753712387673-ecc92b169771?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Rolling hills and lush green vegetation.",
+      "author": "Muhammad S.A. Iqbal",
+      "link": "https://unsplash.com/photos/rolling-hills-and-lush-green-vegetation-qbk_Ry_1exg"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1763229360463-43f07cfebef9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1763229360463-43f07cfebef9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYSUyMHRyYXZlbCUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Eroded sandstone pillars with green vegetation on top",
+      "author": "Wilson Chau",
+      "link": "https://unsplash.com/photos/eroded-sandstone-pillars-with-green-vegetation-on-top-NKlNrxRGRf0"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1763994685383-325cc906944b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1763994685383-325cc906944b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Tall clock tower illuminated at night between buildings.",
+      "author": "Fenghua",
+      "link": "https://unsplash.com/photos/tall-clock-tower-illuminated-at-night-between-buildings-RHlnUiKc74E"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1765291479168-153fb80c9a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1765291479168-153fb80c9a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Two metal bird sculptures with city skyline background.",
+      "author": "Leon Hu",
+      "link": "https://unsplash.com/photos/two-metal-bird-sculptures-with-city-skyline-background-gOHacPe9fSc"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1718351174721-1f02f18b8a40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1718351174721-1f02f18b8a40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a city skyline at night with a bridge over the water",
+      "author": "kimi lee",
+      "link": "https://unsplash.com/photos/a-city-skyline-at-night-with-a-bridge-over-the-water-D5ulGNMnuHQ"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1768109027880-b791faa55647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1768109027880-b791faa55647?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Bronze lion statue in front of ornate temple roof",
+      "author": "Chaojie Ni",
+      "link": "https://unsplash.com/photos/bronze-lion-statue-in-front-of-ornate-temple-roof-BYjyF3RMx9U"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1764555846847-8d1c685b3b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1764555846847-8d1c685b3b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYSUyMGNpdHklMjBsYW5kbWFya3N8ZW58MHx8fHwxNzY4OTcxODkyfDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "Shanghai skyline with oriental pearl tower and modern skyscrapers",
+      "author": "Riku Lu",
+      "link": "https://unsplash.com/photos/shanghai-skyline-with-oriental-pearl-tower-and-modern-skyscrapers-mbH-HwbYL-k"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1730081774532-7a8006eaa973?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1730081774532-7a8006eaa973?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "A tall brick building with a balcony and iron railing",
+      "author": "Cemrecan Yurtman",
+      "link": "https://unsplash.com/photos/a-tall-brick-building-with-a-balcony-and-iron-railing-CkcCHRGqbSk"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1709870844569-a50997a47a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1709870844569-a50997a47a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a tall building sitting on top of a hill",
+      "author": "Mandy L",
+      "link": "https://unsplash.com/photos/a-tall-building-sitting-on-top-of-a-hill-KV59gbSzCL8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1695508069370-500d369da987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1695508069370-500d369da987?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a city street filled with lots of tall buildings",
+      "author": "Nikolaj Habib",
+      "link": "https://unsplash.com/photos/a-city-street-filled-with-lots-of-tall-buildings-Ldy964Mvcvk"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1709870844519-8111ad4e6842?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1709870844519-8111ad4e6842?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYSUyMGxhbmRtYXJrc3xlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a large building with a statue in front of it",
+      "author": "Mandy L",
+      "link": "https://unsplash.com/photos/a-large-building-with-a-statue-in-front-of-it--1HVslSNw0U"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "people at Forbidden City in China during daytime",
+      "author": "Ling Tang",
+      "link": "https://unsplash.com/photos/people-at-forbidden-city-in-china-during-daytime-yBroAF1cN3I"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "architectural photograph of lighted city sky",
+      "author": "Li Yang",
+      "link": "https://unsplash.com/photos/architectural-photograph-of-lighted-city-sky-5h_dMuX_7RE"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1517309230475-6736d926b979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1517309230475-6736d926b979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "person carrying umbrellas",
+      "author": "Nuno Alberto",
+      "link": "https://unsplash.com/photos/person-carrying-umbrellas-MykFFC5zolE"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1513781050488-6dd358209a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1513781050488-6dd358209a1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "red tassel",
+      "author": "Annie Spratt",
+      "link": "https://unsplash.com/photos/red-tassel-rdVLN3UFmpU"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1508804052814-cd3ba865a116?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1508804052814-cd3ba865a116?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxDaGluYXxlbnwwfHx8fDE3Njg5NzE4OTJ8MA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "high-angle view of concrete building and stairs",
+      "author": "Hanson Lu",
+      "link": "https://unsplash.com/photos/high-angle-view-of-concrete-building-and-stairs-Q36BvLGdOAg"
+    }
+  ],
+  "content": {
+    "tagline": "Discover the Wonders of China",
+    "intro": "Located in Eastern Asia, China is a land defined by its unique Chinese heritage and the vibrant atmosphere of its capital, Beijing. From its Asia landscapes to hidden local gems, it remains a captivating chapter in any global journey.",
+    "whyVisit": "Travelers visit China for its rich Eastern Asia atmosphere and the opportunity to explore its unique heritage.",
+    "bestPlaces": [
+      {
+        "city": "Beijing",
+        "reason": "The cultural and political heart of the nation.",
+        "category": "Capital City"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local infrastructure varies from rail to bus networks.",
+      "budget": "Currency used is Chinese yuan (¥). Costs vary by season.",
+      "bestTime": "Spring and Autumn are generally the most comfortable seasons for exploration.",
+      "stay": "A mix of traditional guesthouses and modern hotels are available."
+    }
+  },
+  "updatedAt": "2026-01-21T05:05:26.628Z"
+}

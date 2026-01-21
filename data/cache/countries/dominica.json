@@ -1,0 +1,36 @@
+{
+  "slug": "dominica",
+  "name": "Dominica",
+  "facts": {
+    "officialName": "Commonwealth of Dominica",
+    "capital": "Roseau",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": "67,408",
+    "currency": "Eastern Caribbean dollar ($)",
+    "flag": "https://flagcdn.com/w320/dm.png",
+    "languages": "English",
+    "code": "DM"
+  },
+  "images": [],
+  "content": {
+    "tagline": "Discover the Wonders of Dominica",
+    "intro": "Located in Caribbean, Dominica is a land defined by its unique English heritage and the vibrant atmosphere of its capital, Roseau. From its Americas landscapes to hidden local gems, it remains a captivating chapter in any global journey.",
+    "whyVisit": "Travelers visit Dominica for its rich Caribbean atmosphere and the opportunity to explore its unique heritage.",
+    "bestPlaces": [
+      {
+        "city": "Roseau",
+        "reason": "The cultural and political heart of the nation.",
+        "category": "Capital City"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local infrastructure varies from rail to bus networks.",
+      "budget": "Currency used is Eastern Caribbean dollar ($). Costs vary by season.",
+      "bestTime": "Spring and Autumn are generally the most comfortable seasons for exploration.",
+      "stay": "A mix of traditional guesthouses and modern hotels are available."
+    }
+  },
+  "updatedAt": "2026-01-21T04:57:03.180Z"
+}

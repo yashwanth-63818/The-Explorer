@@ -1,0 +1,126 @@
+{
+  "slug": "canada",
+  "name": "Canada",
+  "facts": {
+    "officialName": "Canada",
+    "capital": "Ottawa",
+    "region": "Americas",
+    "subregion": "North America",
+    "population": "4,16,51,653",
+    "currency": "Canadian dollar ($)",
+    "flag": "https://flagcdn.com/w320/ca.png",
+    "languages": "English, French",
+    "code": "CA"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1655158738263-b3f9dff95f63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYW5hZGElMjB0cmF2ZWwlMjBsYW5kbWFya3N8ZW58MHwwfHx8MTc2ODk3MDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a fighter jet sitting on top of a runway",
+      "author": "Alexandra Tran",
+      "link": "https://unsplash.com/photos/a-fighter-jet-sitting-on-top-of-a-runway-qNG4rlPCYTw"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1712939904796-a5c0f462917b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYW5hZGElMjB0cmF2ZWwlMjBsYW5kbWFya3N8ZW58MHwwfHx8MTc2ODk3MDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a group of tall buildings sitting next to each other",
+      "author": "Ronin",
+      "link": "https://unsplash.com/photos/a-group-of-tall-buildings-sitting-next-to-each-other-lmlmdneP0MU"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1711403045904-887f8bc1ebe8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYW5hZGElMjB0cmF2ZWwlMjBsYW5kbWFya3N8ZW58MHwwfHx8MTc2ODk3MDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a view of some very tall buildings in the city",
+      "author": "Ronin",
+      "link": "https://unsplash.com/photos/a-view-of-some-very-tall-buildings-in-the-city-uj2_4qzUPCM"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1710650248580-bf0f81b180db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYW5hZGElMjBjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a couple of tall buildings sitting next to each other",
+      "author": "Sachin Amarasinghe",
+      "link": "https://unsplash.com/photos/a-couple-of-tall-buildings-sitting-next-to-each-other-XtgxCvYL-lE"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1496698936484-773ec11f375d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYW5hZGElMjBjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "high-rise building",
+      "author": "Patrick Tomasso",
+      "link": "https://unsplash.com/photos/high-rise-building-m5Lq6aMKLAw"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1702950519081-0b2b5cac3da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYW5hZGElMjBjaXR5JTIwYXJjaGl0ZWN0dXJlfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a clock tower on top of a building",
+      "author": "Bruno Fatori",
+      "link": "https://unsplash.com/photos/a-clock-tower-on-top-of-a-building-wq5XahjcE28"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1667312175082-8b724f9e5e1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYW5hZGElMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc2ODk3MDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a lake with a mountain in the background",
+      "author": "Nils Geldner",
+      "link": "https://unsplash.com/photos/a-lake-with-a-mountain-in-the-background-rC97qubV-iw"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1667312267311-7b318240dda8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYW5hZGElMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc2ODk3MDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a group of people on a log in a lake with mountains in the background",
+      "author": "Nils Geldner",
+      "link": "https://unsplash.com/photos/a-group-of-people-on-a-log-in-a-lake-with-mountains-in-the-background-U_tQdrfSVJc"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1641241302745-4b70d6a4bc1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYW5hZGElMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHwwfHx8MTc2ODk3MDk4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large rock in the middle of a body of water",
+      "author": "Nathan Morin",
+      "link": "https://unsplash.com/photos/a-large-rock-in-the-middle-of-a-body-of-water-deIQZvKh7o8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1483069115634-a14e572b2dc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYW5hZGElMjBjdWx0dXJlJTIwcGVvcGxlfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "people walking under glass commercial building",
+      "author": "Priscilla Du Preez 🇨🇦",
+      "link": "https://unsplash.com/photos/people-walking-under-glass-commercial-building-2C5DF2lGGRw"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1760140410958-6168e226b376?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYW5hZGElMjBjdWx0dXJlJTIwcGVvcGxlfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "Modern glass building behind autumn trees in park",
+      "author": "Caio Fernandes",
+      "link": "https://unsplash.com/photos/modern-glass-building-behind-autumn-trees-in-park-xpERV5iaKro"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1566475922470-2740a2d7e17b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYW5hZGElMjBjdWx0dXJlJTIwcGVvcGxlfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "canada text overlay on black background",
+      "author": "Andy Holmes",
+      "link": "https://unsplash.com/photos/canada-text-overlay-on-black-background-0LcnbRruP_Y"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1626186241349-5d5f44407f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxDYW5hZGElMjBzdHJlZXQlMjBmb29kfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "red and white train on rail road during daytime",
+      "author": "Nathalia Segato",
+      "link": "https://unsplash.com/photos/red-and-white-train-on-rail-road-during-daytime-as26awWvRvM"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1594578918716-09ed8e0a45f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxDYW5hZGElMjBzdHJlZXQlMjBmb29kfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "man in black jacket standing in front of store during nighttime",
+      "author": "Desmond Lingard",
+      "link": "https://unsplash.com/photos/man-in-black-jacket-standing-in-front-of-store-during-nighttime-v0w0be3mUDQ"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1668216202694-b2e52f94b1ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxDYW5hZGElMjBzdHJlZXQlMjBmb29kfGVufDB8MHx8fDE3Njg5NzA5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a couple of women in a store",
+      "author": "Matt Hanns Schroeter",
+      "link": "https://unsplash.com/photos/a-couple-of-women-in-a-store-JmQwEuHdrMg"
+    }
+  ],
+  "content": {
+    "tagline": "Exploring Canada",
+    "intro": "Canada is a beautiful destination.",
+    "bestPlaces": [
+      {
+        "city": "Ottawa",
+        "reason": "The capital.",
+        "category": "Mandatory"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local bus.",
+      "budget": "Varies.",
+      "bestTime": "Anytime.",
+      "stay": "Booking.com"
+    }
+  },
+  "updatedAt": "2026-01-21T04:50:14.268Z"
+}

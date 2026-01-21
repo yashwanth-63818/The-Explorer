@@ -1,0 +1,114 @@
+{
+  "slug": "angola",
+  "name": "Angola",
+  "facts": {
+    "officialName": "Republic of Angola",
+    "capital": "Luanda",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": "3,61,70,961",
+    "currency": "Angolan kwanza (Kz)",
+    "flag": "https://flagcdn.com/w320/ao.png",
+    "languages": "Portuguese",
+    "code": "AO"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1647199066877-846462218404?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1647199066877-846462218404?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a panoramic view of a rural area",
+      "author": "Hermenegildo Sebastião",
+      "link": "https://unsplash.com/photos/a-panoramic-view-of-a-rural-area-DsHFPJ84TpA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1749918486355-28a878befb57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1749918486355-28a878befb57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "People stroll along the beach on a sunny day.",
+      "author": "Alexandre Juca",
+      "link": "https://unsplash.com/photos/people-stroll-along-the-beach-on-a-sunny-day-QyP4hANOFvs"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1743172140481-5c7044dd23d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1743172140481-5c7044dd23d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "A cityscape is under a cloudy blue sky.",
+      "author": "Shawn Clark",
+      "link": "https://unsplash.com/photos/a-cityscape-is-under-a-cloudy-blue-sky-P84xh3q3ccE"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1520709087497-0749666fe1d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1520709087497-0749666fe1d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "aerial view of houses near body of water",
+      "author": "Jorge Sá",
+      "link": "https://unsplash.com/photos/aerial-view-of-houses-near-body-of-water-Tri_u7qeqGw"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1630343350724-2eafe052719f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1630343350724-2eafe052719f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxBbmdvbGElMjB0cmF2ZWwlMjBsYW5kc2NhcGVzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "cars parked on street near buildings during daytime",
+      "author": "Eryxson Fonseca",
+      "link": "https://unsplash.com/photos/cars-parked-on-street-near-buildings-during-daytime-UGRVTQnmO7I"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1676379631346-6688e1408dcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxBbmdvbGElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1676379631346-6688e1408dcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxBbmdvbGElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a tall blue building sitting next to a tall white building",
+      "author": "Kuiza Dizaya",
+      "link": "https://unsplash.com/photos/a-tall-blue-building-sitting-next-to-a-tall-white-building-9CV5b_69ZLs"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1562859422-29f5c0f4b24d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxBbmdvbGElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1562859422-29f5c0f4b24d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw0fHxBbmdvbGElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "white high-rise building",
+      "author": "Hermenegildo Sebastião",
+      "link": "https://unsplash.com/photos/white-high-rise-building-glhVDncQmhE"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1647199309996-4c032c052830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxBbmdvbGElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1647199309996-4c032c052830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxBbmdvbGElMjBjaXR5JTIwbGFuZG1hcmtzfGVufDB8fHx8MTc2ODk3MTc5NHww&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "an aerial view of a large building in a city",
+      "author": "Hermenegildo Sebastião",
+      "link": "https://unsplash.com/photos/an-aerial-view-of-a-large-building-in-a-city-wHYf6hyYuF8"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1518521901256-c90d4db6f85c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxBbmdvbGF8ZW58MHx8fHwxNzY4OTcxNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1518521901256-c90d4db6f85c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxBbmdvbGF8ZW58MHx8fHwxNzY4OTcxNzk0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "aerial photo of rocky mountain",
+      "author": "Jorge Sá Pinheiro",
+      "link": "https://unsplash.com/photos/aerial-photo-of-rocky-mountain-aLXA3hpX35Y"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1543163181-25b5600dabb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxBbmdvbGF8ZW58MHx8fHwxNzY4OTcxNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1543163181-25b5600dabb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxBbmdvbGF8ZW58MHx8fHwxNzY4OTcxNzk0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "man on sailboat on sea during daytime",
+      "author": "Jorge Sá Pinheiro",
+      "link": "https://unsplash.com/photos/man-on-sailboat-on-sea-during-daytime-AfFhEeQg3Nk"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1664333396688-1592d43e49e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxBbmdvbGF8ZW58MHx8fHwxNzY4OTcxNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "thumb": "https://images.unsplash.com/photo-1664333396688-1592d43e49e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHw1fHxBbmdvbGF8ZW58MHx8fHwxNzY4OTcxNzk0fDA&ixlib=rb-4.1.0&q=80&w=400",
+      "alt": "a red and yellow flag",
+      "author": "aboodi vesakaran",
+      "link": "https://unsplash.com/photos/a-red-and-yellow-flag-qKaZdqHKMq4"
+    }
+  ],
+  "content": {
+    "tagline": "Discover the Wonders of Angola",
+    "intro": "Located in Middle Africa, Angola is a land defined by its unique Portuguese heritage and the vibrant atmosphere of its capital, Luanda. From its Africa landscapes to hidden local gems, it remains a captivating chapter in any global journey.",
+    "whyVisit": "Travelers visit Angola for its rich Middle Africa atmosphere and the opportunity to explore its unique heritage.",
+    "bestPlaces": [
+      {
+        "city": "Luanda",
+        "reason": "The cultural and political heart of the nation.",
+        "category": "Capital City"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local infrastructure varies from rail to bus networks.",
+      "budget": "Currency used is Angolan kwanza (Kz). Costs vary by season.",
+      "bestTime": "Spring and Autumn are generally the most comfortable seasons for exploration.",
+      "stay": "A mix of traditional guesthouses and modern hotels are available."
+    }
+  },
+  "updatedAt": "2026-01-21T05:03:51.106Z"
+}

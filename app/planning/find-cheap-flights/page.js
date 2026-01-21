@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Search, PlaneTakeoff, PlaneLanding, Calendar, Users, ChevronDown } from "lucide-react";
 
-export default function FlightSearchPage() {
+export default function FindCheapFlightsPage() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [scrollY, setScrollY] = useState(0);
@@ -68,7 +68,7 @@ export default function FlightSearchPage() {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-20 w-full flex flex-col items-center justify-start pt-80 pb-32 px-6 lg:px-12">
+            <div className="relative z-20 w-full flex flex-col items-center justify-start pt-[calc(var(--nav-height)+60px)] md:pt-[calc(var(--nav-height)+120px)] pb-32 px-6 lg:px-12">
                 <div className="w-full max-w-6xl mx-auto">
 
                     {/* Hero Header */}

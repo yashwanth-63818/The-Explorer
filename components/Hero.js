@@ -1,10 +1,11 @@
+
 "use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Hero({
-    backgroundImage = "/images/hero-bg.png",
+    backgroundImage = "/images/premium-hero-dark.png",
     headline = "Nights Under the Alpine Stars",
     description = "Explore the quiet beauty of snow-drenched cities and frozen wonders across the Nordic and Alpine frontiers.",
     primaryCTA = { text: "Start Exploring", href: "/destinations" },
@@ -26,7 +27,7 @@ export default function Hero({
     }, []);
 
     return (
-        <section className="relative h-screen min-h-[800px] flex items-center overflow-hidden bg-black">
+        <section className="relative h-screen min-h-[850px] flex items-center overflow-hidden bg-black pt-[var(--nav-height)] md:pt-[calc(var(--nav-height)+40px)]">
             {/* Background Image with Parallax */}
             <div
                 className="absolute inset-0 z-0 transition-transform duration-300 ease-out"
@@ -36,46 +37,51 @@ export default function Hero({
             >
                 <img
                     src={backgroundImage}
-                    alt="Snowy city at night"
-                    className="w-full h-full object-cover"
+                    alt="Scenic landscape at night"
+                    className="w-full h-full object-cover filter brightness-[0.8]"
                 />
 
                 {/* Refined Cinematic Overlay for perfect readability */}
                 <div
                     className="absolute inset-0 z-10"
                     style={{
-                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.35), rgba(0,0,0,0.7))'
+                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.35), rgba(0,0,0,0.85))'
                     }}
                 ></div>
             </div>
 
-            <div className="container mx-auto px-6 lg:px-12 relative z-20 pt-[120px]">
+            <div className="container mx-auto px-6 lg:px-12 relative z-20">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start lg:items-center">
 
                     {/* Left Content: Bold Heading, Subtext, Buttons */}
                     <div className="lg:col-span-8 flex flex-col items-start animate-in fade-in slide-in-from-bottom-12 duration-1000 ease-out">
+                        <div className="inline-flex items-center gap-3 mb-6">
+                            <span className="w-12 h-[1px] bg-[#FFD700]"></span>
+                            <span className="text-[#FFD700] text-sm font-black uppercase tracking-[0.4em]">The Explorer Magazine</span>
+                        </div>
+
                         <h1
-                            className="font-serif text-white font-bold leading-[1.03] mb-[1.25rem] drop-shadow-2xl"
+                            className="font-serif text-white font-bold leading-[1.03] mb-[1.5rem] drop-shadow-2xl"
                             style={{
                                 letterSpacing: '-0.025em',
                                 textShadow: '0 6px 40px rgba(0,0,0,0.55)',
                             }}
                         >
                             {/* Mobile scale: 2.4rem */}
-                            <span className="md:hidden text-[2.4rem] leading-[1.15] block">{headline}</span>
+                            <span className="md:hidden text-[2.8rem] leading-[1.1] block">{headline}</span>
                             {/* Tablet scale: clamp(3rem, 7vw, 4.5rem) */}
-                            <span className="hidden md:inline lg:hidden text-[clamp(3.rem,7vw,4.5rem)] block">{headline}</span>
+                            <span className="hidden md:inline lg:hidden text-[clamp(4rem,7vw,5.5rem)] block">{headline}</span>
                             {/* Desktop scale: clamp(4.5rem, 8vw, 6.5rem) */}
-                            <span className="hidden lg:inline text-[clamp(4.5rem,8vw,6.5rem)] block">{headline}</span>
+                            <span className="hidden lg:inline text-[clamp(5rem,9vw,6.5rem)] block">{headline}</span>
                         </h1>
 
                         <p
-                            className="font-sans mb-[2rem]"
+                            className="font-sans mb-[2.5rem]"
                             style={{
                                 fontSize: '1.25rem',
                                 lineHeight: '1.75',
-                                maxWidth: '600px',
-                                opacity: '0.9',
+                                maxWidth: '650px',
+                                opacity: '0.85',
                                 color: 'rgba(255,255,255,0.9)',
                             }}
                         >
@@ -85,14 +91,14 @@ export default function Hero({
                         <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
                             <Link
                                 href={primaryCTA.href}
-                                className="group relative px-10 py-5 bg-[#FFD700] text-black text-[0.95rem] font-semibold uppercase tracking-[0.1em] transition-all hover:bg-[#FFC400] hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,215,0,0.2)] hover:shadow-[0_0_40px_rgba(255,215,0,0.4)] flex items-center justify-center rounded-sm"
+                                className="group relative px-10 py-5 bg-[#FFD700] text-black text-[0.95rem] font-bold uppercase tracking-[0.15em] transition-all hover:bg-[#FFC400] hover:scale-105 active:scale-95 shadow-[0_15px_40px_rgba(255,215,0,0.25)] flex items-center justify-center rounded-xl"
                             >
                                 {primaryCTA.text}
                             </Link>
 
                             <Link
                                 href={secondaryCTA.href}
-                                className="group px-10 py-5 bg-transparent border-2 border-white/30 text-white text-[0.95rem] font-semibold uppercase tracking-[0.1em] transition-all hover:bg-white hover:text-black hover:border-white flex items-center justify-center backdrop-blur-md rounded-sm"
+                                className="group px-10 py-5 bg-transparent border-2 border-white/30 text-white text-[0.95rem] font-bold uppercase tracking-[0.15em] transition-all hover:bg-white hover:text-black hover:border-white hover:scale-105 active:scale-95 flex items-center justify-center backdrop-blur-md rounded-xl"
                             >
                                 {secondaryCTA.text}
                             </Link>
@@ -101,11 +107,11 @@ export default function Hero({
 
                     {/* Right Content: Featured Video Card */}
                     <div className="lg:col-span-4 hidden lg:block animate-in fade-in slide-in-from-right-12 duration-1000 delay-300 ease-out">
-                        <div className="group relative bg-[#1a1a1a]/40 backdrop-blur-xl border border-white/10 p-6 rounded-3xl hover:bg-[#1a1a1a]/60 transition-all cursor-pointer shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] overflow-hidden">
+                        <div className="group relative bg-black/40 backdrop-blur-3xl border border-white/10 p-8 rounded-[2.5rem] hover:bg-black/60 transition-all cursor-pointer shadow-[0_40px_80px_-20px_rgba(0,0,0,0.6)] overflow-hidden">
                             {/* Accent Glow */}
                             <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#FFD700]/10 blur-[80px] rounded-full"></div>
 
-                            <div className="relative aspect-video rounded-2xl overflow-hidden mb-8 border border-white/5">
+                            <div className="relative aspect-video rounded-3xl overflow-hidden mb-8 border border-white/5">
                                 <img
                                     src={latestVideo.thumbnail}
                                     alt={latestVideo.title}
@@ -121,17 +127,17 @@ export default function Hero({
                             </div>
 
                             <div className="flex flex-col relative z-10 text-left">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <span className="w-8 h-[1px] bg-[#FFD700]"></span>
-                                    <span className="text-[#FFD700] text-xs font-black uppercase tracking-[0.3em]">Latest Video</span>
+                                <div className="flex items-center gap-3 mb-4">
+                                    <span className="w-10 h-[1px] bg-[#FFD700]"></span>
+                                    <span className="text-[#FFD700] text-xs font-black uppercase tracking-[0.3em]">Latest Feature</span>
                                 </div>
-                                <h3 className="text-white font-serif text-2xl font-bold leading-tight group-hover:text-[#FFD700] transition-colors duration-300 mb-6">
+                                <h3 className="text-white font-serif text-2xl font-bold leading-tight group-hover:text-[#FFD700] transition-colors duration-300 mb-8">
                                     {latestVideo.title}
                                 </h3>
-                                <div className="flex items-center text-white/50 text-xs font-bold uppercase tracking-[0.2em] group-hover:text-white transition-colors">
+                                <div className="flex items-center text-white/50 text-[0.7rem] font-black uppercase tracking-[0.25em] group-hover:text-white transition-colors">
                                     <span>Watch now</span>
-                                    <svg className="ml-3 w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    <svg className="ml-4 w-5 h-5 transform group-hover:translate-x-3 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                     </svg>
                                 </div>
                             </div>
@@ -141,7 +147,7 @@ export default function Hero({
             </div>
 
             {/* Bottom transition gradient */}
-            <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black via-black/50 to-transparent z-20"></div>
+            <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-black via-black/40 to-transparent z-20"></div>
         </section>
     );
 }

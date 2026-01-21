@@ -1,4 +1,5 @@
 import { getDynamicDestinationData } from "@/lib/destinationService";
+import { destinations as editorialData } from "@/lib/destinationData";
 import {
     ChevronRight,
     ArrowRight,
@@ -44,7 +45,15 @@ export default async function CountryPage({ params }) {
         if (!data) throw new Error("No data found");
 
         const { name, facts, images, content } = data;
-        const heroImage = images[0]?.url || "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800";
+
+        // Pick a random image from the first 3 Unsplash results for variety, or fallback
+        const dynamicHero = images.length > 0
+            ? images[Math.floor(Math.random() * Math.min(images.length, 3))]?.url
+            : null;
+
+        const editorialHero = editorialData[slug]?.heroImage;
+
+        const heroImage = dynamicHero || editorialHero || "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800";
 
         const getPostSlug = (cityName) => {
             const cityPart = cityName.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]/g, '');

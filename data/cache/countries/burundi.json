@@ -1,0 +1,36 @@
+{
+  "slug": "burundi",
+  "name": "Burundi",
+  "facts": {
+    "officialName": "Republic of Burundi",
+    "capital": "Gitega",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": "1,23,32,788",
+    "currency": "Burundian franc (Fr)",
+    "flag": "https://flagcdn.com/w320/bi.png",
+    "languages": "French, Kirundi",
+    "code": "BI"
+  },
+  "images": [],
+  "content": {
+    "tagline": "Discover the Wonders of Burundi",
+    "intro": "Located in Eastern Africa, Burundi is a land defined by its unique French heritage and the vibrant atmosphere of its capital, Gitega. From its Africa landscapes to hidden local gems, it remains a captivating chapter in any global journey.",
+    "whyVisit": "Travelers visit Burundi for its rich Eastern Africa atmosphere and the opportunity to explore its unique heritage.",
+    "bestPlaces": [
+      {
+        "city": "Gitega",
+        "reason": "The cultural and political heart of the nation.",
+        "category": "Capital City"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local infrastructure varies from rail to bus networks.",
+      "budget": "Currency used is Burundian franc (Fr). Costs vary by season.",
+      "bestTime": "Spring and Autumn are generally the most comfortable seasons for exploration.",
+      "stay": "A mix of traditional guesthouses and modern hotels are available."
+    }
+  },
+  "updatedAt": "2026-01-21T04:57:18.354Z"
+}

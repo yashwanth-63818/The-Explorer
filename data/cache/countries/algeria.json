@@ -1,0 +1,89 @@
+{
+  "slug": "algeria",
+  "name": "Algeria",
+  "facts": {
+    "officialName": "People's Democratic Republic of Algeria",
+    "capital": "Algiers",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": "4,74,00,000",
+    "currency": "Algerian dinar (د.ج)",
+    "flag": "https://flagcdn.com/w320/dz.png",
+    "languages": "Arabic",
+    "code": "DZ"
+  },
+  "images": [],
+  "content": {
+    "tagline": "The Jewel of North Africa",
+    "intro": "Algeria is a land of vast contrasts, from the Mediterranean coastline's turquoise waters to the golden dunes of the Sahara Desert. As Africa's largest country, it boasts Roman ruins that rival those in Italy, vibrant Casbahs, and a rich cultural tapestry weaving Berber, Arab, and French influences.",
+    "whyVisit": "Algeria is a land of vast contrasts, from the Mediterranean coastline's turquoise waters to the golden dunes of the Sahara Desert. As Africa's largest country, it boasts Roman ruins that rival those in Italy, vibrant Casbahs, and a rich cultural tapestry weaving Berber, Arab, and French influences.",
+    "bestPlaces": [
+      {
+        "city": "Algiers",
+        "reason": "Must visit."
+      },
+      {
+        "city": "Constantine",
+        "reason": "Must visit."
+      },
+      {
+        "city": "Sahara Desert",
+        "reason": "Must visit."
+      },
+      {
+        "city": "Oran",
+        "reason": "Must visit."
+      },
+      {
+        "city": "Tipaza",
+        "reason": "Must visit."
+      }
+    ],
+    "blogPosts": [
+      {
+        "title": "The Ultimate Algiers Travel Guide",
+        "slug": "algiers-algeria-things-to-do-backpacking",
+        "author": "The Explorer Editorial",
+        "date": "Jan 21, 2026"
+      },
+      {
+        "title": "The Ultimate Constantine Travel Guide",
+        "slug": "constantine-algeria-things-to-do-backpacking",
+        "author": "The Explorer Editorial",
+        "date": "Jan 21, 2026"
+      },
+      {
+        "title": "The Ultimate Sahara Desert Travel Guide",
+        "slug": "sahara-desert-algeria-things-to-do-backpacking",
+        "author": "The Explorer Editorial",
+        "date": "Jan 21, 2026"
+      },
+      {
+        "title": "The Ultimate Oran Travel Guide",
+        "slug": "oran-algeria-things-to-do-backpacking",
+        "author": "The Explorer Editorial",
+        "date": "Jan 21, 2026"
+      },
+      {
+        "title": "The Ultimate Tipaza Travel Guide",
+        "slug": "tipaza-algeria-things-to-do-backpacking",
+        "author": "The Explorer Editorial",
+        "date": "Jan 21, 2026"
+      }
+    ],
+    "thingsToDo": [
+      "Explore the Casbah of Algiers",
+      "Trek in the Hoggar Mountains",
+      "Visit the Roman ruins of Timgad",
+      "Cross the 7 Bridges of Constantine",
+      "Relax on the beaches of Annaba"
+    ],
+    "sections": {
+      "transport": "Domestic flights are cheap; trains link major coastal cities.",
+      "budget": "Algerian Dinar (DZD). Cash economy.",
+      "bestTime": "March-May or Oct-Nov to avoid extreme Saharan heat.",
+      "stay": "Hotels & Hostels."
+    }
+  },
+  "updatedAt": "2026-01-21T04:57:29.617Z"
+}

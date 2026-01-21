@@ -1,0 +1,96 @@
+{
+  "slug": "bulgaria",
+  "name": "Bulgaria",
+  "facts": {
+    "officialName": "Republic of Bulgaria",
+    "capital": "Sofia",
+    "region": "Europe",
+    "subregion": "Southeast Europe",
+    "population": "64,37,360",
+    "currency": "Bulgarian lev (лв)",
+    "flag": "https://flagcdn.com/w320/bg.png",
+    "languages": "Bulgarian",
+    "code": "BG"
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1677228514539-57b6e783678f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxCdWxnYXJpYSUyMHRyYXZlbCUyMGxhbmRtYXJrc3xlbnwwfDB8fHwxNzY4OTcxMDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a stone castle with a mountain in the background",
+      "author": "Raya Georgieva",
+      "link": "https://unsplash.com/photos/a-stone-castle-with-a-mountain-in-the-background-bqc9gAxaBKM"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1668014298306-fc1f15335e09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxCdWxnYXJpYSUyMHRyYXZlbCUyMGxhbmRtYXJrc3xlbnwwfDB8fHwxNzY4OTcxMDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large rock cliff with trees on it",
+      "author": "Luba Ertel",
+      "link": "https://unsplash.com/photos/a-large-rock-cliff-with-trees-on-it-XGz8jnbLoEA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1689006145177-164b4ca6f0df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxCdWxnYXJpYSUyMHRyYXZlbCUyMGxhbmRtYXJrc3xlbnwwfDB8fHwxNzY4OTcxMDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a rocky outcropping with mountains in the background",
+      "author": "Christian Spasov",
+      "link": "https://unsplash.com/photos/a-rocky-outcropping-with-mountains-in-the-background-Psv5LiZV8eA"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1695798598638-e8305f0ffac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxCdWxnYXJpYSUyMGNpdHklMjBhcmNoaXRlY3R1cmV8ZW58MHwwfHx8MTc2ODk3MTAyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large building with a clock tower on top of it",
+      "author": "Serenay Tosun",
+      "link": "https://unsplash.com/photos/a-large-building-with-a-clock-tower-on-top-of-it-bKb68HwIeoY"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1695798599270-ed3893a9476f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxCdWxnYXJpYSUyMGNpdHklMjBhcmNoaXRlY3R1cmV8ZW58MHwwfHx8MTc2ODk3MTAyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large building with a clock tower on top of it",
+      "author": "Serenay Tosun",
+      "link": "https://unsplash.com/photos/a-large-building-with-a-clock-tower-on-top-of-it-Bx6wsEKUbeU"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1695798599366-fb041c027148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxCdWxnYXJpYSUyMGNpdHklMjBhcmNoaXRlY3R1cmV8ZW58MHwwfHx8MTc2ODk3MTAyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a large white building with a green roof",
+      "author": "Serenay Tosun",
+      "link": "https://unsplash.com/photos/a-large-white-building-with-a-green-roof-jesSVCefpCs"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1633013037192-fa421ebaf182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxCdWxnYXJpYSUyMG5hdHVyZSUyMGxhbmRzY2FwZXxlbnwwfDB8fHwxNzY4OTcxMDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a view of a mountain range with a cloudy sky",
+      "author": "Anton Atanasov",
+      "link": "https://unsplash.com/photos/a-view-of-a-mountain-range-with-a-cloudy-sky-f7S2IkXI0fQ"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1633013040977-2ffe18b1b9f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwyfHxCdWxnYXJpYSUyMG5hdHVyZSUyMGxhbmRzY2FwZXxlbnwwfDB8fHwxNzY4OTcxMDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "a view of a mountain range under a cloudy sky",
+      "author": "Anton Atanasov",
+      "link": "https://unsplash.com/photos/a-view-of-a-mountain-range-under-a-cloudy-sky-FyCKpAWhY2E"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1592489499886-8e923ae813e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwzfHxCdWxnYXJpYSUyMG5hdHVyZSUyMGxhbmRzY2FwZXxlbnwwfDB8fHwxNzY4OTcxMDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "green trees on mountain during daytime",
+      "author": "Stefan Gogov",
+      "link": "https://unsplash.com/photos/green-trees-on-mountain-during-daytime-TjP-9_Qv7-A"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1528272252360-5efd274e36fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTMyMTl8MHwxfHNlYXJjaHwxfHxCdWxnYXJpYSUyMHN0cmVldCUyMGZvb2R8ZW58MHwwfHx8MTc2ODk3MTAyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "alt": "assorted labeled bottle on display shelf",
+      "author": "Angel Sinigersky",
+      "link": "https://unsplash.com/photos/assorted-labeled-bottle-on-display-shelf-THdmJFIBEI8"
+    }
+  ],
+  "content": {
+    "tagline": "Exploring Bulgaria",
+    "intro": "Bulgaria is a beautiful destination.",
+    "bestPlaces": [
+      {
+        "city": "Sofia",
+        "reason": "The capital.",
+        "category": "Mandatory"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local bus.",
+      "budget": "Varies.",
+      "bestTime": "Anytime.",
+      "stay": "Booking.com"
+    }
+  },
+  "updatedAt": "2026-01-21T04:51:01.653Z"
+}

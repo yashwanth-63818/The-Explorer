@@ -1,0 +1,36 @@
+{
+  "slug": "cyprus",
+  "name": "Cyprus",
+  "facts": {
+    "officialName": "Republic of Cyprus",
+    "capital": "Nicosia",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": "14,42,614",
+    "currency": "Euro (€)",
+    "flag": "https://flagcdn.com/w320/cy.png",
+    "languages": "Greek, Turkish",
+    "code": "CY"
+  },
+  "images": [],
+  "content": {
+    "tagline": "Discover the Wonders of Cyprus",
+    "intro": "Located in Southern Europe, Cyprus is a land defined by its unique Greek heritage and the vibrant atmosphere of its capital, Nicosia. From its Europe landscapes to hidden local gems, it remains a captivating chapter in any global journey.",
+    "whyVisit": "Travelers visit Cyprus for its rich Southern Europe atmosphere and the opportunity to explore its unique heritage.",
+    "bestPlaces": [
+      {
+        "city": "Nicosia",
+        "reason": "The cultural and political heart of the nation.",
+        "category": "Capital City"
+      }
+    ],
+    "blogPosts": [],
+    "sections": {
+      "transport": "Local infrastructure varies from rail to bus networks.",
+      "budget": "Currency used is Euro (€). Costs vary by season.",
+      "bestTime": "Spring and Autumn are generally the most comfortable seasons for exploration.",
+      "stay": "A mix of traditional guesthouses and modern hotels are available."
+    }
+  },
+  "updatedAt": "2026-01-21T04:56:53.870Z"
+}
