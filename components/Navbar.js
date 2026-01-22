@@ -1,15 +1,21 @@
 "use client";
 import Link from "next/link";
 import { Search, Menu, X, ChevronDown, Flag, Instagram, Youtube, Twitter, Plane, Bed, Home, Bus, Train, Car, Compass, Ticket, Shield, Smartphone, Lock } from "lucide-react";
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useState, useEffect, useRef } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import DestinationsMegaMenu from "./DestinationsMegaMenu";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [activeMenu, setActiveMenu] = useState(null);
+    const [searchQuery, setSearchQuery] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
+    const [isSearching, setIsSearching] = useState(false);
+    const [showResults, setShowResults] = useState(false);
+    const searchRef = useRef(null);
     const pathname = usePathname();
+    const router = useRouter();
 
     // Close menus on route change
     useEffect(() => {
@@ -42,12 +48,14 @@ export default function Navbar() {
             if (e.key === "Escape") {
                 setActiveMenu(null);
                 setIsOpen(false);
+                setShowResults(false);
             }
         };
 
         const handleClickOutside = (e) => {
-            if (!e.target.closest("header")) {
+            if (!e.target.closest("header") && !e.target.closest(".search-results-dropdown")) {
                 setActiveMenu(null);
+                setShowResults(false);
             }
         };
 
@@ -58,6 +66,50 @@ export default function Navbar() {
             window.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
+
+    useEffect(() => {
+        const fetchResults = async () => {
+            if (searchQuery.length < 2) {
+                setSearchResults([]);
+                setShowResults(false);
+                return;
+            }
+
+            setIsSearching(true);
+            try {
+                const res = await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`);
+                const data = await res.json();
+                setSearchResults(data);
+                setShowResults(true);
+            } catch (err) {
+                console.error("Search error:", err);
+            } finally {
+                setIsSearching(false);
+            }
+        };
+
+        const timer = setTimeout(fetchResults, 300);
+        return () => clearTimeout(timer);
+    }, [searchQuery]);
+
+    const handleResultClick = (result) => {
+        setSearchQuery("");
+        setShowResults(false);
+        setIsOpen(false);
+        if (result.type === 'country') {
+            router.push(`/destinations/${result.slug}`);
+        } else if (result.type === 'city') {
+            router.push(`/destinations/${result.countrySlug}`);
+        } else if (result.type === 'region') {
+            router.push(`/destinations`);
+        }
+    };
+
+    const handleSearchSubmit = (e) => {
+        if (e.key === 'Enter' && searchResults.length > 0) {
+            handleResultClick(searchResults[0]);
+        }
+    };
 
     const navItems = [
         { name: "Planning", href: "/planning", hasDropdown: true },
@@ -85,8 +137,8 @@ export default function Navbar() {
 
     return (
         <header className="fixed top-0 w-full z-50">
-            {/* Top Bar - Dark Background */}
-            <div className={`transition-all duration-300 ${scrolled ? 'bg-[#2d2d2d]/95 backdrop-blur-md shadow-md' : 'bg-[#2d2d2d]/80 backdrop-blur-sm'}`}>
+            {/* Top Bar - Dark Background - Added relative and high z-index to keep search results on top */}
+            <div className={`relative z-20 transition-all duration-300 ${scrolled ? 'bg-[#2d2d2d]/95 backdrop-blur-md shadow-md' : 'bg-[#2d2d2d]/80 backdrop-blur-sm'}`}>
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         {/* Logo Section */}
@@ -98,15 +150,52 @@ export default function Navbar() {
                         </Link>
 
                         {/* Middle Search Bar - Hidden on mobile, visible desktop */}
-                        <div className="hidden lg:block flex-1 max-w-xl mx-8">
+                        <div className="hidden lg:block flex-1 max-w-xl mx-8 relative" ref={searchRef}>
                             <div className="relative group">
-                                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-white transition-colors" size={18} />
+                                <Search className={`absolute left-4 top-1/2 -translate-y-1/2 transition-colors ${isSearching ? 'text-[#FFD700] animate-pulse' : 'text-gray-400 group-focus-within:text-white'}`} size={18} />
                                 <input
                                     type="text"
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    onFocus={() => searchQuery.length >= 2 && setShowResults(true)}
+                                    onKeyDown={handleSearchSubmit}
                                     placeholder="Search the blog"
                                     className="w-full bg-white/10 border border-white/10 rounded-full py-2.5 pl-12 pr-4 text-sm text-gray-200 placeholder:text-gray-400 focus:outline-none focus:bg-white/20 transition-all font-medium"
                                 />
                             </div>
+
+                            {/* Desktop Search Results Dropdown */}
+                            {showResults && searchResults.length > 0 && (
+                                <div className="absolute top-full left-0 w-full mt-2 bg-[#1a1a1b]/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden z-[60] search-results-dropdown animate-in fade-in slide-in-from-top-2 duration-200">
+                                    <div className="py-2">
+                                        {searchResults.map((result) => (
+                                            <button
+                                                key={result.id}
+                                                onClick={() => handleResultClick(result)}
+                                                className="w-full px-5 py-3.5 flex items-center gap-4 hover:bg-white/10 transition-all text-left group border-b border-white/[0.03] last:border-0"
+                                            >
+                                                <div className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-gray-400 group-hover:bg-[#FFD700] group-hover:text-black transition-all duration-300">
+                                                    {result.type === 'country' ? <Flag size={15} /> : result.type === 'city' ? <Compass size={15} /> : <div className="text-[9px] font-black uppercase tracking-tighter">REG</div>}
+                                                </div>
+                                                <div className="flex flex-col">
+                                                    <span className="text-sm font-bold text-gray-200 group-hover:text-white">{result.name}</span>
+                                                    <span className="text-[10px] text-gray-500 uppercase tracking-widest font-black">
+                                                        {result.type === 'country' ? result.region :
+                                                            result.type === 'city' ? `City in ${result.countryName}` :
+                                                                'Global Region'}
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            {showResults && searchResults.length === 0 && searchQuery.length >= 2 && !isSearching && (
+                                <div className="absolute top-full left-0 w-full mt-2 bg-[#1a1a1b] border border-white/10 rounded-2xl shadow-2xl p-6 text-center z-[60] search-results-dropdown">
+                                    <p className="text-gray-400 text-sm italic">No destinations found for "{searchQuery}"</p>
+                                </div>
+                            )}
                         </div>
 
                         {/* Social Icons */}
@@ -208,11 +297,45 @@ export default function Navbar() {
                 <div className="lg:hidden fixed inset-0 top-20 bg-[#2d2d2d] z-40 overflow-y-auto w-full">
                     <div className="flex flex-col p-6 gap-6">
                         <div className="relative mb-4">
+                            <Search className={`absolute left-4 top-1/2 -translate-y-1/2 transition-colors ${isSearching ? 'text-[#FFD700]' : 'text-gray-400'}`} size={18} />
                             <input
                                 type="text"
-                                placeholder="Search..."
-                                className="w-full bg-white/10 border border-white/10 rounded-lg p-3 text-white placeholder:text-gray-400 focus:outline-none"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                placeholder="Search destinations..."
+                                className="w-full bg-white/10 border border-white/10 rounded-lg py-3 pl-12 pr-4 text-white placeholder:text-gray-400 focus:outline-none"
                             />
+
+                            {/* Mobile Search Results */}
+                            {searchQuery.length >= 2 && (
+                                <div className="mt-4 space-y-2">
+                                    {isSearching ? (
+                                        <div className="text-center py-4 text-gray-500 text-sm animate-pulse">Searching...</div>
+                                    ) : searchResults.length > 0 ? (
+                                        searchResults.map((result) => (
+                                            <button
+                                                key={result.id}
+                                                onClick={() => handleResultClick(result)}
+                                                className="w-full p-4 flex items-center gap-4 bg-white/5 border border-white/5 rounded-xl text-left"
+                                            >
+                                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-[#FFD700]">
+                                                    {result.type === 'country' ? <Flag size={16} /> : result.type === 'city' ? <Compass size={16} /> : <div className="text-[10px] font-bold">REG</div>}
+                                                </div>
+                                                <div className="flex flex-col">
+                                                    <span className="text-base font-bold text-white">{result.name}</span>
+                                                    <span className="text-[10px] text-gray-500 uppercase tracking-widest font-black">
+                                                        {result.type === 'country' ? result.region :
+                                                            result.type === 'city' ? `City in ${result.countryName}` :
+                                                                'Global Region'}
+                                                    </span>
+                                                </div>
+                                            </button>
+                                        ))
+                                    ) : (
+                                        <div className="text-center py-4 text-gray-500 text-sm italic">No results found</div>
+                                    )}
+                                </div>
+                            )}
                         </div>
                         {navItems.map((item) => (
                             <Link

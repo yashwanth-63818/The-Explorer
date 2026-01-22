@@ -91,8 +91,43 @@ export default async function CountryPage({ params }) {
                     facts={facts}
                     heroImage={heroImage}
                     intro={content.intro}
-                    bestPlaces={content.bestPlaces}
                 />
+
+                {/* B. PLACES TO VISIT SECTION - Bucketlistly Styled */}
+                <section id="places-to-visit" className="bg-[#0f0f0f] border-y border-white/5 py-12 relative overflow-hidden">
+                    <div className="container mx-auto px-4">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+                            <div>
+                                <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-2">Places to Visit</h2>
+                                <p className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight">The Best of {name}</p>
+                            </div>
+                            <div className="flex items-center gap-4 text-[10px] font-bold text-white/30 uppercase tracking-widest hidden md:flex">
+                                <span>Swipe to explore</span>
+                                <ArrowRight size={14} className="animate-pulse" />
+                            </div>
+                        </div>
+
+                        {/* Pills Container - Scrollable on mobile, wrapped on desktop */}
+                        <div className="flex flex-nowrap md:flex-wrap gap-4 overflow-x-auto md:overflow-x-visible pb-8 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+                            {content.bestPlaces.map((place, i) => (
+                                <Link
+                                    key={i}
+                                    href={`/destinations/${slug}/${place.slug}`}
+                                    className="flex-shrink-0 px-8 py-4 bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl text-[12px] font-black uppercase tracking-[0.2em] text-white/80 hover:bg-[#FFD700] hover:text-black hover:border-[#FFD700] transition-all duration-500 hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center gap-4 group"
+                                >
+                                    <span className="text-[10px] text-[#FFD700] group-hover:text-black/40 transition-colors">0{i + 1}</span>
+                                    {place.city}
+                                    <ArrowRight size={14} className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-black" />
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Faded Background Text */}
+                    <div className="absolute -bottom-10 -right-20 text-[15vw] font-black text-white/[0.02] uppercase select-none pointer-events-none tracking-tighter overflow-hidden">
+                        {name}
+                    </div>
+                </section>
 
                 {/* B. UTILITY CARDS GRID */}
                 <section id="utility-cards" className="py-20 bg-[#0c0c0c] border-b border-white/5">
