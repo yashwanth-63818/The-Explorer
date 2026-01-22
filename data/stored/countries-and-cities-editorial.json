@@ -216,7 +216,7 @@
         "china": {
             "name": "China",
             "region": "Asia",
-            "heroDescription": "China is a continental giant where ancient history and futuristic innovation collide in spectacular fashion. From the Great Wall snaking across mountain ridges to the terracotta warriors of Xi'an and the forbidden city of Beijing, the country's imperial past is ever-present. Yet, the neon-lit skylines of Shanghai and Shenzhen reflect a nation at the cutting edge of the 21st century. Beyond the cities, China offers a landscape of breathtaking variety, from the karst peaks of Guilin and the rainbow mountains of Zhangye to the high-altitude plateaus of Tibet. It is a destination of immense scale and depth, offering a journey through the very heart of human civilization.",
+            "heroDescription": "China is a continental giant where ancient history and futuristic innovation collide in spectacular fashion. From the Great Wall snaking across mountain ridges to the terracotta warriors of Xi'an and the forbidden city of Beijing, the country's imperial past is ever-present. Yet, the neon-lit skylines of Shanghai and Shenzhen reflect a nation at the cutting edge of the 21st century. Beyond the cities, China offers a landscape of breathtaking variety, from the karst peaks of Yangshuo to the high-altitude plateaus of Tibet and the perfectly preserved water towns of the south.",
             "placesToVisit": {
                 "popular": [
                     {
@@ -235,14 +235,14 @@
                         "type": "City"
                     },
                     {
-                        "slug": "xian",
+                        "slug": "xi-an",
                         "name": "Xi'an",
                         "type": "City"
                     },
                     {
                         "slug": "guilin",
                         "name": "Guilin",
-                        "type": "Region"
+                        "type": "City"
                     },
                     {
                         "slug": "zhangjiajie",
@@ -270,6 +270,516 @@
                         "slug": "pingyao",
                         "name": "Pingyao",
                         "type": "History"
+                    }
+                ]
+            }
+        },
+        "indonesia": {
+            "name": "Indonesia",
+            "region": "Asia",
+            "heroDescription": "Indonesia is a sprawling archipelago of over 17,000 islands, where volcanic peaks rise from emerald jungles and ancient temples stand in the shadow of active craters. From the spiritual heart of Bali to the rugged, prehistoric landscapes of Komodo, it is a country of intense natural diversity and deep-rooted cultures. It is a place of endless surf, vibrant street food, and a sense of adventure that feels limitless.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "bali",
+                        "name": "Bali",
+                        "type": "Island"
+                    },
+                    {
+                        "slug": "jakarta",
+                        "name": "Jakarta",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "yogyakarta",
+                        "name": "Yogyakarta",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "komodo",
+                        "name": "Komodo",
+                        "type": "Region"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "nusa-penida",
+                        "name": "Nusa Penida",
+                        "type": "Island"
+                    },
+                    {
+                        "slug": "gili-islands",
+                        "name": "Gili Islands",
+                        "type": "Archipelago"
+                    },
+                    {
+                        "slug": "mount-bromo",
+                        "name": "Mount Bromo",
+                        "type": "Mountain"
+                    },
+                    {
+                        "slug": "belitung",
+                        "name": "Belitung",
+                        "type": "Island"
+                    }
+                ]
+            }
+        },
+        "albania": {
+            "name": "Albania",
+            "region": "Europe",
+            "heroDescription": "Albania is the last great secret of the Mediterranean, a land of rugged Accursed Mountains, turquoise Ionian shores, and Ottoman-era stone towns. Long isolated from the world, it is now emerging as a soulful, authentic destination where hospitality remains a sacred code and the layers of history—from Illyrian ruins to Cold War bunkers—are everywhere.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "tirana",
+                        "name": "Tirana",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "gjirokaster",
+                        "name": "Gjirokaster",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "berat",
+                        "name": "Berat",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "saranda",
+                        "name": "Saranda",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "theth",
+                        "name": "Theth",
+                        "type": "Village"
+                    },
+                    {
+                        "slug": "shkoder",
+                        "name": "Shkoder",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "ksamil",
+                        "name": "Ksamil",
+                        "type": "Beach"
+                    },
+                    {
+                        "slug": "valbona",
+                        "name": "Valbona",
+                        "type": "Mountain"
+                    }
+                ]
+            }
+        },
+        "algeria": {
+            "name": "Algeria",
+            "region": "Africa",
+            "heroDescription": "Algeria is a vast North African giant, stretching from the sun-drenched Mediterranean coast to the mystical, shifting sands of the Sahara. It is home to some of the world's best-preserved Roman ruins, vibrant Casbahs, and a deep-rooted Berber heritage that predates civilization itself. It is a land of quiet majesty, where the ancient world meets the modern spirit of resilience.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "algiers",
+                        "name": "Algiers",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "oran",
+                        "name": "Oran",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "constantine",
+                        "name": "Constantine",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "tlemcen",
+                        "name": "Tlemcen",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "ghardaia",
+                        "name": "Ghardaia",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "djanet",
+                        "name": "Djanet",
+                        "type": "Oasis"
+                    },
+                    {
+                        "slug": "bejaia",
+                        "name": "Bejaia",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "tipaza",
+                        "name": "Tipaza",
+                        "type": "History"
+                    }
+                ]
+            }
+        },
+        "usa": {
+            "name": "USA",
+            "region": "Americas",
+            "heroDescription": "The United States is a vast, continental tapestry of iconic skylines, sprawling national parks, and a relentless energy that has shaped global culture. From the neon pulse of Times Square to the ethereal silence of the Grand Canyon and the rugged coastlines of the Pacific Northwest, it is a country of extreme scale and diversity. It is a place where the individual spirit meets a collective ambition, offering everything from high-wattage urban exploration to the most profound natural escapes on Earth.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "new-york",
+                        "name": "New York",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "los-angeles",
+                        "name": "Los Angeles",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "chicago",
+                        "name": "Chicago",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "san-francisco",
+                        "name": "San Francisco",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "portland",
+                        "name": "Portland",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "austin",
+                        "name": "Austin",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "sedona",
+                        "name": "Sedona",
+                        "type": "Nature"
+                    },
+                    {
+                        "slug": "nashville",
+                        "name": "Nashville",
+                        "type": "City"
+                    }
+                ]
+            }
+        },
+        "france": {
+            "name": "France",
+            "region": "Europe",
+            "heroDescription": "France is the world's most sophisticated sanctuary of art, gastronomy, and historic elegance. From the wrought-iron silhouette of the Eiffel Tower to the sun-drenched lavender fields of Provence and the rugged cliffs of Normandy, it is a country that has perfected the art of living. It is a landscape of medieval chateaus, world-class vineyards, and a culture that treats every meal and every interaction with a sense of ceremony and grace.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "paris",
+                        "name": "Paris",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "lyon",
+                        "name": "Lyon",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "marseille",
+                        "name": "Marseille",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "nice",
+                        "name": "Nice",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "bordeaux",
+                        "name": "Bordeaux",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "strasbourg",
+                        "name": "Strasbourg",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "annecy",
+                        "name": "Annecy",
+                        "type": "Town"
+                    },
+                    {
+                        "slug": "mont-saint-michel",
+                        "name": "Mont Saint-Michel",
+                        "type": "History"
+                    }
+                ]
+            }
+        },
+        "uk": {
+            "name": "United Kingdom",
+            "region": "Europe",
+            "heroDescription": "The United Kingdom is a dense, high-contrast matrix of ancient history, royal ceremony, and cutting-edge creativity. From the bustling global crossroads of London to the misty highlands of Scotland and the rolling green hills of the Cotswolds, it is a land defined by its character and its heritage. It is a place where industrial power once reshaped the world and where the echoes of kings, poets, and revolutionaries are heard in every stone alley and village square.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "london",
+                        "name": "London",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "edinburgh",
+                        "name": "Edinburgh",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "manchester",
+                        "name": "Manchester",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "liverpool",
+                        "name": "Liverpool",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "bath",
+                        "name": "Bath",
+                        "type": "History"
+                    },
+                    {
+                        "slug": "oxford",
+                        "name": "Oxford",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "isle-of-skye",
+                        "name": "Isle of Skye",
+                        "type": "Nature"
+                    },
+                    {
+                        "slug": "cotswolds",
+                        "name": "Cotswolds",
+                        "type": "Region"
+                    }
+                ]
+            }
+        },
+        "germany": {
+            "name": "Germany",
+            "region": "Europe",
+            "heroDescription": "Germany is a powerhouse of precision, history, and natural beauty, where medieval half-timbered towns sit alongside some of the world's most futuristic urban environments. From the high-energy club culture of Berlin to the fairytale castles of Bavaria and the industrial might of the Ruhr, it is a country of profound depth. It is a land of dense forests, wide rivers, and a philosophical spirit that balances rigorous engineering with a deep-seated love for the arts and the outdoors.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "berlin",
+                        "name": "Berlin",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "munich",
+                        "name": "Munich",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "hamburg",
+                        "name": "Hamburg",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "frankfurt",
+                        "name": "Frankfurt",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "dresden",
+                        "name": "Dresden",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "heidelberg",
+                        "name": "Heidelberg",
+                        "type": "Town"
+                    },
+                    {
+                        "slug": "black-forest",
+                        "name": "Black Forest",
+                        "type": "Nature"
+                    },
+                    {
+                        "slug": "koln",
+                        "name": "Cologne",
+                        "type": "City"
+                    }
+                ]
+            }
+        },
+        "australia": {
+            "name": "Australia",
+            "region": "Oceania",
+            "heroDescription": "Australia is a vast, sun-drenched island continent of staggering variety and ancient spirit. From the iconic white shells of the Sydney Opera House to the red, spiritual heart of the Outback and the kaleidoscope of the Great Barrier Reef, it is a land of endless scale. It is a place defined by its coastlines, its unique wildlife, and a laid-back lifestyle that thrives on a deep connection with the wild, untamed powers of the natural world.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "sydney",
+                        "name": "Sydney",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "melbourne",
+                        "name": "Melbourne",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "brisbane",
+                        "name": "Brisbane",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "perth",
+                        "name": "Perth",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "byron-bay",
+                        "name": "Byron Bay",
+                        "type": "Town"
+                    },
+                    {
+                        "slug": "uluru",
+                        "name": "Uluru",
+                        "type": "Nature"
+                    },
+                    {
+                        "slug": "tasmania",
+                        "name": "Tasmania",
+                        "type": "Island"
+                    },
+                    {
+                        "slug": "gold-coast",
+                        "name": "Gold Coast",
+                        "type": "City"
+                    }
+                ]
+            }
+        },
+        "canada": {
+            "name": "Canada",
+            "region": "North America",
+            "heroDescription": "Canada is a vast, untamed wilderness of scale, where emerald lakes reflect snow-capped Rockies and vibrant, multicultural cities sit on the edge of the world's longest coastline. From the French elegance of Quebec to the rugged, ocean-mist charm of Vancouver Island, it is a country that offers a sense of total freedom and breathtaking natural grandeur.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "vancouver",
+                        "name": "Vancouver",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "toronto",
+                        "name": "Toronto",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "banff",
+                        "name": "Banff",
+                        "type": "Town"
+                    },
+                    {
+                        "slug": "montreal",
+                        "name": "Montreal",
+                        "type": "City"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "vancouver-island",
+                        "name": "Vancouver Island",
+                        "type": "Island"
+                    },
+                    {
+                        "slug": "jasper",
+                        "name": "Jasper",
+                        "type": "National Park"
+                    },
+                    {
+                        "slug": "quebec-city",
+                        "name": "Quebec City",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "haida-gwaii",
+                        "name": "Haida Gwaii",
+                        "type": "Archipelago"
+                    }
+                ]
+            }
+        },
+        "switzerland": {
+            "name": "Switzerland",
+            "region": "Europe",
+            "heroDescription": "Switzerland is a high-altitude masterpiece of precision, where mirror-like lakes reflect the jagged silhouettes of the Eiger and the Matterhorn. It is a land of red trains winding through emerald valleys, silent alpine pastures, and cities that blend medieval character with cutting-edge sophistication.",
+            "placesToVisit": {
+                "popular": [
+                    {
+                        "slug": "zurich",
+                        "name": "Zurich",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "geneva",
+                        "name": "Geneva",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "lucerne",
+                        "name": "Lucerne",
+                        "type": "City"
+                    },
+                    {
+                        "slug": "interlaken",
+                        "name": "Interlaken",
+                        "type": "Town"
+                    }
+                ],
+                "underrated": [
+                    {
+                        "slug": "zermatt",
+                        "name": "Zermatt",
+                        "type": "Mountain"
+                    },
+                    {
+                        "slug": "lauterbrunnen",
+                        "name": "Lauterbrunnen",
+                        "type": "Village"
+                    },
+                    {
+                        "slug": "grindelwald",
+                        "name": "Grindelwald",
+                        "type": "Village"
+                    },
+                    {
+                        "slug": "appenzell",
+                        "name": "Appenzell",
+                        "type": "Region"
                     }
                 ]
             }
@@ -1286,6 +1796,1304 @@
                 "Pingyao is a high-speed rail stop between Beijing and Xi'an, making it a perfect one or two-night stop",
                 "The ancient city is entirely car-free; arrive at one of the city gates and take an electric golf cart to your hotel",
                 "Try the local Pingyao beef and the region's famous aged vinegar—it's a staple of every meal here"
+            ]
+        },
+        "bali": {
+            "name": "Bali",
+            "country": "indonesia",
+            "heroTitle": "Bali: The Morning of the World",
+            "heroDescription": "Bali is a spiritual kaleidoscope, a place where the scent of incense and frangipani fills the air and every corner holds a vibrant daily offering. From the emerald-green rice terraces of Ubud to the world-class surf breaks of Uluwatu, it is an island of profound aesthetic beauty and deep-rooted Hindu tradition. It is a destination that caters to every soul—the seeker of wellness, the hunter of waves, and the lover of high-end design. Bali is not just an island; it's a feeling of total immersion in a culture that lives and breathes in harmony with nature.",
+            "bestTimeToVisit": "April to October during the dry season, which offers perfect conditions for surfing, hiking, and exploring the island's many temples.",
+            "whyVisit": [
+                "A uniquely vibrant Hindu culture with daily ceremonies and thousands of ornate temples",
+                "Incredible natural diversity ranging from volcanic mountains to pristine beaches and lush jungles",
+                "One of the world's most sophisticated and creative culinary and wellness scenes"
+            ],
+            "topExperiences": [
+                "Walk through the Tegalalang Rice Terraces at sunrise for a view of Bali's iconic agricultural artistry",
+                "Watch a traditional Kecak Fire Dance at Uluwatu Temple as the sun sets over the Indian Ocean",
+                "Spend a morning in Ubud's Sacred Monkey Forest, observing the playful macaques among ancient temple ruins"
+            ],
+            "travelTips": [
+                "Rent a scooter for the ultimate freedom, but always wear a helmet and be prepared for chaotic traffic",
+                "Always dress modestly for temples (sarongs are usually available for rent at the entrance)",
+                "Support the local community by eating at 'Warungs'—traditional family-run Indonesian eateries"
+            ]
+        },
+        "jakarta": {
+            "name": "Jakarta",
+            "country": "indonesia",
+            "heroTitle": "Jakarta: The Big Durian",
+            "heroDescription": "Jakarta is a sprawling, high-octane metropolis where the future and the past exist in a state of constant, electric tension. As the heartbeat of Indonesia, it is a city of extreme contrasts—where sleek skyscrapers look down on historic Dutch colonial remains and vibrant street markets. It is a place of incredible energy, diverse subcultures, and a culinary scene that represents every corner of the archipelago. Jakarta may be chaotic, but for those who embrace its rhythm, it reveals a soulful, irrepressible character that is the very essence of modern Indonesia.",
+            "bestTimeToVisit": "June to September during the dry season to avoid the intense tropical floods and high humidity of the monsoon.",
+            "whyVisit": [
+                "A world-class destination for enthusiasts of urban culture, nightlife, and mega-shopping malls",
+                "Deep historical roots in the Old Town (Kota Tua), showcasing the city's colonial maritime past",
+                "The ultimate gateway to the culinary diversity of Indonesia's 17,000 islands"
+            ],
+            "topExperiences": [
+                "Explore the Dutch colonial architecture in Kota Tua and visit the historic Cafe Batavia",
+                "Take a walk through the National Monument (Monas) park at sunset for a glimpse of the city's patriotic heart",
+                "Experience the high-end rooftop bar scene for panoramic views of the Jakarta skyline at night"
+            ],
+            "travelTips": [
+                "Use the TransJakarta busway or ride-sharing apps like Gojek and Grab to navigate the city's legendary traffic",
+                "The city is massive; choose your base carefully—Sudirman or Menteng are popular for central access",
+                "Jakarta is a foodie's paradise; don't be afraid to try the street food, especially the Satay and Nasi Goreng"
+            ]
+        },
+        "yogyakarta": {
+            "name": "Yogyakarta",
+            "country": "indonesia",
+            "heroTitle": "Yogyakarta: The Soul of Java",
+            "heroDescription": "Yogyakarta, often called 'Jogja', is the cultural and artistic heart of Java—a city that feels more like a grand village governed by tradition and the arts. Within reachable distance of the colossal Borobudur and Prambanan temple complexes, it is a bastion of Javanese heritage, from batik and silversmithing to shadow puppetry. It is a city of students, artists, and royalty, where the Sultan still lives in his ancient kraton (palace). Jogja is a place for the slow traveler who seeks spiritual depth and the quiet beauty of Javanese life.",
+            "bestTimeToVisit": "April to October during the dry season, which is perfect for visiting the large temple complexes at sunrise and sunset.",
+            "whyVisit": [
+                "Direct access to some of the world's most significant Buddhist and Hindu archaeological sites",
+                "The epicenter of traditional Javanese arts, including batik, Gamelan music, and Wayang Kulit",
+                "A vibrant and affordable street food culture, led by the legendary Malioboro Street"
+            ],
+            "topExperiences": [
+                "Experience a sunrise at Borobudur, the world's largest Buddhist temple, as the mist lifts from the surrounding volcanoes",
+                "Explore the sprawling Hindu temple complex of Prambanan and stay for the Ramayana Ballet performance",
+                "Wander through the Taman Sari Water Castle, the former royal garden and bathing complex of the Sultan"
+            ],
+            "travelTips": [
+                "Take a 'Becak' (traditional pedicab) for short trips around the old city for a classic Jogja experience",
+                "Visit a batik workshop in the Kraton area to learn the intricate process of wax-dyeing",
+                "Try 'Gudeg', a local young jackfruit stew—it's the definitive flavor of Yogyakarta"
+            ]
+        },
+        "komodo": {
+            "name": "Komodo",
+            "country": "indonesia",
+            "heroTitle": "Komodo: The Land of Dragons",
+            "heroDescription": "Komodo National Park is a prehistoric world of rugged volcanic islands, turquoise waters, and ancient reptiles that time forgot. It is the only place on earth where the legendary Komodo Dragon—the world's largest lizard—roams freely in its natural habitat. Beyond the dragons, the park is a world-class marine sanctuary, home to manta rays, vibrant coral reefs, and the iconic Pink Beach. To travel Komodo is to live on a boat, moving between silent bays and trekking up golden hills for views that feel like a scene from another planet.",
+            "bestTimeToVisit": "April to June when the islands are still green and the weather is pleasant before the peak heat of the dry season.",
+            "whyVisit": [
+                "The only destination in the world to see Komodo Dragons in the wild on Rinca and Komodo islands",
+                "Breathtaking marine biodiversity, consistently ranked among the top diving and snorkeling spots globally",
+                "Unique natural wonders like the Pink Beach and the panoramic views from Padar Island"
+            ],
+            "topExperiences": [
+                "Trek to the summit of Padar Island at sunrise for the iconic view of three different colored bays",
+                "Go snorkeling or diving at Manta Point to swim with dozens of graceful giant manta rays",
+                "Take a guided park ranger walk on Komodo Island to spot the dragons and learn about their ecology"
+            ],
+            "travelTips": [
+                "You must visit with a licensed guide and stay within the designated paths on the dragon islands",
+                "Liveaboards are the best way to experience the park; book at least a 3-day/2-night trip for the full experience",
+                "The currents in Komodo can be very strong; snorkeling and diving should be done with experienced operators"
+            ]
+        },
+        "nusa-penida": {
+            "name": "Nusa Penida",
+            "country": "indonesia",
+            "heroTitle": "Nusa Penida: The Wild Frontier",
+            "heroDescription": "Nusa Penida is Bali's rugged, dramatic neighbor—an island of towering white cliffs, hidden lagoons, and a raw, untamed energy. Unlike the manicured beaches of the main island, Penida offers a landscape of extreme verticality, where narrow paths lead to some of the most spectacular coastal vistas in Southeast Asia. From the T-Rex-shaped headland of Kelingking to the crystal-clear waters of Crystal Bay, it is an island for the true adventurer who doesn't mind a few bumps in the road in exchange for world-class natural beauty.",
+            "bestTimeToVisit": "May to September during the dry season. The island is best avoided during the peak monsoon as the roads can become treacherous.",
+            "whyVisit": [
+                "Incredible coastal landforms and viewpoints that are among the most photographed in the world",
+                "One of the best places in Indonesia to swim with Manta Rays and see the rare Mola Mola (Sunfish)",
+                "A more quiet, less developed alternative to the busy southern parts of Bali"
+            ],
+            "topExperiences": [
+                "Hike down the steep cliff path to Kelingking Beach for a swim in the turquoise waters far below the crowds",
+                "Explore the natural limestone arch of Broken Beach and the nearby Angel's Billabong infinity pool",
+                "Snorkel at Manta Bay or Crystal Bay for some of the island's most vibrant and accessible marine life"
+            ],
+            "travelTips": [
+                "The roads on Nusa Penida are notoriously poor; only rent a scooter if you are an exceptionally confident rider",
+                "For most travelers, hiring a local driver for a day is the safest and most efficient way to see the main sites",
+                "Take a fast boat from Sanur in Bali; the crossing takes about 45 minutes and can be bumpy"
+            ]
+        },
+        "gili-islands": {
+            "name": "Gili Islands",
+            "country": "indonesia",
+            "heroTitle": "Gili Islands: The Archipelago of Peace",
+            "heroDescription": "The Gili Islands are a trio of tiny, palm-fringed coral isles—Gili Trawangan, Gili Meno, and Gili Air—where no motorized vehicles are allowed. Here, the only sounds are the lapping of waves, the ringing of bicycle bells, and the clip-clop of horse-drawn carriages (cidomos). Each island has its own character: Gili T is the vibrant party hub, Gili Meno is the silent honeymooner's retreat, and Gili Air offers a perfect boho-chic balance. Surrounded by turquoise waters filled with sea turtles, the Gilis are a pure island escape where life moves at the speed of a bicycle.",
+            "bestTimeToVisit": "July to September for the best weather, though the islands are a popular year-round destination despite the rainy season.",
+            "whyVisit": [
+                "A unique car-free environment that offers a rare sense of peace and true island disconnection",
+                "Exceptional snorkeling and diving with residents like green sea turtles and hawksbill turtles",
+                "A diverse range of island vibes to choose from, catering to every type of traveler"
+            ],
+            "topExperiences": [
+                "Rent a bicycle to circumnavigate any of the three islands, finding hidden beach bars and quiet sunset spots",
+                "Go snorkeling directly off the beach at Gili Meno to see the iconic underwater statues and turtles",
+                "Enjoy a seafood BBQ on the beach in Gili Trawangan's night market for an authentic local meal"
+            ],
+            "travelTips": [
+                "The Gilis are a 'plastic-free' zone; many businesses don't offer straws or plastic bags—plan accordingly",
+                "The horse-drawn carriages (cidomos) can be controversial; many travelers prefer to walk or use bicycles",
+                "Be aware that fresh water is a scarcity on the islands; many showers use desalinated brackish water"
+            ]
+        },
+        "mount-bromo": {
+            "name": "Mount Bromo",
+            "country": "indonesia",
+            "heroTitle": "Mount Bromo: The Smoking Crater",
+            "heroDescription": "Mount Bromo is one of the world's most dramatic volcanic landscapes, an active crater that sits within the vast, desolate 'Sea of Sand' in East Java. Part of the Bromo Tengger Semeru National Park, it is an otherworldly environment of grey volcanic dust, steaming vents, and jagged peaks rising from a massive ancient caldera. The experience of Bromo is defined by the sunrise from Mount Penanjakan, where the volcanoes emerge from a sea of clouds in a spectacular display of geological power. It is a place of deep spiritual significance to the local Tengger people and a bucket-list destination for every adventure traveler.",
+            "bestTimeToVisit": "June to August during the dry season for the best chance of a clear sunrise and manageable conditions for trekking.",
+            "whyVisit": [
+                "One of the most accessible and visually stunning active volcanoes in the world",
+                "The surreal, moon-like experience of walking across the vast 'Sea of Sand' caldera",
+                "A unique cultural experience with the Tenggerese people and the Kasada festival"
+            ],
+            "topExperiences": [
+                "Stand at the King Kong Hill viewpoint at sunrise to see Bromo, Batok, and Semeru emerge from the mist",
+                "Hike up the 250 steps to the rim of Bromo's crater to hear the roar of the active volcano below",
+                "Take a 4x4 Jeep tour across the Sea of Sand for a rugged, high-altitude adventure"
+            ],
+            "travelTips": [
+                "It gets extremely cold before sunrise; bring a heavy jacket, gloves, and a hat—you can also rent them locally",
+                "The volcanic ash can be intense; bring a face mask and eye protection for the walk to the crater",
+                "Check the volcano's activity status before traveling, as access can be restricted during periods of high activity"
+            ]
+        },
+        "belitung": {
+            "name": "Belitung",
+            "country": "indonesia",
+            "heroTitle": "Belitung: The Granite Labyrinth",
+            "heroDescription": "Belitung is a quiet, pristine island off the coast of Sumatra, famous for its turquoise waters and massive, rounded white granite boulders that dot its shores. It is an island of incredible clarity and calm, where the beaches are white and the forests are lush. Belitung has avoided the mass tourism of Bali, maintaining a local, sleepy feel that is centered around its fishing heritage and its unique 'Laskar Pelangi' (Rainbow Troops) literary connection. It is a destination for the traveler who seeks untouched beaches and an authentic, low-key island experience.",
+            "bestTimeToVisit": "April to October to enjoy the best visibility for snorkeling and island hopping around the granite islets.",
+            "whyVisit": [
+                "Stunning, unique coastal scenery with thousands of massive granite boulders and clear turquoise lagoons",
+                "A world-class island-hopping destination with pristine, empty sandbars and lighthouse islands",
+                "A peaceful and affordable alternative to Indonesia's more crowded tropical destinations"
+            ],
+            "topExperiences": [
+                "Take a boat tour to Lengkuas Island to see the 19th-century Dutch lighthouse and snorkel in the granite pools",
+                "Visit the 'Danau Kaolin', a bright turquoise lake formed in a former kaolin mine, for surreal photography",
+                "Explore the boulders of Tanjung Tinggi beach, made famous by the movie 'Laskar Pelangi'"
+            ],
+            "travelTips": [
+                "Belitung is famous for its local coffee; try a 'Kopi Joss' or traditional brew at a local warung in Tanjung Pandan",
+                "The island is very safe and locals are exceptionally friendly; it's a great place to explore at your own pace",
+                "Direct flights from Jakarta make it an easy and quick getaway from the Indonesian capital"
+            ]
+        },
+        "tirana": {
+            "name": "Tirana",
+            "country": "albania",
+            "heroTitle": "Tirana: The Kaleidoscope Capital",
+            "heroDescription": "Tirana is a vibrant, high-energy capital that has transformed itself into one of Europe's most colorful and eccentric cities. Once a grey, drab center under a rigid communist regime, it is now an explosion of painted buildings, bustling coffee house culture, and unexpected urban spaces like Skanderbeg Square and the Blloku district. Surrounded by a ring of mountains and filled with a youthful, forward-looking energy, Tirana is a city of layers—where socialist-realist monuments stand alongside ultra-modern skyscrapers and high-end street art. It is the unfiltered, beating heart of the new Albania.",
+            "bestTimeToVisit": "April to June or September to October. The summer can be quite hot, but it's when the city's outdoor cafe culture is at its most vibrant.",
+            "whyVisit": [
+                "A uniquely vibrant and colorful urban environment with a world-class cafe and nightlife scene",
+                "Deeply fascinating historical sites including the 'Bunk'Art' Cold War bunkers and museums",
+                "A perfect base for exploring the nearby Dajti Mountain and the traditional villages of Central Albania"
+            ],
+            "topExperiences": [
+                "Take the Dajti Ekspres cable car to the top of Mount Dajti for panoramic views of the city and the Adriatic Sea",
+                "Explore the 'Bunk'Art 2' museum in a former secret police bunker to understand Albania's complex 20th-century history",
+                "Wander through the Blloku district in the evening to experience the city's best bars, cafes, and creative energy"
+            ],
+            "travelTips": [
+                "Tirana is very safe; walk around at night to fully appreciate the city's neon-lit pulse",
+                "Try 'Fërgesë', a local dish of peppers, tomatoes, and cheese—it's the definitive taste of Tirana",
+                "Download the 'Tiran's Public Transport' app or use taxis as the city's traffic can be confusing for drivers"
+            ]
+        },
+        "gjirokaster": {
+            "name": "Gjirokaster",
+            "country": "albania",
+            "heroTitle": "Gjirokaster: The Stone City",
+            "heroDescription": "Gjirokaster is a strikingly beautiful Ottoman-era stone town, a UNESCO World Heritage site known as 'The City of Stone' for its unique architecture and slate-roofed houses. Clinging to the slopes of the Gjerë Mountains, the town is dominated by a massive 12th-century fortress that looks down on a labyrinth of steep, cobblestone streets. It is the birthplace of both the dictator Enver Hoxha and the world-renowned novelist Ismail Kadare, a duality that adds a layer of literary and historical weight to its atmosphere. Gjirokaster is a destination of slow, vertical charm and high-altitude hospitality.",
+            "bestTimeToVisit": "May to June or September. The town's stone structures can become incredibly hot in direct summer sun.",
+            "whyVisit": [
+                "Exceptional Ottoman architectural heritage, featuring remarkably preserved fortified tower houses (Kullas)",
+                "The largest castle in Albania, housing a fascinating museum and world-class views of the Drino Valley",
+                "A gateway to the stunning 'Blue Eye' spring and the archaeological site of Antigonea"
+            ],
+            "topExperiences": [
+                "Explore the Gjirokaster Castle and see the captured American 'spy plane' from the Cold War era",
+                "Visit the Skenduli House for a guided tour of a perfect 18th-century Ottoman merchant home",
+                "Wander through the Old Bazaar (Qafa e Pazarit) to see local artisans practicing traditional wood and stone carving"
+            ],
+            "travelTips": [
+                "The streets are steep and the cobblestones can be slippery; wear shoes with excellent grip",
+                "Try the local 'Qifqi'—roasted rice balls that are unique to Gjirokaster",
+                "Stay in a traditional Ottoman guesthouse for an immersive experience of the town's historic character"
+            ]
+        },
+        "berat": {
+            "name": "Berat",
+            "country": "albania",
+            "heroTitle": "Berat: The City of a Thousand Windows",
+            "heroDescription": "Berat is a high-altitude sanctuary of white Ottoman houses rising vertically from the banks of the Osum River. Known as the 'City of a Thousand Windows,' its historic Mangalem and Gorica districts are a vision of architectural symmetry and light. Above the town sits the Kala—a massive 13th-century citadel where people still live within the ancient walls among Byzantine churches and Ottoman mosques. Berat is a place where coexistence is a way of life, offering a peaceful, soulful atmosphere that has been preserved for over two millennia.",
+            "bestTimeToVisit": "Spring or Autumn to enjoy hiking in the nearby Tomorr Mountains and the mild weather in the historic stone districts.",
+            "whyVisit": [
+                "A stunningly preserved UNESCO World Heritage site representing the peak of Ottoman urban architecture",
+                "An 'alive' castle (Kala) where you can wander among ancient ruins that are still part of daily life",
+                "One of the world's most impressive collections of religious icons at the Onufri National Museum"
+            ],
+            "topExperiences": [
+                "Walk across the 18th-century Gorica Bridge for the iconic view of the 'thousand windows' of Mangalem",
+                "Explore the Kala (Citadel) at sunset, visiting the many hidden churches and the Onufri Iconography Museum",
+                "Go wine tasting at a local vineyard like Cobo Winery to sample the indigenous Puls and Shesh i Zi grapes"
+            ],
+            "travelTips": [
+                "Berat is famous for its hospitality; if a local invites you for a raki or coffee, it's a genuine gesture",
+                "The town is highly walkable, but be prepared for steep climbs into the castle area",
+                "Try 'Byrek' (savory pie) from a local bakery in the Mangalem district for a cheap and delicious lunch"
+            ]
+        },
+        "saranda": {
+            "name": "Saranda",
+            "country": "albania",
+            "heroTitle": "Saranda: The Gate to the Ionian",
+            "heroDescription": "Saranda is a vibrant coastal gateway, a city that sits at the southern tip of the Albanian Riviera looking across the blue water to the Greek island of Corfu. Built on a horseshoe-shaped bay, it is a bustling hub of seaside promenades, palm-fringed beaches, and Mediterranean energy. It serves as the perfect base for exploring the archaeological wonders of Butrint and the crystalline white shores of Ksamil. Saranda is a place of dramatic sunsets, fresh seafood, and a lively 'Xhiro' (evening walk) culture that defines the rhythm of the Ionian coast.",
+            "bestTimeToVisit": "May to June or September. July and August are the peak of the Albanian summer and the city can become extremely crowded.",
+            "whyVisit": [
+                "The ultimate strategic hub for exploring the southern Albanian Riviera and Butrint National Park",
+                "A lively, affordable Mediterranean atmosphere with a world-class seafood dining scene",
+                "Stunning views of the Ionian Sea and easy day-trip access to the Greek islands"
+            ],
+            "topExperiences": [
+                "Dine on the terrace of Lekuresi Castle at sunset for panoramic views of the city and Corfu",
+                "Explore the UNESCO-listed ruins of Butrint, an ancient Greek and Roman city hidden in a lush marshland",
+                "Walk the 'Bulevardi Hasan Tahsini' in the evening to join the local crowd for the traditional Xhiro"
+            ],
+            "travelTips": [
+                "Direct ferries connect Saranda to Corfu daily—it's often the easiest way to reach southern Albania",
+                "Public transport (Furgons) is the most local way to travel to Butrint or Ksamil, but confirm the times at the central bus stop",
+                "Tap water is not drinkable in Saranda; use bottled water or refillable filtered bottles"
+            ]
+        },
+        "theth": {
+            "name": "Theth",
+            "country": "albania",
+            "heroTitle": "Theth: The Heart of the Accursed Mountains",
+            "heroDescription": "Theth is a remote, mist-shrouded sanctuary nestled in the very heart of the Albanian Alps (the Accursed Mountains). Surrounded by grey granite peaks that rise over 2,000 meters, it is a village of stone houses, shingle roofs, and crystal-clear mountain rivers. It is a place where life is dictated by the seasons and the ancient code of the Kanun. Theth is a destination for the true mountain lover, offering some of Europe's most spectacular and wild hiking trails, including the iconic pass to Valbona. To stay in Theth is to experience high-altitude silence and the raw beauty of the Balkan wilderness.",
+            "bestTimeToVisit": "June to September. The high mountain passes are often closed by snow from November through May.",
+            "whyVisit": [
+                "One of Europe's last truly wild mountain landscapes with world-class, non-commercialized hiking",
+                "A deep dive into the unique oral history and traditional architecture of the Albanian Highlands",
+                "Incredible natural landmarks like the Blue Eye of Theth and the Grunas Waterfall"
+            ],
+            "topExperiences": [
+                "Hike the 17km trail from Theth to Valbona over the Valbona Pass (1,795m) for world-class alpine views",
+                "Visit the 'Lock-in Tower' (Kulla e Ngujimit) to learn about the ancient Kanun law and blood feuds",
+                "Take a walk to the 'Blue Eye' (Syri i Kaltër), a natural neon-blue karst spring hidden deep in the forest"
+            ],
+            "travelTips": [
+                "The road from Shkoder to Theth is now paved but still narrow and steep; 4WD is recommended for the final village reaches",
+                "There are no ATMs in Theth; bring all the cash you need for your stay in Shkoder",
+                "Stay in a local guesthouse (Bujtina); the price usually includes a massive, traditional mountain dinner and breakfast"
+            ]
+        },
+        "shkoder": {
+            "name": "Shkoder",
+            "country": "albania",
+            "heroTitle": "Shkoder: The Ancient Cradle",
+            "heroDescription": "Shkoder is one of Europe's oldest cities and a soulful cultural bastion in North Albania. Sitting at the foot of the Accursed Mountains and on the shores of Lake Shkader, it is a city of bicycles, art, and remarkable religious coexistence. Dominated by the soaring ruins of Rozafa Castle, it has served as a strategic crossroads for Illyrians, Romans, Venetians, and Ottomans. Shkoder is a place of wide boulevards, vibrant photography galleries, and a high-energy artistic community that makes it feel like the creative soul of the north.",
+            "bestTimeToVisit": "May to June or September. The city is the perfect gateway for those planning to hike in the Albanian Alps in the summer.",
+            "whyVisit": [
+                "One of the world's most impressive collections of classic Balkan photography at the Marubi National Museum",
+                "Rozafa Castle—a colossal 4th-century fortress with views that span from the mountains to the sea",
+                "The largest lake in the Balkans, offering a diverse ecosystem for birdwatching and boating"
+            ],
+            "topExperiences": [
+                "Walk through the 'Pedonale', the city's elegant, Italian-style pedestrian street for cafes and local energy",
+                "Explore the Rozafa Castle at dusk to hear the legend of the woman walled into its foundations",
+                "Take a boat tour through the marshlands of Lake Shkader to see the Dalmatian pelicans and water lilies"
+            ],
+            "travelTips": [
+                "Shkoder is the bicycle capital of Albania—rent a bike for the most local way to see the city and the lake",
+                "Try 'Krap i Tavë' (baked carp)—the signature lake dish of Shkoder",
+                "The city is a major hub for buses (Furgons) going to Tirana, Montenegro, and the mountain villages"
+            ]
+        },
+        "ksamil": {
+            "name": "Ksamil",
+            "country": "albania",
+            "heroTitle": "Ksamil: The Caribbean of the Balkans",
+            "heroDescription": "Ksamil is a turquoise dream of white-sand beaches and small, rocky islets sitting just south of Saranda. With its crystalline Ionian waters and pristine shores, it has earned the title of the 'Caribbean of Europe.' In a country of rugged coastlines, Ksamil offers a softer, more tropical atmosphere where you can swim between islands and dine on literal platforms over the sea. While it has become a major summer hotspot, the area maintains a soulful connection to the nearby Butrint ruins and the traditional olive groves of the southern coast.",
+            "bestTimeToVisit": "May, June, or September. The beaches are tiny and become extremely crowded during July and August.",
+            "whyVisit": [
+                "Some of the most beautiful and accessible white-sand beaches in the entire Mediterranean region",
+                "The unique opportunity to swim or paddle to four small, uninhabited tropical islets",
+                "Excellent, high-quality seafood and a relaxed, resort-style atmosphere at a fraction of Greek prices"
+            ],
+            "topExperiences": [
+                "Rent a kayak or pedal boat to reach the Ksamil Islands for a quiet beach experience away from the mainland bars",
+                "Spend a day at 'Bora Bora' or 'Third Island' beach for the definitive white-sand and turquoise water experience",
+                "Dine at one of the seaside restaurants for a 'Crudo' (raw seafood) platter and local white wine"
+            ],
+            "travelTips": [
+                "Expect to pay for sunbeds; almost all beach space in Ksamil is private during the high season",
+                "Ksamil is an easy 20-minute bus or taxi ride from Saranda",
+                "Visit early in the morning (before 9 AM) to see the water at its most still and transparent"
+            ]
+        },
+        "valbona": {
+            "name": "Valbona",
+            "country": "albania",
+            "heroTitle": "Valbona: The Valley of Light",
+            "heroDescription": "Valbona Valley is a majestic, high-altitude alpine corridor of dramatic verticality and deep, glacial-blue rivers. Surrounded by some of the highest peaks in the Accursed Mountains, it is a landscape of profound silence and raw, vertical beauty. While neighboring Theth is a narrow canyon, Valbona is a wide, bright valley of wildflower meadows and ancient beech forests. It is the end (or beginning) of the legendary cross-border PEAKS of the Balkans trail and home to reaching, hospitable highlanders who have lived here in harmony with the stone for centuries.",
+            "bestTimeToVisit": "June to September for hiking. The ferry on Lake Koman, the main access route, is a bucket-list experience in itself during the summer.",
+            "whyVisit": [
+                "Incredible, high-contrast mountain scenery with jagged grey peaks and lush green valleys",
+                "The gateway to the Koman Lake Ferry—one of the world's most spectacular inland boat journeys",
+                "A world-class destination for high-altitude hiking and off-the-beaten-path mountain exploration"
+            ],
+            "topExperiences": [
+                "Take the 3-hour Koman Lake Ferry from Koman to Fierze—often cited as one of the world's best boat trips",
+                "Hike to the Kukaj village for a quiet, high-altitude view of the valley away from the main road",
+                "Experience a traditional 'Sac' dinner (meat and vegetables slow-cooked under a metal lid) at a local guesthouse"
+            ],
+            "travelTips": [
+                "There are no shops in the upper Valbona valley; bring any specific supplies from Shkoder or Bajram Curri",
+                "The valley is long; confirm the exact location of your guesthouse as some are several kilometers from the trailhead",
+                "Pack for all weather; mountain storms can roll in quickly even on the sunniest summer days"
+            ]
+        },
+        "vancouver": {
+            "name": "Vancouver",
+            "country": "canada",
+            "heroTitle": "Vancouver: The Emerald Metropolis",
+            "heroDescription": "Vancouver is a glistening glass city of the future, carved into a peninsula between the Pacific Ocean and the snow-capped Coast Mountains. It is a place of profound natural proximity, where you can ski in the morning and sail in the afternoon. Known for its laid-back West Coast energy and its incredible culinary diversity, Vancouver is a city of rain, cedar forests, and glittering harbor views. From the ancient totems of Stanley Park to the bustling markets of Granville Island, it offers a lifestyle that is defined by a deep respect for the surrounding environment.",
+            "bestTimeToVisit": "June to September for the most reliable sunshine and the best conditions for hiking, sailing, and outdoor festivals.",
+            "whyVisit": [
+                "A world-class urban experience within walking distance of primeval rainforests and ocean beaches",
+                "One of the most diverse and high-quality food scenes in North America, especially famous for seafood and Asian cuisine",
+                "The ultimate base for exploring the wild rugged coastlines of British Columbia and the nearby ski resorts"
+            ],
+            "topExperiences": [
+                "Cycle the 9km seawall loop around Stanley Park for views of the skyline and the Lion's Gate Bridge",
+                "Take an Aquabus to Granville Island for a sensory feast at the Public Market and artisan studios",
+                "Walk across the Capilano Suspension Bridge for a heart-pounding journey above the forest floor"
+            ],
+            "travelTips": [
+                "Vancouver is famous for its rain; a high-quality waterproof shell is a year-round essential",
+                "The SkyTrain is the fastest way to get around the city and connects directly to the airport",
+                "Experience the 'Grouse Grind'—a steep 2.9km hike up Grouse Mountain—a local rite of passage"
+            ]
+        },
+        "toronto": {
+            "name": "Toronto",
+            "country": "canada",
+            "heroTitle": "Toronto: The Global Crossroads",
+            "heroDescription": "Toronto is Canada's high-wattage heartbeat, a massive, multicultural engine of energy that sits on the shores of Lake Ontario. Dominated by the iconic needle of the CN Tower, it is a city of 140 neighborhoods, each with its own language, flavor, and distinct character. From the historic Distillery District to the glass-and-steel financial core, Toronto is a metropolis of endless movement. It is the cultural, financial, and artistic center of Canada, offering a density and diversity that makes it feel like the entire world has converged on a single city.",
+            "bestTimeToVisit": "May to June or September to October. The summer is vibrant with festivals, while the autumn offers crisp air and beautiful park colors.",
+            "whyVisit": [
+                "Incredible cultural diversity reflected in a global culinary scene ranging from Kensington Market to refined dining",
+                "Major league sports and world-class museums like the Art Gallery of Ontario and the Royal Ontario Museum",
+                "A vibrant, high-energy waterfront and easy ferry access to the serene Toronto Islands"
+            ],
+            "topExperiences": [
+                "Climb the CN Tower (or do the EdgeWalk) for a bird's-eye view of the city and Lake Ontario",
+                "Explore the Victorian industrial architecture of the Distillery District, now home to galleries and boutiques",
+                "Catch a ferry to Center Island for a quiet escape with a classic view of the Toronto skyline"
+            ],
+            "travelTips": [
+                "The PATH is a massive underground walkway system—perfect for navigating the city during a freezing winter",
+                "Toronto is highly walkable, but the TTC (subway and streetcars) is excellent for reaching outlying neighborhoods",
+                "Book your tickets for Niagara Falls (just 1.5 hours away) well in advance if you plan a day trip"
+            ]
+        },
+        "banff": {
+            "name": "Banff",
+            "country": "canada",
+            "heroTitle": "Banff: The Alpenglow Town",
+            "heroDescription": "Banff is a castle-like alpine town tucked deep within Canada's first National Park—a world of turquoise glacial lakes (Moraine and Louise), jagged Rockies, and ancient hot springs. It is a destination of cinematic scale, where the air is thin and the light turns the peaks a vibrant pink at sunset. From the historic Banff Springs Hotel to the wild trails of the Sulphur Mountain, it is a place of refined mountain luxury and raw, vertical adventure. Banff isn't just a park; it's a sacred landscape of the wild, where grizzly bears and elk share the terrain with world-class ski slopes.",
+            "bestTimeToVisit": "July to August for hiking and the best lake reflections, or December to March for legendary champagne powder skiing.",
+            "whyVisit": [
+                "Breathtaking mountain scenery that is consistently ranked among the most beautiful on the planet",
+                "Direct access to some of the world's most iconic glacial lakes, including Lake Louise and Moraine Lake",
+                "A luxury alpine experience with high-end dining, spas, and historic mountain chateaus"
+            ],
+            "topExperiences": [
+                "Take the Banff Gondola to the summit of Sulphur Mountain for a panoramic view of the six mountain ranges",
+                "Visit Lake Louise early in the morning to see the Victoria Glacier reflected in its emerald waters",
+                "Soak in the Banff Upper Hot Springs, a natural geothermal pool with a view of Mount Rundle"
+            ],
+            "travelTips": [
+                "Moraine Lake and Lake Louise are extremely popular; use the park shuttles as parking is closed early in the morning",
+                "Banff is a National Park; you must purchase a Park Pass to enter and stay in the town",
+                "Keep a safe distance from wildlife (elk and bears)—they are wild and roam freely through the town streets"
+            ]
+        },
+        "montreal": {
+            "name": "Montreal",
+            "country": "canada",
+            "heroTitle": "Montreal: The European Soul of the North",
+            "heroDescription": "Montreal is a sophisticated, bilingual island city where Old World European charm meets the creative energy of North American subculture. Known for its stone-paved streets in Vieux-Montréal, its soaring cathedrals, and its legendary jazz festivals, it is the cultural capital of French Canada. It is a city of distinct seasons, from the vibrant street life of the summer to the cozy, underground world of the winter. Montreal is a destination of the senses—the smell of freshly baked bagels, the sight of murals in the Plateau, and the sound of French conversations in cozy bistros.",
+            "bestTimeToVisit": "May to June or September to October. The summer is a non-stop festival season (Jazz, Just for Laughs), while the autumn is stunning on Mount Royal.",
+            "whyVisit": [
+                "A unique cultural blend of French heritage and modern North American dynamism",
+                "A world-class culinary scene bridge the gap between humble poutine and refined French gastronomy",
+                "Stunning historic architecture and a vibrant arts scene centered around Mile End and the Plateau"
+            ],
+            "topExperiences": [
+                "Wander the cobblestone streets of Old Montreal (Vieux-Montréal) and visit the Notre-Dame Basilica",
+                "Hike or bike to the summit of Mount Royal (Mont-Royal) for the best view of the city skyline",
+                "Spend a morning in the Jean-Talon Market, tasting local Quebec cheeses, ciders, and maple products"
+            ],
+            "travelTips": [
+                "Montreal is a bilingual city; while almost everyone speaks English, a 'Bonjour' goes a long way",
+                "The city has an excellent bike-share system (BIXI) and is one of the most bike-friendly cities in North America",
+                "Try a Montreal-style bagel from St-Viateur or Fairmount—they are boiled in honey water and iconic"
+            ]
+        },
+        "vancouver-island": {
+            "name": "Vancouver Island",
+            "country": "canada",
+            "heroTitle": "Vancouver Island: The Pacific Sanctuary",
+            "heroDescription": "Vancouver Island is a wild, mist-drenched world of ancient rainforests and rugged Pacific shores off Canada's west coast. It is a land of massive cedars, hidden waterfalls, and small, soulful towns like Tofino and Victoria. Here, the ocean is the constant companion—providing world-class cold-water surfing, whale watching, and the freshest salmon. From the colonial elegance of the inner harbor in Victoria to the raw, untamed spirit of the West Coast Trail, the island offers a slower, more profound connection to the powers of nature.",
+            "bestTimeToVisit": "June to September for whale watching and clear skies, or November to February for dramatic winter storm watching in Tofino.",
+            "whyVisit": [
+                "Incredible marine and land biodiversity, home to orcas, bears, and thousand-year-old trees",
+                "Victoria, the provincial capital, offers a charming blend of colonial history and modern West Coast culture",
+                "Tofino is the undisputed surfing capital of Canada, set within a spectacular national park reserve"
+            ],
+            "topExperiences": [
+                "Take a whale-watching zodiac tour from Victoria or Tofino to see orcas and humpbacks",
+                "Walk among the ancient giants of Cathedral Grove (MacMillan Provincial Park)",
+                "Visit the Butchart Gardens for 55 acres of world-class floral displays in a former limestone quarry"
+            ],
+            "travelTips": [
+                "The ferry from Vancouver to the island (Victoria or Nanaimo) is a scenic 1.5-hour journey—book ahead for cars",
+                "Tofino is remote; the drive from Nanaimo takes 3 hours across mountain passes—check weather in winter",
+                "Experience a 'Storm Watching' weekend in Tofino for some of the most dramatic coastal weather imaginable"
+            ]
+        },
+        "jasper": {
+            "name": "Jasper",
+            "country": "canada",
+            "heroTitle": "Jasper: The Dark Sky Wilderness",
+            "heroDescription": "Jasper is the wild, less-crowded brother of Banff—a vast National Park of rugged peaks, deep canyons, and the spectacular Icefields Parkway. It is a place of pure, unadulterated wilderness, where the wildlife is more plentiful and the silence is deeper. Famous as one of the world's largest Dark Sky Preserves, the stars here are as much an attraction as the mountains. From the turquoise waters of Maligne Lake to the crushing power of Athabasca Falls, Jasper is a destination for the true explorer who seeks the raw, vertical beauty of the Rockies in their quietest form.",
+            "bestTimeToVisit": "July to August for hiking and the best lake conditions, or October for the Jasper Dark Sky Festival to see the stars at their peak.",
+            "whyVisit": [
+                "A more authentic and quiet alternative to the high-traffic areas of the Southern Rockies",
+                "Home to the Icefields Parkway, consistently ranked as one of the world's most scenic drives",
+                "Unparalleled opportunities for wildlife viewing, from grizzly bears and wolves to massive elk herds"
+            ],
+            "topExperiences": [
+                "Take a boat tour to Spirit Island on Maligne Lake, one of the most iconic views in the Canadian Rockies",
+                "Walk on the Athabasca Glacier—part of the Columbia Icefield, the largest ice mass in the Rockies",
+                "Drive the Icefields Parkway from Jasper to Banff, stopping at the many glaciers, lakes, and waterfalls"
+            ],
+            "travelTips": [
+                "Jasper is a major wildlife corridor; always drive with extreme caution, especially at dawn and dusk",
+                "Accommodation is limited compared to Banff; book your guesthouse or campsite several months in advance",
+                "Pack for serious cold even in summer; glacier winds can drop temperatures to freezing in minutes"
+            ]
+        },
+        "quebec-city": {
+            "name": "Quebec City",
+            "country": "canada",
+            "heroTitle": "Quebec City: The Fortress of the North",
+            "heroDescription": "Quebec City is a piece of Europe transported to the banks of the St. Lawrence River. As the only fortified city in North America north of Mexico, it is a UNESCO World Heritage site of immense historic charm and French elegance. Dominated by the towering Château Frontenac, the Old Town (Vieux-Québec) is a labyrinth of steep cobblestone streets, stone boutiques, and French-style bistros. Quebec City doesn't just feel old; it feels alive with the spirit of New France, especially during the magic of a snowy winter or the vibrant energy of the summer festivals.",
+            "bestTimeToVisit": "June to September for the best weather, or January to February for the world-famous Winter Carnival (Carnaval de Québec).",
+            "whyVisit": [
+                "The most authentic European-style historic experience in North America",
+                "A world-class culinary scene focused on traditional Quebecois soul food and refined French dining",
+                "Breathtaking views of the St. Lawrence River and proximity to the Montmorency Falls"
+            ],
+            "topExperiences": [
+                "Wander through Quartier Petit Champlain—one of the most beautiful and oldest streets in North America",
+                "Take the funicular from the lower town to the upper town for a stunning view of the Château Frontenac",
+                "Visit the Montmorency Falls, which are 30 meters higher than Niagara Falls, just outside the city"
+            ],
+            "travelTips": [
+                "French is the primary language here; while English is spoken, starting with 'Bonjour' is highly appreciated",
+                "The city is very vertical with many steep hills and stairs; wear comfortable walking shoes",
+                "Stay in the Old Town (Vieux-Québec) to be within walking distance of all the major historic sites"
+            ]
+        },
+        "haida-gwaii": {
+            "name": "Haida Gwaii",
+            "country": "canada",
+            "heroTitle": "Haida Gwaii: The Galápagos of the North",
+            "heroDescription": "Haida Gwail is a remote, misty archipelago off the coast of British Columbia, home to the Haida Nation and some of the world's most profound ancient culture. It is a place of massive, moss-covered cedars, towering totem poles, and a rugged coastline where the eagles outnumber people. Haida Gwaii is a spiritual landscape where the land and sea are deeply intertwined with the history of its people. To travel here is to enter a world of profound silence and ancestral power, where the art and the environment are inseparable from the spirit of the Haida.",
+            "bestTimeToVisit": "May to September. The weather is notoriously misty and wet, but the summer offers the best chance for marine exploration.",
+            "whyVisit": [
+                "One of the most culturally significant and naturally pristine destinations in North America",
+                "The chance to see ancient, weathered totem poles in their original forested settings in Gwaii Haanas",
+                "Exceptional marine life and world-class fishing in a remote, non-commercialized environment"
+            ],
+            "topExperiences": [
+                "Take a guided Haida Watchmen tour of the ancient village site of SGang Gwaay (Ninstints)",
+                "Visit the Haida Heritage Centre in Skidegate to learn about the history, art, and language of the Haida",
+                "Explore the Naikoon provincial park and hike to Tow Hill for views of the misty coastline"
+            ],
+            "travelTips": [
+                "Haida Gwaii is remote; reach it via a 2-hour flight from Vancouver or a 7-hour ferry from Prince Rupert",
+                "Respect for the Haida people and their land is paramount; follow all local guidelines for visiting sacred sites",
+                "Supplies can be limited and expensive on the islands; bring any specific gear you need from the mainland"
+            ]
+        },
+        "zurich": {
+            "name": "Zurich",
+            "country": "switzerland",
+            "heroTitle": "Zurich: The Alpine Metropolis",
+            "heroDescription": "Zurich is a sleek, ultra-organized metropolis that sits on the northern shores of Lake Zurich with the Alps rising in the distance. Known as a global hub for finance and innovation, it is a city of incredible precision, luxury, and surprisingly vibrant creative subcultures. From the medieval guild houses of the Altstadt to the industrial-chic bars of Zurich West, the city offers a high-end urban experience that is deeply connected to nature. Zurich is a place where you can swim in the crystal-clear river Limmat in the morning and dine in a world-class, Michelin-starred restaurant in the evening.",
+            "bestTimeToVisit": "June to August for the best lake swimming and outdoor cafe weather, or December for the magical Christmas markets and proximity to the ski slopes.",
+            "whyVisit": [
+                "A perfect blend of high-end luxury infrastructure and a stunning natural setting by the lake and river",
+                "One of Europe's most sophisticated and diverse shopping, dining, and nightlife scenes",
+                "The ultimate gateway to the Swiss Alps with world-class train connections to every part of the country"
+            ],
+            "topExperiences": [
+                "Wander through the narrow, winding streets of the Altstadt (Old Town) and visit the Grossmünster",
+                "Take a boat trip across Lake Zurich at sunset for panoramic views of the city and the distant mountains",
+                "Explore Zurich West, a former industrial district turned cultural hub with the 'Im Viadukt' shopping area"
+            ],
+            "travelTips": [
+                "The Zurich Card is excellent value, offering unlimited travel and free or discounted entry to many museums",
+                "Tap water in Zurich is some of the highest quality in the world—refill your bottle from any of the city's 1,200 fountains",
+                "Don't miss a visit to a 'Badi'—the city's historic river and lake swimming baths that turn into bars at night"
+            ]
+        },
+        "geneva": {
+            "name": "Geneva",
+            "country": "switzerland",
+            "heroTitle": "Geneva: The Peace Capital",
+            "heroDescription": "Geneva is a cosmopolitan sanctuary of diplomacy, luxury, and watchmaking, sitting on the shores of Western Europe's largest lake. Surrounded by the Alps and the Jura mountains, it is the headquarters of dozens of international organizations including the UN and the Red Cross. Known for its iconic Jet d'Eau fountain and its refined, French-influenced character, Geneva is a city of elegant parks, world-class watch boutiques, and a high-energy culinary scene. It is a place of global gravity that maintains a quiet, lakeside grace.",
+            "bestTimeToVisit": "May to June or September for the most pleasant weather for lakeside walks and exploring the nearby vineyards.",
+            "whyVisit": [
+                "A world-class destination for international culture, history, and the art of fine watchmaking",
+                "Stunning lakeside setting with panoramic mountain views and the iconic 140-meter tall Jet d'Eau",
+                "Direct access to some of the world's most famous health and wellness retreats and luxury hotels"
+            ],
+            "topExperiences": [
+                "Take a guided tour of the Palais des Nations, the European headquarters of the United Nations",
+                "Explore the narrow streets of the Vieille Ville (Old Town) and visit the St. Pierre Cathedral",
+                "Visit CERN, the world's largest particle physics laboratory, for a glimpse into the future of science"
+            ],
+            "travelTips": [
+                "If you stay in a hotel, hostel, or campsite, you'll receive a 'Geneva Transport Card' for free public transport",
+                "The 'Mouettes' (small yellow water taxis) are the most scenic way to cross the lake and are included in the transport card",
+                "Visit the Patek Philippe Museum for an incredible journey through the history of horology"
+            ]
+        },
+        "lucerne": {
+            "name": "Lucerne",
+            "country": "switzerland",
+            "heroTitle": "Lucerne: The City of Lights",
+            "heroDescription": "Lucerne is a fairytale city of medieval bridges, painted facades, and a stunning mountain backdrop on the shores of Lake Lucerne. Dominated by the iconic Chapel Bridge (Kapellbrücke) and the distant silhouettes of Mount Pilatus and Rigi, it is the spiritual home of Central Switzerland. It is a city of festivals, classical music, and high-end engineering, where the gear-driven mountain railways are as much a part of the landscape as the ancient architecture. Lucerne is an invitation to experience the very essence of Swiss mountain-side beauty.",
+            "bestTimeToVisit": "June to September for boat trips on the lake and hiking, or December for the traditional Christmas markets and snowy peaks.",
+            "whyVisit": [
+                "The most iconic and well-preserved medieval old town in Switzerland in a spectacular natural setting",
+                "Gateway to some of the most famous and accessible mountain excursions in the Alps (Pilatus, Rigi, Titlis)",
+                "A world-class hub for classical music and culture, home to the KKL Lucerne concert hall"
+            ],
+            "topExperiences": [
+                "Walk across the 14th-century Kapellbrücke (Chapel Bridge) and see the historic paintings in the rafters",
+                "Take a vintage paddle steamer cruise across Lake Lucerne to the base of the mountain railways",
+                "Ascend Mount Pilatus via the world's steepest cogwheel railway for breathtaking views of the Alps"
+            ],
+            "travelTips": [
+                "The 'Luzern Mobile Card' provides free public transport within the city for overnight guests",
+                "Mount Rigi is often included in the Swiss Travel Pass, making it an excellent value excursion",
+                "Visit the 'Lion Monument'—a moving sculpture of a dying lion carved into a limestone cliff"
+            ]
+        },
+        "interlaken": {
+            "name": "Interlaken",
+            "country": "switzerland",
+            "heroTitle": "Interlaken: The Adventure Hub",
+            "heroDescription": "Interlaken is the adrenaline-fueled heartbeat of the Swiss Alps, a town perfectly sandwiched between the turquoise Lake Brienz and Lake Thun. Dominated by the soaring 'Big Three' peaks—the Eiger, Mönch, and Jungfrau—it is the ultimate gateway to the Bernese Oberland. Known as the paragliding and skydiving capital of Europe, Interlaken is a landscape of vertical cliffs, cascading waterfalls, and emerald valleys. It is a place for the seeker of thrills and the lover of scale, where the gear-driven trains lead to the 'Top of Europe'.",
+            "bestTimeToVisit": "June to August for the best hiking and paragliding conditions, or December to March for winter sports in the surrounding mountains.",
+            "whyVisit": [
+                "The absolute best base for adventure sports and exploring the Bernese Oberland's major peaks",
+                "Breathtaking dual-lake setting with incredible mountain panoramas from every corner of the town",
+                "Direct access to the Jungfraujoch—the highest railway station in Europe at 3,454 meters"
+            ],
+            "topExperiences": [
+                "Take the train up to the Jungfraujoch (Top of Europe) to see the Aletsch Glacier from the Sphinx Observatory",
+                "Go paragliding from Beatenberg for a bird's-eye view of Interlaken and the two lakes",
+                "Take a boat tour on Lake Brienz to see the turquoise water and the Giessbach Falls up close"
+            ],
+            "travelTips": [
+                "Interlaken is a major rail hub; use the excellent train system to reach nearby Grindelwald and Lauterbrunnen",
+                "The 'Interlaken Guest Card' provides free local transport and various discounts on attractions",
+                "For the best views of the town and lakes, take the Harderbox funicular up to the Harder Kulm viewpoint"
+            ]
+        },
+        "zermatt": {
+            "name": "Zermatt",
+            "country": "switzerland",
+            "heroTitle": "Zermatt: The Mirror of the Matterhorn",
+            "heroDescription": "Zermatt is a high-altitude sanctuary of mountain culture and iconic verticality, sitting at the foot of the world's most famous peak—the Matterhorn. This car-free village is a world of wooden chalets, narrow alleys, and a persistent, thin-aired energy of mountaineering history. Known for some of the best skiing in the world and its dramatic Gornergrat views, Zermatt is a place where nature is both a playground and a cathedral. Here, the only transport is the quiet electric taxis and the horse-drawn carriages, allowing the silence of the Alps to define the experience.",
+            "bestTimeToVisit": "December to April for legendary skiing and winter atmosphere, or July to September for high-alpine hiking and mountain biking.",
+            "whyVisit": [
+                "Unrivaled proximity to the Matterhorn and access to the world's highest 3S cableway to Klein Matterhorn",
+                "A car-free, authentic alpine village experience with high-end luxury and world-class dining",
+                "A premier year-round destination for skiing, mountaineering, and high-altitude adventure"
+            ],
+            "topExperiences": [
+                "Take the Gornergrat cogwheel railway for the definitive panorama of the Matterhorn and 29 other 4,000-meter peaks",
+                "Ascend to the Matterhorn Glacier Paradise to see the ice palace and the view from the summit of Klein Matterhorn",
+                "Hike the 'Five Lakes Trail' (5-Seenweg) to see the Matterhorn reflected in several alpine lakes"
+            ],
+            "travelTips": [
+                "Zermatt is car-free; you must park your car in Täsch and take the shuttle train for the final 12-minute journey",
+                "The mountain weather changes rapidly; always check the webcams before buying expensive lift tickets",
+                "Sunscreen is a non-negotiable at this altitude; the reflection off the glaciers is intense even on cloudy days"
+            ]
+        },
+        "lauterbrunnen": {
+            "name": "Lauterbrunnen",
+            "country": "switzerland",
+            "heroTitle": "Lauterbrunnen: The Valley of 72 Waterfalls",
+            "heroDescription": "Lauterbrunnen is a spectacular, U-shaped glacial valley of vertical limestone cliffs and cascading silver threads of water. Known as the valley of 72 waterfalls, it is the real-world inspiration for Tolkien's Rivendell. Here, the Staubbach Falls plummet 300 meters from a hanging valley directly above the village, creating a mist that gives the air a fresh, mountain scent. Lauterbrunnen is a place of emerald-green pastures, cable cars rising into the clouds, and a profound sense of scale that makes it one of the most photographed valleys in the world.",
+            "bestTimeToVisit": "May to June when the snowmelt makes the waterfalls their most powerful, or September for the clear autumn skies and golden meadows.",
+            "whyVisit": [
+                "One of the most visually stunning and dramatic valley landscapes in the entire Alpine region",
+                "Direct access to the car-free mountain villages of Wengen and Mürren via cable cars and trains",
+                "Home to the Trümmelbach Falls—ten glacial waterfalls inside a mountain reachable by tunnel lift"
+            ],
+            "topExperiences": [
+                "Walk the path directly under the Staubbach Falls for a close-up feel of the valley's most iconic waterfall",
+                "Explore the Trümmelbach Falls inside the mountain to see the thunderous power of 20,000 liters of water per second",
+                "Take the cable car up to the Schilthorn summit (Piz Gloria) for a 360-degree view made famous by James Bond"
+            ],
+            "travelTips": [
+                "The valley floor is flat and perfect for easy cycling; rent a bike to see the outlying waterfalls",
+                "Stay in Lauterbrunnen as a base; it's the hub for all transport going up into the surrounding high-altitude villages",
+                "The walk from Lauterbrunnen to Stechelberg along the valley floor is one of the most beautiful easy walks in Switzerland"
+            ]
+        },
+        "grindelwald": {
+            "name": "Grindelwald",
+            "country": "switzerland",
+            "heroTitle": "Grindelwald: The Glacier Village",
+            "heroDescription": "Grindelwald is a dramatic alpine village nestled at the foot of the Eiger's north face—one of the world's most formidable and legendary rock walls. Surrounded by glaciers and high-altitude pastures, it is a landscape of intense verticality and traditional mountain charm. Known for its extensive network of hiking trails and its world-class Eiger Express tricable gondola, Grindelwald is a place where you can feel the presence of the giants. It is a village of wooden chalets, cowbells, and a deep history of pioneering alpinism that continues to attract explorers from around the world.",
+            "bestTimeToVisit": "June to October for the best high-altitude hiking, or December to March for the vast Jungfrau Ski Region.",
+            "whyVisit": [
+                "Direct, spectacular access to the Eiger, Mönch, and Jungfrau peaks via the world's most modern cable cars",
+                "Incredible range of family-friendly adventure activities including the First Flyer and First Glider",
+                "Breathtaking landscapes that perfectly represent the classic image of the Swiss Alps"
+            ],
+            "topExperiences": [
+                "Take the Eiger Express to the Eiger Glacier station for a close-up view of the legendary north face",
+                "Visit the First cliff walk by Tissot for a heart-pounding walk along the edge of the vertical rock face",
+                "Hike the panorama trail from Männlichen to Kleine Scheidegg for one of the most iconic views in Switzerland"
+            ],
+            "travelTips": [
+                "Grindelwald can be very busy; book your accommodation and major mountian transport (Eiger Express) in advance",
+                "The 'Grindelwald First' area is the hub for adventure sports; buy an Adventure Package to save on individual rides",
+                "Try the local mountain cheese and 'Rösti'—traditional Swiss hash browns—in a mountain-side restaurant"
+            ]
+        },
+        "appenzell": {
+            "name": "Appenzell",
+            "country": "switzerland",
+            "heroTitle": "Appenzell: The Soul of Tradition",
+            "heroDescription": "Appenzell is a rolling, emerald-green landscape of traditional customs and painted wooden houses in North-Eastern Switzerland. It is the spiritual home of Swiss folk culture, from yodeling and alpine horn playing to the world-famous Appenzeller cheese. Surrounded by the Alpstein mountain range and the iconic Seealpsee lake, it is a region where life moves according to the rhythm of the seasonal cattle drives. Appenzell is a destination for the traveler who seeks authenticity, quiet mountain beauty, and a deep dive into the heart of Swiss pastoral heritage.",
+            "bestTimeToVisit": "May to June for the flower-filled meadows and the 'Alpfahrt' (cattle drive up to the mountains), or September for the autumn festivals.",
+            "whyVisit": [
+                "The most traditional and culturally distinct region in Switzerland, famous for its hand-painted architecture",
+                "Breathtaking, mirror-like alpine lakes like Seealpsee and spectacular cliffside guest houses like Aescher",
+                "Home to some of the country's best artisanal foods, including cheese, cider, and traditional gingerbread"
+            ],
+            "topExperiences": [
+                "Hike from the Ebenalp cable car station down to the Aescher cliff house, one of the world's most unique guest houses",
+                "Visit the Seealpsee lake at dawn to see the surrounding peaks reflected in the perfectly still water",
+                "Explore the town of Appenzell, known for its brightly colored houses and traditional high-street boutiques"
+            ],
+            "travelTips": [
+                "Appenzell is much quieter and less 'touristy' than the Bernese Oberland; it's a great place for a peaceful escape",
+                "Stay for at least three nights in a local hotel to receive the 'Appenzeller Holiday Card' for free transport and attractions",
+                "The region is a hiker's paradise; get a detailed map of the Alpstein range as many trails are steep and challenging"
+            ]
+        },
+        "algiers": {
+            "name": "Algiers",
+            "country": "algeria",
+            "heroTitle": "Algiers: The White City",
+            "heroDescription": "Algiers is a stunning Mediterranean metropolis of blindingly white buildings rising from a sapphire bay. Known as 'Alger la Blanche,' it is a city where French colonial elegance meets the ancient, winding alleys of the UNESCO-listed Casbah. From the soaring Memorial du Martyr to the quiet, garden-filled courtyards of the historic center, Algiers is a place of dramatic elevation and deep-rooted North African soul. It is a city that has witnessed the rise and fall of empires, maintaining a quiet majesty and a vibrant street life that reflects the resilience of the Algerian spirit.",
+            "bestTimeToVisit": "April to June or September to October for mild Mediterranean weather and the best conditions for exploring the Casbah and the botanical gardens.",
+            "whyVisit": [
+                "The UNESCO-listed Casbah of Algiers, an incredible labyrinth of 16th-century alleys and Ottoman-era architecture",
+                "Stunning Mediterranean views and a unique blend of 19th-century French colonial and modern Algerian urbanism",
+                "Exceptional seafood and a vibrant cafe culture that rivals any in Southern Europe"
+            ],
+            "topExperiences": [
+                "Wander through the narrow streets of the Casbah to find hidden mosques and traditional craft workshops",
+                "Visit the Jardin d'Essai du Hamma, a spectacular botanical garden established in 1832",
+                "Take a walk along the waterfront promenade (Front de Mer) for panoramic views of the bay"
+            ],
+            "travelTips": [
+                "French is widely spoken and incredibly useful for navigating the city and interacting with locals",
+                "The Algiers Metro is clean, safe, and the most efficient way to travel between major neighborhoods",
+                "Dress respectfully when visiting the older parts of the city or religious sites"
+            ]
+        },
+        "constantine": {
+            "name": "Constantine",
+            "country": "algeria",
+            "heroTitle": "Constantine: The City of Bridges",
+            "heroDescription": "Constantine is one of Africa's most breathtaking urban sights—a city perched on a high limestone plateau, dramatically split by a deep ravine and connected by a series of soaring historic bridges. Known as the 'City of Bridges,' it is a place of sheer verticality and ancient gravity. With a history that stretches back to its days as the Numidian capital Cirta, Constantine is a living archive of Roman, Ottoman, and French influences. The air here is thin and the views are dizzying, offering a perspective on the landscape that is unlike anywhere else in the Maghreb.",
+            "bestTimeToVisit": "Spring (April-May) or Autumn (September-October) when the weather is mild and the light on the limestone cliffs is most beautiful.",
+            "whyVisit": [
+                "The world-famous Sidi M'Cid Bridge, which spans the 175-meter-deep Rhumel Gorge",
+                "Ancient Roman heritage visible in the nearby ruins of Timgad and the central archaeological museum",
+                "A unique cultural atmosphere that blends the traditions of the high plateaus with an adventurous, cliffside lifestyle"
+            ],
+            "topExperiences": [
+                "Walk across the Sidi M'Cid suspension bridge for heart-pounding views of the gorge floor below",
+                "Explore the Palace of Ahmed Bey, a masterpiece of Ottoman civil architecture and tilework",
+                "Visit the historic center and the many 'Medersas' (religious schools) that showcase the city's intellectual history"
+            ],
+            "travelTips": [
+                "The city is divided by the gorge; walking between major areas often involves crossing one of its eight bridges",
+                "Constantine is at a higher altitude than the coast; be prepared for cooler evenings even in summer",
+                "Try local specialties like 'Djari' (a traditional soup) and the city's famous honey-drenched desserts"
+            ]
+        },
+        "new-york": {
+            "name": "New York",
+            "country": "usa",
+            "heroTitle": "New York: The Center of the Universe",
+            "heroDescription": "New York City is a high-wattage, relentless engine of culture, finance, and ambition that defines the modern urban experience. From the neon-drenched canyons of Times Square to the historic brownstones of Brooklyn and the sprawling green sanctuary of Central Park, it is a city of a thousand neighborhoods and eight million stories. Known as 'The City That Never Sleeps,' New York offers a density of life and a diversity of perspective that is unmatched on the planet. It is a place where the world's cuisines, languages, and dreams converge in a single, electrifying pulse.",
+            "bestTimeToVisit": "May to June or September to October for the most pleasant walking weather and vibrant park colors.",
+            "whyVisit": [
+                "The global capital of theater (Broadway), art (Met, MoMA), and high-end culinary innovation",
+                "Incredible skyline views from world-famous landmarks like the Empire State Building and Top of the Rock",
+                "A world-class park system and a relentless, high-energy street life that is exhilarating to experience"
+            ],
+            "topExperiences": [
+                "Walk across the Brooklyn Bridge at sunset for panoramic views of the Manhattan skyline",
+                "Explore the High Line—an elevated park built on a historic freight rail line above Chelsea",
+                "Catch a ferry to the Statue of Liberty and Ellis Island for a profound look at American history"
+            ],
+            "travelTips": [
+                "The NYC Subway is the fastest and most iconic way to get around; use OMNY for easy tap-and-go payment",
+                "New York is a walking city; wear your most comfortable shoes and be prepared for long days on your feet",
+                "Tipping in restaurants is standard at 20%; most service workers rely on it for their income"
+            ]
+        },
+        "los-angeles": {
+            "name": "Los Angeles",
+            "country": "usa",
+            "heroTitle": "Los Angeles: The Dream Factory",
+            "heroDescription": "Los Angeles is a sprawling, sun-drenched mosaic of palm-lined boulevards, rugged canyons, and the iconic glitter of Hollywood. It is a city defined by its pursuit of the beautiful and the cinematic, where the Pacific Ocean meets the high-energy pulse of the entertainment industry. From the historic stars on the Hollywood Walk of Fame to the world-class Getty Center and the relaxed surf culture of Santa Monica, LA is a land of endless transformation and high-contrast living. It is a place where every corner feels like a movie set and every sunset is an event.",
+            "bestTimeToVisit": "March to May or September to November when the air is clear, the weather is mild, and the summer crowds have thinned.",
+            "whyVisit": [
+                "The global center of the film and television industry with world-famous studio tours and landmarks",
+                "Substantial high-end art collections and world-class architecture like the Walt Disney Concert Hall",
+                "Incredible coastal lifestyle with miles of iconic beaches and prime hiking in the Santa Monica mountains"
+            ],
+            "topExperiences": [
+                "Hike up to the Griffith Observatory for the best view of the Hollywood Sign and the city lights",
+                "Spend an afternoon at the Getty Center for its extraordinary art collection and garden architecture",
+                "Cycle the 22-mile beach path from Santa Monica to Venice Beach for the definitive LA experience"
+            ],
+            "travelTips": [
+                "Los Angeles is massive and decentralized; renting a car is almost essential for exploring multiple districts",
+                "Traffic is a serious factor; plan your travel times carefully to avoid the peak rush hours",
+                "The culinary scene is one of the best in the US; don't miss the authentic tacos and high-end sushi"
+            ]
+        },
+        "chicago": {
+            "name": "Chicago",
+            "country": "usa",
+            "heroTitle": "Chicago: The Windy City",
+            "heroDescription": "Chicago is an architectural masterpiece of steel and glass standing on the shores of Lake Michigan. Known for its world-class museums, its legendary jazz and blues history, and its bold, hearty culinary scene, it is a city of distinct neighborhoods and deep-rooted pride. From the soaring heights of the Willis Tower to the mirror-like 'Bean' in Millennium Park, Chicago offers an urban experience that is both sophisticated and remarkably accessible. It is a city that reclaimed itself from the Great Fire of 1871 to become the birthplace of the skyscraper and a global hub of culture.",
+            "bestTimeToVisit": "June to August for the best lakefront weather and non-stop street festivals, or September to October for crisp autumn air.",
+            "whyVisit": [
+                "Some of the world's most significant modern architecture and the Art Institute of Chicago",
+                "A legendary music scene centered on the birth of modern blues and high-energy jazz clubs",
+                "A world-class lakefront with miles of beaches, parks, and the iconic Navy Pier"
+            ],
+            "topExperiences": [
+                "Take the Architecture River Cruise for the best perspective on the city's legendary skyline",
+                "Visit Millennium Park to see the Cloud Gate sculpture and attend a free concert at the Pritzker Pavilion",
+                "Walk the Magnificent Mile for high-end shopping and views of the historic Water Tower"
+            ],
+            "travelTips": [
+                "The 'L' (elevated train) is efficient and offers great views of the city's unique urban texture",
+                "The winters are notoriously harsh; if visiting between December and March, bring serious thermal gear",
+                "Try a deep-dish pizza or a Chicago-style hot dog—they are cultural institutions here"
+            ]
+        },
+        "san-francisco": {
+            "name": "San Francisco",
+            "country": "usa",
+            "heroTitle": "San Francisco: The Golden Gate",
+            "heroDescription": "San Francisco is a city of steep hills, Victorian elegance, and pervasive maritime fog, sitting on a peninsula between the Pacific Ocean and the bay. Known for its iconic Golden Gate Bridge, its historic cable cars, and its legacy as a sanctuary for social revolution and technological innovation, it is one of the most visually stunning cities in North America. From the colorful 'Painted Ladies' of Alamo Square to the high-tech energy of Silicon Valley's northern edge, the city offers a unique blend of Old World charm and futuristic thinking, all set against a backdrop of dramatic coastal light.",
+            "bestTimeToVisit": "September to November (the 'Indian Summer') when the weather is warmest and the notorious summer fog is at its thinnest.",
+            "whyVisit": [
+                "Iconic landmarks like the Golden Gate Bridge, Alcatraz, and the world's last manually operated cable cars",
+                "One of the best culinary scenes in the US, especially famous for seafood, sourdough, and Mission-style burritos",
+                "Breathtaking natural surroundings including the Muir Woods redwoods and the Napa Valley wine region"
+            ],
+            "topExperiences": [
+                "Cycle across the Golden Gate Bridge to Sausalito for spectacular views of the city and the bay",
+                "Take a ferry to Alcatraz Island for a tour of the world's most famous former federal prison",
+                "Wander through the historic Ferry Building Marketplace for the best local artisanal foods and coffee"
+            ],
+            "travelTips": [
+                "San Francisco is famous for its microclimates; always dress in layers as the temperature can drop 10 degrees in one block",
+                "The hills are serious; while it's a walking city, you'll get a workout—take the cable cars or BART for longer distances",
+                "Parking is extremely difficult and expensive; use public transport or ride-sharing whenever possible"
+            ]
+        },
+        "paris": {
+            "name": "Paris",
+            "country": "france",
+            "heroTitle": "Paris: The City of Light",
+            "heroDescription": "Paris is the world's most enduring icon of romance, art, and culinary perfection, a city that breathes through its grand boulevards and its intimate, lamp-lit alleys. From the iron lace of the Eiffel Tower to the hallowed halls of the Louvre and the bohemian heights of Montmartre, it is a metropolis of unparalleled aesthetic consistency. Known for its high-fashion houses, its legendary cafe culture, and its historic pastry shops, Paris is a destination that demands to be explored slowly. It is a place where every corner feels like a masterpiece and every meal is an exercise in elegance.",
+            "bestTimeToVisit": "April to June for the legendary 'Paris in Spring' or September to October for the crisp autumn air and golden light.",
+            "whyVisit": [
+                "The world's greatest concentration of artistic masterpieces in the Louvre, Musée d'Orsay, and Centre Pompidou",
+                "A world-class culinary scene ranging from humble neighborhood boulangeries to historic Michelin-starred dining",
+                "Stunning architecture across every era, from Gothic cathedrals to Haussmann's grand 19th-century boulevards"
+            ],
+            "topExperiences": [
+                "Walk along the Seine at sunset and browse the historic 'Bouquinistes' (open-air book stalls)",
+                "Explore the winding streets of Le Marais for its boutiques, historic mansions, and vibrant Jewish heritage",
+                "Take a picnic to the Canal Saint-Martin or the Luxembourg Gardens for a truly local Parisian experience"
+            ],
+            "travelTips": [
+                "The Paris Metro is one of the best in the world; learn the lines to navigate the city like a local",
+                "A simple 'Bonjour' is the essential key to polite interaction in any shop or restaurant",
+                "Avoid the restaurants with 'tourist menus' right next to major sites; head two blocks into the side streets for authenticity"
+            ]
+        },
+        "lyon": {
+            "name": "Lyon",
+            "country": "france",
+            "heroTitle": "Lyon: The Gastronomic Heart",
+            "heroDescription": "Lyon is a sophisticated, historic city sitting at the confluence of the Rhône and Saône rivers, widely considered the culinary capital of France. With over 2,000 years of history, it is a city of Roman ruins, Renaissance architecture, and the unique 'Traboules'—hidden passageways that weave through the Old Town and the silk-weaving district of Croix-Rousse. Lyon is a place of deep traditions and modern innovation, where the 'Bouchons' (traditional bistros) serve hearty Lyonnaise cuisine and the Fête des Lumières transforms the city into a spectacular canvas of light every December.",
+            "bestTimeToVisit": "May to June or September to October. The weather is pleasant for walking and the outdoor cafes are at their best.",
+            "whyVisit": [
+                "Unrivaled culinary experiences in the city's legendary Bouchons and the Les Halles de Lyon Paul Bocuse market",
+                "The UNESCO-listed Vieux Lyon (Old Town), one of Europe's most extensive Renaissance neighborhoods",
+                "A vibrant, high-quality urban experience that is much more relaxed and affordable than Paris"
+            ],
+            "topExperiences": [
+                "Explore the Traboules (hidden passages) of Vieux Lyon and Croix-Rousse to discover the city's secret history",
+                "Take the funicular up to the Fourvière Basilica for the best panoramic view of the city and the distant Alps",
+                "Spend a morning in the Parc de la Tête d'Or, one of the most beautiful urban parks in France"
+            ],
+            "travelTips": [
+                "Lyon is extremely walkable, but the transport system (TCL) is excellent and uses the same ticket for Metro, tram, and bus",
+                "Book your tables for dinner well in advance; the best Bouchons are small and always full",
+                "Visit during the 'Fête des Lumières' (December 8th) for one of the world's most spectacular light festivals"
+            ]
+        },
+        "marseille": {
+            "name": "Marseille",
+            "country": "france",
+            "heroTitle": "Marseille: The Mediterranean Gateway",
+            "heroDescription": "Marseille is a gritty, vibrant, and sun-drenched port city that serves as the oldest urban center in France. Built around the historic Vieux-Port (Old Port), it is a place of high energy and immense cultural diversity, where the scent of sea salt and North African spices fills the air. From the colorful Panier neighborhood to the futuristic MuCEM museum and the spectacular limestone cliffs of the Calanques National Park, Marseille offers a Mediterranean experience that is raw, authentic, and unapologetically alive. It is a city that has redefined itself as a major cultural hub while staying true to its maritime soul.",
+            "bestTimeToVisit": "May to June or September to October. The summer can be localized and crowded, but the shoulder seasons offer perfect Mediterranean light.",
+            "whyVisit": [
+                "The stunning Calanques National Park, with its turquoise inlets and dramatic white limestone cliffs",
+                "A unique cultural blend reflected in its vibrant street life, music scene, and diverse culinary traditions",
+                "Breathtaking views from the Notre-Dame de la Garde basilica overlooking the city and the Mediterranean"
+            ],
+            "topExperiences": [
+                "Take a boat trip from the Vieux-Port to the Calanques for swimming in the crystal-clear fjords",
+                "Wander through Le Panier, the city's oldest neighborhood, known for its narrow streets and street art",
+                "Visit the MuCEM (Museum of European and Mediterranean Civilisations) for its incredible architecture and exhibits"
+            ],
+            "travelTips": [
+                "Marseille can be intense; stay in well-traveled areas like the Vieux-Port or Cours Julien for the best experience",
+                "Try an authentic Bouillabaisse—the city's famous fish stew—but be prepared to pay for the real deal in a reputable restaurant",
+                "The 'Marseille City Pass' is great value for transport and entry to major museums and a boat trip to the islands"
+            ]
+        },
+        "nice": {
+            "name": "Nice",
+            "country": "france",
+            "heroTitle": "Nice: The Queen of the Riviera",
+            "heroDescription": "Nice is a sophisticated, sun-soaked gem of the French Riviera, where the pebble-lined Promenade des Anglais curves around the turquoise waters of the Baie des Anges. Known for its extraordinary Mediterranean light, which attracted artists like Matisse and Chagall, it is a city of vibrant ochre buildings, lush gardens, and a high-end culinary scene that blends Provençal traditions with Italian influences. From the bustling flower markets of the Cours Saleya to the luxury boutiques of the Avenue Jean Médecin, Nice offers a lifestyle of refined coastal elegance and historic charm.",
+            "bestTimeToVisit": "May to June or September for the best weather and the perfect swimming conditions without the extreme August crowds.",
+            "whyVisit": [
+                "Iconic Mediterranean scenery and direct access to the most glamorous beach towns on the French Riviera",
+                "World-class art museums dedicated to the masters of modern art who were inspired by the city's unique light",
+                "The vibrant Old Town (Vieux Nice) with its narrow streets, flower markets, and authentic Niçoise cuisine"
+            ],
+            "topExperiences": [
+                "Walk the entire length of the Promenade des Anglais for spectacular views of the turquoise sea",
+                "Climb to the top of the Colline du Château (Castle Hill) for the absolute best view of the city and the port",
+                "Explore the Cours Saleya market in the morning for fresh flowers, local soaps, and traditional Socca (chickpea pancake)"
+            ],
+            "travelTips": [
+                "Nice is the perfect base for exploring the Riviera; use the regional TER trains to visit Monaco, Cannes, and Antibes",
+                "The beach in Nice is made of large pebbles; bring water shoes for a more comfortable swimming experience",
+                "Try 'Socca' from a street stall in the Old Town—it's a delicious, iconic, and cheap local snack"
+            ]
+        },
+        "london": {
+            "name": "London",
+            "country": "uk",
+            "heroTitle": "London: The Modern Metropolis",
+            "heroDescription": "London is a global crossroads where nearly two thousand years of history meet the cutting edge of modern urban life. From the Gothic towers of Westminster to the futuristic Shard and the vibrant street art of Shoreditch, it is a city of immense scale and endless subcultures. Known for its world-class museums, its legendary theater district (the West End), and its vast, green royal parks, London is a place that is perpetually reinventing itself. It is a city where every brick has a story, yet the energy is focused entirely on the future.",
+            "bestTimeToVisit": "May to June for the best garden weather and the Queen's Official Birthday celebrations, or December for the magical Christmas atmosphere and lights.",
+            "whyVisit": [
+                "The world's greatest concentration of free, high-quality museums including the British Museum and Tate Modern",
+                "A world-class theater scene in the West End that rivals Broadway in its scale and quality",
+                "Exceptional historical depth with landmarks like the Tower of London, Buckingham Palace, and Westminster Abbey"
+            ],
+            "topExperiences": [
+                "Take a walk across Tower Bridge for iconic views of the Thames and the city's shifting skyline",
+                "Explore the South Bank from the London Eye to the Borough Market for a sensory feast of food and culture",
+                "Spend an afternoon in one of the Royal Parks, especially Richmond Park for its wild deer and ancient oaks"
+            ],
+            "travelTips": [
+                "The London Underground (the Tube) is the fastest way to get around; use your contactless card or phone to tap-and-go",
+                "London is a city of villages; explore neighborhoods like Hampstead, Brixton, and Greenwich to find its true soul",
+                "The weather is notoriously changeable; always carry a small umbrella even on a sunny day"
+            ]
+        },
+        "edinburgh": {
+            "name": "Edinburgh",
+            "country": "uk",
+            "heroTitle": "Edinburgh: The Athens of the North",
+            "heroDescription": "Edinburgh is a dramatic, medieval city of verticality and volcanic rock, dominated by the brooding silhouette of its castle. Known for its extraordinary Old Town (a UNESCO World Heritage site) and its elegant, 18th-century New Town, it is a place of deep academic history and vibrant artistic energy. It is the birthplace of Harry Potter and the host of the world's largest arts festival, the Edinburgh Fringe. With its stone-paved 'closes,' its hidden underground vaults, and its high-altitude viewpoints like Arthur's Seat, Edinburgh is a city that feels both ancient and eternally creative.",
+            "bestTimeToVisit": "August for the world-famous Edinburgh Festivals (Fringe, International, Military Tattoo), or December for the legendary Hogmanay (New Year) celebrations.",
+            "whyVisit": [
+                "One of the most visually stunning and well-preserved historic cities in Europe with a unique vertical landscape",
+                "The global center for festivals and the arts, especially during the month of August",
+                "Direct access to some of Scotland's most beautiful natural scenery including the nearby Highlands"
+            ],
+            "topExperiences": [
+                "Walk the Royal Mile from Edinburgh Castle down to the Palace of Holyroodhouse",
+                "Hike up Arthur's Seat (an extinct volcano) for a panoramic view of the city and the Firth of Forth",
+                "Explore the 'Closes' (narrow alleys) of the Old Town and descend into the historic underground vaults"
+            ],
+            "travelTips": [
+                "Edinburgh is very vertical and involves a lot of walking up hills and stairs; bring sturdy, comfortable shoes",
+                "Book your accommodation months in advance if visiting during August or Hogmanay",
+                "Try a traditional 'Haggis, Neeps and Tatties' in a historic pub—it's much more delicious than it sounds"
+            ]
+        },
+        "manchester": {
+            "name": "Manchester",
+            "country": "uk",
+            "heroTitle": "Manchester: The Industrial Heart",
+            "heroDescription": "Manchester is a bold, high-energy city that serves as the unofficial capital of Northern England and the birthplace of the Industrial Revolution. Known for its legendary music history (The Smiths, Joy Division, Oasis), its world-class football clubs, and its vibrant, canal-side warehouses, it is a city of gritty authenticity and modern swagger. From the historic library of John Rylands to the futuristic architecture of MediaCityUK and the creative hub of the Northern Quarter, Manchester is a metropolis that wears its hard-working heritage with pride while looking firmly toward the digital future.",
+            "bestTimeToVisit": "May to June or September. The weather is relatively mild, and the city's many outdoor festivals and music events are in full swing.",
+            "whyVisit": [
+                "A premier global destination for football fans, home to the iconic Old Trafford and Etihad stadiums",
+                "A world-class music and nightlife scene with a deep history of shaping global pop culture",
+                "Incredible industrial heritage architecture and cutting-edge museums like Science and Industry and the Whitworth"
+            ],
+            "topExperiences": [
+                "Wander through the Northern Quarter to find the best independent record shops, boutiques, and street art",
+                "Take a tour of 'The Theatre of Dreams' (Old Trafford) to experience the history of Manchester United",
+                "Explore the historic canals of Castlefield, where the Roman fort and industrial heritage meet modern bars"
+            ],
+            "travelTips": [
+                "The Metrolink tram system is the best way to get around the city and to reach outlying areas like Salford Quays",
+                "Mancunians are famously friendly and talkative; don't be afraid to ask for local recommendations in a pub",
+                "The city is a shopping powerhouse; explore the Arndale Center and the high-end boutiques of King Street"
+            ]
+        },
+        "liverpool": {
+            "name": "Liverpool",
+            "country": "uk",
+            "heroTitle": "Liverpool: The UNESCO City of Music",
+            "heroDescription": "Liverpool is a soulful, maritime city of grand architecture and legendary human scale, sitting on the eastern shore of the Mersey Estuary. Most famous as the birthplace of The Beatles, it is a city that vibrates with music and a profound sense of local identity. From the iconic 'Three Graces' on the waterfront to the historic Albert Dock and the towering cathedrals, Liverpool is a place of dramatic vistas and deep-rooted resilience. It is a city that has transformed itself from a major imperial port into a global cultural hub, defined by its warmth, its wit, and its irrepressible spirit.",
+            "bestTimeToVisit": "May to June or September. The waterfront is beautiful in the sun, and the city's many music festivals (like Sound City) are in full swing.",
+            "whyVisit": [
+                "The absolute ground zero for Beatles history, with the Cavern Club, the Beatles Story, and childhood homes",
+                "The largest collection of Grade I listed buildings in the UK outside of London, including the stunning Royal Albert Dock",
+                "A world-class arts scene featuring Tate Liverpool and the Walker Art Gallery"
+            ],
+            "topExperiences": [
+                "Take a 'Ferry Cross the Mersey' for the best view of the iconic Liverpool skyline and the Three Graces",
+                "Visit the Cavern Club in Mathew Street to hear live music in the legendary venue where the Beatles were discovered",
+                "Explore the Royal Albert Dock, home to museums, galleries, and a high-energy waterfront dining scene"
+            ],
+            "travelTips": [
+                "Liverpool is very walkable; most of the city's major landmarks and the waterfront are within easy reach of the center",
+                "The city's 'Scouse' accent can be strong, but the people are exceptionally welcoming to visitors",
+                "Be sure to visit both the Anglican and Metropolitan cathedrals—they are architecturally stunning and very different"
+            ]
+        },
+        "berlin": {
+            "name": "Berlin",
+            "country": "germany",
+            "heroTitle": "Berlin: The Frontier of Freedom",
+            "heroDescription": "Berlin is a sprawling, high-energy metropolis that serves as a living laboratory for modern history, subculture, and creative expression. After decades of division, it has emerged as a city of profound freedom, where the scars of the 20th century are integrated into a vibrant, high-tech landscape. From the iconic Brandenburg Gate to the remnants of the Berlin Wall at the East Side Gallery and the relentless club culture of Berghain, it is a city that never stops questioning itself. Berlin is a place of massive parks, wide boulevards, and a sense of possibility that attracts rebels, artists, and innovators from across the globe.",
+            "bestTimeToVisit": "May to September when the city's park-and-lake culture is at its peak and the outdoor cafes and beer gardens are in full swing.",
+            "whyVisit": [
+                "One of the world's most significant and complex historical landscapes, from the Prussian Empire to the Cold War",
+                "A premier global center for electronic music and nightlife, offering some of the planet's most legendary clubs",
+                "An incredible range of world-class museums on the UNESCO-listed Museum Island"
+            ],
+            "topExperiences": [
+                "Walk along the East Side Gallery to see the world's longest open-air mural on a remaining section of the Berlin Wall",
+                "Visit the Reichstag building and its glass dome for a view into the heart of German democracy and the city skyline",
+                "Spend a Sunday at Mauerpark for the legendary outdoor karaoke and the massive flea market"
+            ],
+            "travelTips": [
+                "The public transport system (S-Bahn, U-Bahn, and trams) is exceptional; buy a day pass for unlimited travel",
+                "Berlin is a collection of distinct neighborhoods (Kieze); explore Kreuzberg, Neukölln, and Prenzlauer Berg to find your vibe",
+                "Most shops in Germany are closed on Sundays; plan your grocery shopping and retail therapy accordingly"
+            ]
+        },
+        "munich": {
+            "name": "Munich",
+            "country": "germany",
+            "heroTitle": "Munich: The High-End Heartland",
+            "heroDescription": "Munich is a sophisticated, wealthy metropolis that serves as the gateway to the Bavarian Alps. Known for its world-famous Oktoberfest, its high-tech industry (BMW, Siemens), and its profound respect for tradition, it is a city of high-quality living. From the grand Marienplatz to the sprawling Englischer Garten (one of the world's largest urban parks) and the high-end boutiques of Maximilianstraße, Munich offers a perfect blend of 'Gemütlichkeit' (coziness) and cosmopolitan swagger. It is a city where people surf on river waves in the morning and dine in Michelin-starred restaurants in the evening.",
+            "bestTimeToVisit": "May to June for the best mountain weather and beer gardens, or late September for the world-famous Oktoberfest experience.",
+            "whyVisit": [
+                "The ultimate base for exploring the Bavarian Alps and the fairytale castles like Neuschwanstein",
+                "A world-class beer culture with historic halls like the Hofbräuhaus and vast, leafy beer gardens",
+                "Substantial high-end art and technology museums including the Alte Pinakothek and the Deutsches Museum"
+            ],
+            "topExperiences": [
+                "Watch the river surfers on the Eisbach wave in the Englischer Garten—a unique urban phenomenon",
+                "Visit the Viktualienmarkt for a sensory feast of local Bavarian cheeses, meats, and fresh produce",
+                "Climb to the top of St. Peter's Church (Alter Peter) for the best view over Marienplatz and toward the Alps"
+            ],
+            "travelTips": [
+                "The city's transport system (MVV) is extremely efficient; use the 'Group Day Ticket' if traveling with 2-5 people",
+                "Beer gardens allow you to bring your own food as long as you buy a drink—it's a great way to save and eat locally",
+                "Learn the local greeting 'Grüß Gott' instead of the standard German 'Guten Tag' to connect with the locals"
+            ]
+        },
+        "hamburg": {
+            "name": "Hamburg",
+            "country": "germany",
+            "heroTitle": "Hamburg: The Gateway to the World",
+            "heroDescription": "Hamburg is a wealthy, high-wattage port city defined by its relationship with the water. Known for its massive harbor, its historic red-brick Speicherstadt warehouse district (the largest in the world), and its legendary Reeperbahn nightlife, it is a city of immense character and international spirit. Built around the Alster lakes and crisscrossed by more bridges than Venice or London, Hamburg offers a unique urban experience of wind, water, and brick. It is a place of high-fashion boutiques and gritty dockyards, where the historic Elbe Tunnel leads to panoramic views of a city that has been reshaped by global trade for centuries.",
+            "bestTimeToVisit": "May to September when the harbor festivities are in full swing and the Alster lakes are perfect for sailing and rowing.",
+            "whyVisit": [
+                "The UNESCO-listed Speicherstadt, an incredible architectural sight of red-brick warehouses on canals",
+                "The Elbphilharmonie, one of the world's most spectacular modern concert halls with a high-altitude plaza view",
+                "One of Europe's most vibrant and diverse nightlife and music scenes in the historic St. Pauli district"
+            ],
+            "topExperiences": [
+                "Take a harbor cruise from Landungsbrücken to see the massive scale of the container port and the historic ships",
+                "Visit Miniatur Wunderland—the world's largest model railway and a masterpiece of intricate engineering",
+                "Spend an evening in a bar in the Reeperbahn to experience the district where the Beatles honed their craft"
+            ],
+            "travelTips": [
+                "The HVV transport tickets also work on the HADAG ferries—it's the cheapest way to see the harbor from the water",
+                "The weather can be very windy and rainy; a high-quality raincoat is a better investment than an umbrella",
+                "Visit the Fischmarkt (Fish Market) early on Sunday morning (5:30 AM) for a unique local tradition is music and food"
+            ]
+        },
+        "frankfurt": {
+            "name": "Frankfurt",
+            "country": "germany",
+            "heroTitle": "Frankfurt: The Silicon of the Main",
+            "heroDescription": "Frankfurt is Germany's high-octane financial heartbeat, a city of steel and glass skyscrapers that is unique in the nation. Dominating the skyline is the Commerzbank Tower, reflecting the city's role as a global banking hub. Yet, beneath the corporate glass, Frankfurt maintains a soulful historic core in the Römerberg and a vibrant, traditional lifestyle in the apple-wine taverns of Sachsenhausen. It is a major global crossroads, home to one of the world's busiest airports and a diverse population that brings an international flavor to its culinary and cultural scene. Frankfurt is a place of intense efficiency and surprising, riverside charm.",
+            "bestTimeToVisit": "May to June or September to October. The weather is pleasant for river walks and the city's many museums are less crowded.",
+            "whyVisit": [
+                "Direct access to some of Germany's most significant museums along the Museumsufer (Museum Embankment)",
+                "A unique urban skyline in Germany combined with a well-preserved historic old town (the New Old Town)",
+                "The ultimate transport hub for exploring the Rhine Valley and the traditional towns of central Germany"
+            ],
+            "topExperiences": [
+                "Walk across the Eiserner Steg (Iron Bridge) for the definitive view of the Frankfurt skyline and the Main river",
+                "Cross the river to Sachsenhausen for a glass of authentic 'Ebbelwoi' (apple wine) in a traditional wooden tavern",
+                "Visit the Goethe House and Museum, the birthplace of Germany's most famous writer and philosopher"
+            ],
+            "travelTips": [
+                "The RMV transport system is complex; use the Frankfurt Card for free transport and discounts if you are staying for a few days",
+                "The area around the main train station (Hauptbahnhof) can be intense; head toward the river for a more relaxed atmosphere",
+                "Try the 'Grüne Soße' (Green Sauce)—a cold herb sauce that is a beloved local specialty served with potatoes and eggs"
+            ]
+        },
+        "sydney": {
+            "name": "Sydney",
+            "country": "australia",
+            "heroTitle": "Sydney: The Harbor City",
+            "heroDescription": "Sydney is a glistening, sun-drenched metropolis carved around one of the world's most spectacular natural harbors. Dominated by the iconic white sails of the Opera House and the massive steel arch of the Harbor Bridge, it is a city of high-contrast living between a high-tech CBD and world-class surf beaches. Known for its laid-back West Coast energy and its incredible culinary diversity, Sydney is a city of salt air, ancient sandstone, and glittering water views. From the historic alleys of The Rocks to the coastal paths of Bondi and the wilderness of the Blue Mountains, it offers a lifestyle that is defined by its profound proximity to the ocean.",
+            "bestTimeToVisit": "September to November (Spring) or February to April (Autumn) for clear skies and the best conditions for outdoor swimming and hiking.",
+            "whyVisit": [
+                "Two of the world's most iconic landmarks—the Sydney Opera House and the Sydney Harbor Bridge",
+                "Spectacular urban beaches like Bondi and Manly, connected by some of the world's best coastal walking paths",
+                "A world-class dining scene that blends high-end experimentation with the freshest Pacific seafood"
+            ],
+            "topExperiences": [
+                "Take a public ferry from Circular Quay to Manly at sunset for the most spectacular view of the harbor for the price of a coffee",
+                "Walk the 6km coastal path from Bondi to Coogee for breathtaking Pacific views and hidden ocean pools",
+                "Explore the historic sandstone pubs and weekend markets of The Rocks, the city's oldest European settlement"
+            ],
+            "travelTips": [
+                "The Opal card is your key to all public transport (trains, buses, ferries); use your phone or credit card to tap-and-go",
+                "The sun is extremely strong; high-SPF sunscreen is a non-negotiable part of daily life in Sydney",
+                "Sydney is expensive; use the 'early bird' specials at restaurants and the free museums to balance your budget"
+            ]
+        },
+        "melbourne": {
+            "name": "Melbourne",
+            "country": "australia",
+            "heroTitle": "Melbourne: The Cultural Capital",
+            "heroDescription": "Melbourne is a sophisticated, European-influenced metropolis of hidden laneways, world-class coffee, and intense cultural pride. Widely considered Australia's spiritual home of art, fashion, and sport, it is a city that thrives on subcultures and discovery. From the Victorian elegance of its arcades to the street-art-drenched alleys of Hosier Lane and the high-energy pulse of the MCG (Melbourne Cricket Ground), it is a city of profound depth. It is a place of unpredictable weather and meticulous taste, where the best bars, cafes, and boutiques are often unmarked and found on a rooftop or down a dark side-alley.",
+            "bestTimeToVisit": "March to May (Autumn) for the most stable weather and the stunning park colors, or October to November for the spring festivals and horse racing.",
+            "whyVisit": [
+                "The world's premier coffee culture and a high-end dining scene that is consistently ranked among the best in the world",
+                "A vibrant, walkable city center filled with historic architecture, secret laneways, and extraordinary street art",
+                "The global center for sports with world-class facilities for tennis (Australian Open), cricket, and AFL"
+            ],
+            "topExperiences": [
+                "Spend a morning laneway-hopping in the CBD—start at Degraves Street and find a tiny, high-end espresso bar",
+                "Explore the vibrant, bohemian neighborhood of Fitzroy for its independent boutiques and rooftop bars",
+                "Take a day trip down the Great Ocean Road to see the Twelve Apostles and the rugged Victorian coastline"
+            ],
+            "travelTips": [
+                "Melbourne's weather is famous for 'four seasons in one day'; always carry a light jacket and be prepared for changes",
+                "The city has a 'Free Tram Zone' in the CBD; utilize the historic City Circle tram for a free loop of the major sites",
+                "Get a Myki card for all transport outside the free zone; you must touch on and touch off for every journey"
+            ]
+        },
+        "brisbane": {
+            "name": "Brisbane",
+            "country": "australia",
+            "heroTitle": "Brisbane: The River City",
+            "heroDescription": "Brisbane is a high-growth, sun-soaked city of the future, built around the winding curves of the Brisbane River. Known for its laid-back outdoor lifestyle, its subtropical climate, and its booming creative scene, it is the gateway to the Gold Coast and the Sunshine Coast. From the man-made beach at South Bank to the high-end boutiques of James Street and the panoramic views from Mount Coot-tha, Brisbane is a city that embraces the sun. It is a metropolis of timber-framed 'Queenslander' houses and sleek glass towers, offering a lifestyle that is more relaxed than Sydney but no less ambitious.",
+            "bestTimeToVisit": "April to October. The winters are mild and dry with clear blue skies, while the summers can be intensely hot and humid with tropical storms.",
+            "whyVisit": [
+                "Excellent outdoor urban lifestyle with world-class riverfront parks, galleries, and a man-made inner-city beach",
+                "Direct, easy access to some of the world's most famous surfing beaches and Great Barrier Reef gateways",
+                "A vibrant and rapidly growing culinary and nightlife scene centered around Fortitude Valley"
+            ],
+            "topExperiences": [
+                "Ride the CityCat ferry along the river for a tranquil and scenic perspective of the city's unique architecture",
+                "Visit the South Bank Parklands for a swim at Streets Beach and a tour of the QAGOMA modern art galleries",
+                "Climb to the summit of Mount Coot-tha at dawn for a spectacular view over the city to Moreton Bay"
+            ],
+            "travelTips": [
+                "The Go Card is the best way to pay for public transport (buses, trains, ferries) and offers a significant discount over paper tickets",
+                "Brisbane is very casual; dress code for most restaurants and bars is 'smart casual' and relaxed",
+                "Visit the Lone Pine Koala Sanctuary—the world's first and largest—to see Australia's iconic wildlife in a natural setting"
+            ]
+        },
+        "perth": {
+            "name": "Perth",
+            "country": "australia",
+            "heroTitle": "Perth: The Isolated Oasis",
+            "heroDescription": "Perth is a remote, wealthy, and sun-soaked metropolis that sits between the vast Indian Ocean and the rugged Darling Scarp. Known for being one of the most isolated major cities in the world, it has developed a unique, high-quality urban life defined by space, light, and incredible natural proximity. From the white sands of Cottesloe Beach to the sprawling Kings Park (one of the world's largest inner-city parks) and the historic port of Fremantle, Perth offers a lifestyle of refined coastal isolation. It is a city of clear blue skies, world-class Swan Valley vineyards, and a sense of quiet prosperity that is distinctly West Australian.",
+            "bestTimeToVisit": "September to November for the wildflower season and perfect hiking weather, or February to March for the best ocean swimming and sunsets.",
+            "whyVisit": [
+                "Some of the most pristine and less-crowded urban beaches in the world with legendary Indian Ocean sunsets",
+                "Kings Park and Botanic Garden—a massive, high-altitude sanctuary with views over the Swan River and the skyline",
+                "The historic, bohemian port city of Fremantle with its preserved 19th-century architecture and vibrant markets"
+            ],
+            "topExperiences": [
+                "Take a ferry to Rottnest Island to meet the world-famous Quokkas and cycle between turquoise bays",
+                "Watch the sunset from the iconic surf beach of Cottesloe with a meal at the historic Indiana Tea House",
+                "Spend a day in the Swan Valley, Australia's oldest wine region, just 25 minutes from the city center"
+            ],
+            "travelTips": [
+                "Perth is very spread out; while the central area is walkable, you'll need a car or use the Transperth trains for beaches",
+                "The city has a 'Free Transit Zone' for buses within the CBD—look for the red icons on the bus stops",
+                "Be prepared for the 'Fremantle Doctor'—a strong afternoon sea breeze that cools the city down but can blow sand on the beach"
+            ]
+        },
+        "chiang-mai": {
+            "name": "Chiang Mai",
+            "country": "thailand",
+            "heroTitle": "Chiang Mai: The Rose of the North",
+            "heroDescription": "Chiang Mai is a soulful, mist-shrouded sanctuary in the mountains of Northern Thailand, where the scent of incense and woodsmoke fills the air. Once the capital of the Lanna Kingdom, it is a city of over 300 temples, golden spires, and a pace of life that is refreshingly slow compared to Bangkok. From the sacred heights of Wat Phra That Doi Suthep to the vibrant night markets and the lush elephant sanctuaries, it offers a deep connection with Thai culture and nature. It is a place of artisans, digital nomads, and ancient traditions, nestled within a landscape of emerald jungles and rolling hills.",
+            "bestTimeToVisit": "November to February for the cool, dry weather and the spectacular Yi Peng lantern festival.",
+            "whyVisit": [
+                "The cultural and spiritual heart of Thailand with hundreds of historic temples and a thriving art scene",
+                "Direct access to some of the country's best mountain trekking, waterfalls, and ethical wildlife experiences",
+                "A world-class destination for foodies, especially famous for the unique 'Khao Soi' curry noodles"
+            ],
+            "topExperiences": [
+                "Hike or drive up to Wat Phra That Doi Suthep at sunset for a panoramic view of the city and the surrounding valley",
+                "Wander through the Sunday Night Market (Walking Street) for local handicrafts and an endless variety of street food",
+                "Visit an ethical elephant sanctuary to learn about conservation and interact with these gentle giants in their natural habitat"
+            ],
+            "travelTips": [
+                "Rent a scooter to explore the outlying waterfalls and mountain villages, but be careful on the winding roads",
+                "Participate in a 'Monk Chat' at one of the temples to learn about Buddhism and local life directly from the practitioners",
+                "Chiang Mai is very budget-friendly; stay in a traditional guesthouse in the Old City for an authentic experience"
+            ]
+        },
+        "tokyo": {
+            "name": "Tokyo",
+            "country": "japan",
+            "heroTitle": "Tokyo: The Neon Symphony",
+            "heroDescription": "Tokyo is a high-octane, neon-drenched metropolis that serves as a living laboratory for the future of urban life. From the frantic scramble of Shibuya to the quiet, cedar-lined shrines of Meiji Jingu, it is a city of extreme contrasts and meticulous order. Known for its world-class culinary scene, its cutting-edge subcultures, and its vast, efficient transport network, Tokyo is a place where every corner feels like a scene from another world. It is a city that never stops moving, yet maintains a profound respect for the silence and tradition that define its core.",
+            "bestTimeToVisit": "Late March to early April for the cherry blossom season, or late October to November for the stunning autumn foliage.",
+            "whyVisit": [
+                "The world's greatest concentration of Michelin-starred restaurants and a diverse, high-quality street food scene",
+                "A premier global hub for technology, fashion, and pop culture, ranging from Akihabara to Harajuku",
+                "Incredible historical depth with landmarks like the Imperial Palace and the ancient Senso-ji temple in Asakusa"
+            ],
+            "topExperiences": [
+                "Cross the world's busiest intersection at Shibuya Scramble and watch the flow of humanity from a nearby cafe",
+                "Explore the traditional atmosphere of Asakusa and walk through the Kaminarimon gate to the Senso-ji temple",
+                "Visit the teamLab Borderless or Planets exhibitions for a mind-bending immersive digital art experience"
+            ],
+            "travelTips": [
+                "The Tokyo Subway is the most efficient way to get around; buy a Suica or Pasmo card for easy tap-and-go travel",
+                "Most ATMs in convenience stores (like 7-Eleven) accept international cards, which is the easiest way to get cash",
+                "Tokyo is a collection of villages; explore neighborhoods like Shimokitazawa and Daikanyama to find its true soul"
+            ]
+        },
+        "kyoto": {
+            "name": "Kyoto",
+            "country": "japan",
+            "heroTitle": "Kyoto: The Eternal Garden",
+            "heroDescription": "Kyoto is the spiritual heart of Japan, a city of over 2,000 temples, shrines, and meticulously groomed Zen gardens. Once the imperial capital for over a millennium, it is a place where the ancient arts of the tea ceremony, flower arranging, and Geisha culture are still practiced with profound devotion. From the shimmering Golden Pavilion to the thousand red torii gates of Fushimi Inari, Kyoto offers a journey through the very essence of Japanese history and aesthetics. It is a city that invites a slower pace, where the whisper of bamboo and the scent of incense define the rhythm of the day.",
+            "bestTimeToVisit": "April for the cherry blossoms or November for the fiery autumn colors that illuminate the temple gardens.",
+            "whyVisit": [
+                "The most concentrated and well-preserved collection of traditional Japanese architecture and historical sites",
+                "One of the world's best-preserved cultural heritage sites, featuring 17 UNESCO World Heritage monuments",
+                "The birthplace of high-end Kaiseki dining and the most authentic tea ceremony experiences in Japan"
+            ],
+            "topExperiences": [
+                "Walk through the thousand vermillion torii gates of Fushimi Inari-taisha and climb the mountain for a view over the city",
+                "Visit the Kinkaku-ji (Golden Pavilion) to see its stunning reflection in the surrounding pond",
+                "Wander through the Gion district at dusk for a chance to see Geiko and Maiko on their way to traditional appointments"
+            ],
+            "travelTips": [
+                "Kyoto is best explored on foot or by bicycle; many of the most beautiful spots are hidden in quiet side streets",
+                "Many temples require you to remove your shoes; bring comfortable socks for walking on wooden floors",
+                "Book your accommodation in the Kawaramachi area for the best access to transport and dining"
+            ]
+        },
+        "rome": {
+            "name": "Rome",
+            "country": "italy",
+            "heroTitle": "Rome: The Eternal City",
+            "heroDescription": "Rome is a sprawling, high-energy museum of Western civilization, where nearly three thousand years of history are layered into the very fabric of the city. From the colossal ruins of the Colosseum to the hallowed halls of the Vatican and the baroque elegance of the Trevi Fountain, it is a metropolis of unparalleled historical depth. Known for its world-class pasta, its vibrant piazza life, and its irrepressible spirit, Rome is a place where every cobblestone has a story and every meal is a celebration. It is a city that demands a slower pace, inviting travelers to lose themselves in the grandeur of the past and the simple beauty of a neighborhood trattoria.",
+            "bestTimeToVisit": "April to June or September to October for the most pleasant walking weather and any major festivals.",
+            "whyVisit": [
+                "The world's greatest concentration of ancient Roman landmarks and archaeological sites",
+                "Access to the Vatican City, home to the Sistine Chapel and St. Peter's Basilica",
+                "An incredible culinary scene that is the birthplace of Carbonara, Amatriciana, and world-class gelato"
+            ],
+            "topExperiences": [
+                "Take a guided tour of the Colosseum and the Roman Forum to stand in the heart of the ancient empire",
+                "Throw a coin into the Trevi Fountain and wander through the narrow streets of the historic center",
+                "Spend a morning in the Vatican Museums to see the absolute pinnacle of Renaissance art"
+            ],
+            "travelTips": [
+                "Rome is a major walking city; wear your most comfortable shoes with good grip for the cobblestones",
+                "Avoid the restaurants right next to major landmarks; head toward Trastevere or Testaccio for authentic Roman soul food",
+                "Book your tickets for the Colosseum and Vatican Museums weeks in advance—they literally sell out every day"
+            ]
+        },
+        "osaka": {
+            "name": "Osaka",
+            "country": "japan",
+            "heroTitle": "Osaka: The Nation's Kitchen",
+            "heroDescription": "Osaka is a bold, high-energy metropolis of neon, street food, and irrepressible humor. Known as the 'Nation's Kitchen,' it is a city that lives to eat, where the mantra is 'kuidaore'—to eat yourself to ruin. From the neon-drenched Dotonbori canal to the historic heights of Osaka Castle and the futuristic Umeda Sky Building, it is a city of extremes. Osaka is a place of loud laughs, vibrant nightlife, and a welcoming, down-to-earth energy that makes it one of the most approachable and exciting cities in Japan.",
+            "bestTimeToVisit": "Late March to early April for the cherry blossoms at Osaka Castle Park, or October to November for mild weather.",
+            "whyVisit": [
+                "The undisputed capital of Japanese street food, famous for Takoyaki, Okonomiyaki, and Kushikatsu",
+                "A vibrant and energetic nightlife scene centered around the neon-lit Dotonbori and Namba districts",
+                "Home to Universal Studios Japan and one of the world's most impressive aquariums, the Kaiyukan"
+            ],
+            "topExperiences": [
+                "Walk through Dotonbori at night to see the Glico Man neon sign and try as much street food as possible",
+                "Explore the grounds of Osaka Castle and climb to the top for a panoramic view of the city",
+                "Spend a day in the Shinsekai district for a nostalgic look at mid-20th-century urban Japan"
+            ],
+            "travelTips": [
+                "Osaka is the perfect base for exploring the Kansai region; Kyoto, Nara, and Kobe are all under an hour away by train",
+                "The Osaka Amazing Pass offers unlimited transport and free entry to over 40 attractions for a fixed price",
+                "People in Osaka are famously more outgoing and talkative than in Tokyo; don't be afraid to strike up a conversation"
             ]
         }
     }

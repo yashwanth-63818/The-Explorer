@@ -57,7 +57,20 @@ export default async function CountryPage({ params }) {
 
     try {
         const data = await getDynamicDestinationData(countryName);
-        if (!data) throw new Error("No data found");
+
+        if (!data) {
+            return (
+                <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center p-8 pt-[var(--nav-height)]">
+                    <div className="text-center max-w-2xl bg-[#151515] p-16 rounded-3xl border border-white/5 shadow-2xl">
+                        <h1 className="text-4xl font-black text-white mb-6 uppercase tracking-widest">Discovery in Progress</h1>
+                        <p className="text-gray-400 mb-8 italic">We're gathering the most editorial content for {countryName}.</p>
+                        <Link href="/" className="inline-flex items-center gap-4 px-10 py-4 bg-white text-black font-black uppercase tracking-widest text-[10px] rounded-full hover:bg-[#FFD700] transition-all">
+                            BACK TO BASE <ArrowRight size={16} />
+                        </Link>
+                    </div>
+                </div>
+            );
+        }
 
         const { name, facts, images, content } = data;
 

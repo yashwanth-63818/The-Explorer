@@ -45,35 +45,42 @@ export default async function CityDetailPage({ params }) {
     return (
         <main className="bg-[#0f0f0f] min-h-screen text-gray-200 font-inter selection:bg-[#FFD700] selection:text-black scroll-smooth">
             {/* 1. CINEMATIC HERO SECTION */}
-            <section className="relative h-[85vh] min-h-[600px] flex flex-col items-center justify-start overflow-hidden pt-[var(--nav-height)]">
+            <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-[var(--nav-height)] pb-24">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <SafeImage
-                        src={`https://images.unsplash.com/photo-1540959733332-e94e270b2d42?q=80&w=2000`} // Default to a city-looking image, service will handle fallbacks
+                        src={`https://images.unsplash.com/photo-1540959733332-e94e270b2d42?q=80&w=2000`}
                         alt={cityData.name}
                         fill
                         priority
-                        className="object-cover scale-100 brightness-[0.4] transition-all duration-1000"
+                        className="object-cover scale-100 brightness-[0.45] transition-all duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-[#0f0f0f]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/10 to-[#0f0f0f]"></div>
                 </div>
 
                 {/* Content Container */}
-                <div className="relative z-10 container mx-auto px-4 text-center mt-20 md:mt-32">
+                <div className="relative z-10 container mx-auto px-4 text-center">
                     {/* Breadcrumbs */}
-                    <nav className="flex justify-center items-center gap-3 text-[11px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-8 font-inter opacity-80">
+                    <nav className="flex justify-center items-center gap-3 text-[11px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-6 font-inter opacity-80">
                         <Link href={`/destinations/${slug}`} className="hover:text-white transition-colors">{countryData?.name || slug}</Link>
                         <span className="text-white/20 select-none">/</span>
                         <span className="text-white cursor-default">Destinations</span>
                     </nav>
 
-                    {/* City Title */}
-                    <h1 className="text-[clamp(3.5rem,12vw,10rem)] font-black uppercase tracking-tighter leading-[0.8] mb-12 text-white font-inter drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+                    {/* City Title - Matching Country serif style */}
+                    <h1 className="text-[clamp(4.5rem,15vw,13rem)] font-black uppercase tracking-tighter leading-[0.8] mb-12 text-white font-serif drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)] selection:bg-[#FFD700] selection:text-black">
                         {cityData.name}
                     </h1>
 
                     {/* Editorial Description */}
-                    <p className="max-w-3xl mx-auto font-medium text-white/90 text-lg md:text-xl leading-[1.8] italic px-6 drop-shadow-lg">
+                    <p
+                        className="max-w-4xl mx-auto font-medium text-white/90 px-6 italic"
+                        style={{
+                            fontSize: 'clamp(1rem, 1.4vw, 1.25rem)',
+                            lineHeight: '1.8',
+                            textShadow: '0 2px 15px rgba(0,0,0,0.6)'
+                        }}
+                    >
                         {cityData.heroDescription}
                     </p>
                 </div>

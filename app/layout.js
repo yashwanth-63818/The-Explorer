@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} ${baskerville.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${baskerville.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased bg-white text-gray-900 min-h-screen relative">
         <Navbar />
         <main>
