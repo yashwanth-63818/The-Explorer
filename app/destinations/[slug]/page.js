@@ -12,25 +12,27 @@ import {
     Compass,
     Ticket,
     Shield,
+    Smartphone,
     Play,
     Clock,
     User
 } from "lucide-react";
 import Link from "next/link";
-import SafeImage from "@/components/SafeImage";
 import CountryHero from "@/components/CountryHero";
-import { EXTERNAL_PARTNERS, getPartnerRedirectUrl } from "@/lib/navigationService";
+
+import SafeImage from "@/components/SafeImage";
 
 export async function generateStaticParams() {
-    const editorialPath = path.join(process.cwd(), "data", "stored", "countries-editorial.json");
+    const editorialPath = path.join(process.cwd(), "data", "stored", "countries-and-cities-editorial.json");
     try {
         const content = await fs.readFile(editorialPath, "utf-8");
-        const allEditorial = JSON.parse(content);
-        return Object.keys(allEditorial).map((slug) => ({
+        const allData = JSON.parse(content);
+        const countries = allData.countries || {};
+        return Object.keys(countries).map((slug) => ({
             slug: slug,
         }));
     } catch (err) {
-        console.warn("[Build] Failed to read countries-editorial.json for static generation.");
+        console.warn("[Build] Failed to read editorial.json for static generation.");
         return [];
     }
 }
@@ -72,206 +74,148 @@ export default async function CountryPage({ params }) {
             );
         }
 
-        const { name, facts, images, content } = data;
-
-        const getPostSlug = (cityName) => {
-            const cityPart = cityName.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]/g, '');
-            const countryPart = name.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]/g, '');
-            return `${cityPart}-${countryPart}-travel-guide`;
-        };
+        const { name, facts, content } = data;
 
         const utilityButtons = [
-            { label: `Find Cheap Flights To ${name}`, icon: Plane, sub: EXTERNAL_PARTNERS.SKYSCANNER },
-            { label: `Find Hotels In ${name}`, icon: Bed, sub: EXTERNAL_PARTNERS.BOOKING },
-            { label: `Find Buses In ${name}`, icon: Bus, sub: EXTERNAL_PARTNERS.OMIO },
-            { label: `Find Trains In ${name}`, icon: Train, sub: EXTERNAL_PARTNERS.OMIO },
-            { label: `Rent A Car In ${name}`, icon: Car, sub: EXTERNAL_PARTNERS.DISCOVERCARS },
-            { label: `Find Things To Do In ${name}`, icon: Compass, sub: EXTERNAL_PARTNERS.VIATOR },
-            { label: `Find Ticket Deals In ${name}`, icon: Ticket, sub: EXTERNAL_PARTNERS.GETYOURGUIDE },
-            { label: `Find Travel Insurance For ${name}`, icon: Shield, sub: EXTERNAL_PARTNERS.HEYMONDO },
+            { label: "Find Cheap Flights", icon: Plane, href: "/planning/find-cheap-flights" },
+            { label: "Find Hotels", icon: Bed, href: "/planning/find-hotels" },
+            { label: "Find Buses", icon: Bus, href: "/planning/find-buses" },
+            { label: "Find Trains", icon: Train, href: "/planning/find-trains" },
+            { label: "Rent a Car", icon: Car, href: "/planning/rent-a-car" },
+            { label: "Find Things To Do", icon: Compass, href: "/planning/things-to-do" },
+            { label: "Travel Insurance", icon: Shield, href: "/planning/travel-insurance" },
+            { label: "SIM Cards", icon: Smartphone, href: "/planning/sim-cards" },
+        ];
+
+        const itineraries = [
+            { title: `Ultimate 2-Week ${name} Itinerary`, desc: `A complete journey through the most iconic highlights of ${name}, from bustling cities to serene landscapes.` },
+            { title: `${name} Off The Beaten Path`, desc: "Discover hidden gems and local secrets away from the tourist crowds in this unique adventure." },
+            { title: `Best of ${name} in 10 Days`, desc: "The perfect balance of culture, history, and nature for travelers with limited time." },
+        ];
+
+        const recentPosts = [
+            { title: `10 Things I Wish I Knew Before Visiting ${name}`, author: "The Explorer", date: "Jan 2026" },
+            { title: `Budget Travel Guide: How to see ${name} on $50 a day`, author: "The Explorer", date: "Jan 2026" },
+            { title: `Is it safe to travel to ${name} right now?`, author: "The Explorer", date: "Dec 2025" },
         ];
 
         return (
-            <main className="bg-[#0f0f0f] min-h-screen text-gray-200 selection:bg-[#FFD700] selection:text-black font-inter scroll-smooth">
-                {/* A. HERO SECTION */}
+            <main className="bg-[#0b0b0b] min-h-screen text-gray-200 selection:bg-[#FFD700] selection:text-black font-inter scroll-smooth">
+                {/* 1 & 2. BREADCRUMB + COUNTRY HERO SECTION */}
                 <CountryHero
                     name={name}
                     facts={facts}
                     intro={content.intro}
-                    isCity={false}
+                    scrollId="places-to-visit"
                 />
 
-                {/* B. PLACES TO VISIT SECTION - Bucketlistly Styled */}
-                <section id="places-to-visit" className="bg-[#0f0f0f] border-y border-white/5 py-12 relative overflow-hidden">
-                    <div className="container mx-auto px-4">
-                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
-                            <div>
-                                <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-2">Places to Visit</h2>
-                                <p className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight">The Best of {name}</p>
-                            </div>
-                            <div className="flex items-center gap-4 text-[10px] font-bold text-white/30 uppercase tracking-widest hidden md:flex">
-                                <span>Swipe to explore</span>
-                                <ArrowRight size={14} className="animate-pulse" />
+                {/* 3. PLACES TO VISIT */}
+                <section id="places-to-visit" className="py-24 bg-[#0f0f0f] border-y border-white/5">
+                    <div className="container mx-auto px-4 max-w-6xl">
+                        <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-12 text-center">Places to Visit</h2>
+
+                        {/* Popular Places */}
+                        <div className="mb-20">
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-8 flex items-center gap-4">
+                                <span className="w-8 h-px bg-white/10"></span>
+                                Popular Places
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                                {content.bestPlaces.popular.map((place, i) => (
+                                    <Link
+                                        key={i}
+                                        href={`/destinations/${slug}/${place.slug}`}
+                                        className="group p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-[#FFD700] hover:text-black hover:border-[#FFD700] transition-all duration-500 text-center"
+                                    >
+                                        <div className="text-[13px] font-black uppercase tracking-wider">{place.city}</div>
+                                    </Link>
+                                ))}
                             </div>
                         </div>
 
-                        {/* Pills Container - Scrollable on mobile, wrapped on desktop */}
-                        <div className="flex flex-nowrap md:flex-wrap gap-4 overflow-x-auto md:overflow-x-visible pb-8 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
-                            {content.bestPlaces.map((place, i) => (
+                        {/* Underrated Places */}
+                        <div>
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-8 flex items-center gap-4">
+                                <span className="w-8 h-px bg-white/10"></span>
+                                Underrated Places
+                            </h3>
+                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                                {content.bestPlaces.underrated.map((place, i) => (
+                                    <Link
+                                        key={i}
+                                        href={`/destinations/${slug}/${place.slug}`}
+                                        className="group p-6 bg-white/[0.02] border border-white/5 rounded-xl hover:bg-white/10 transition-all text-center"
+                                    >
+                                        <div className="text-[12px] font-bold text-white/60 group-hover:text-white transition-colors">{place.city}</div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* 4. ITINERARIES */}
+                <section className="py-24 bg-[#0b0b0b]">
+                    <div className="container mx-auto px-4 max-w-6xl">
+                        <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-12 text-center">Itineraries</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            {itineraries.map((it, i) => (
+                                <div key={i} className="group p-10 bg-[#121212] border border-white/5 rounded-3xl hover:border-white/20 transition-all cursor-default">
+                                    <h3 className="text-xl font-black text-white mb-4 group-hover:text-[#FFD700] transition-colors uppercase tracking-tight leading-tight">{it.title}</h3>
+                                    <p className="text-gray-500 text-sm leading-relaxed">{it.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* 5. PLAN YOUR TRIP */}
+                <section className="py-24 bg-[#0f0f0f] border-y border-white/5">
+                    <div className="container mx-auto px-4 max-w-6xl">
+                        <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-12 text-center">Plan Your Trip</h2>
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                            {utilityButtons.map((btn, i) => (
                                 <Link
                                     key={i}
-                                    href={`/destinations/${slug}/${place.slug}`}
-                                    className="flex-shrink-0 px-8 py-4 bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl text-[12px] font-black uppercase tracking-[0.2em] text-white/80 hover:bg-[#FFD700] hover:text-black hover:border-[#FFD700] transition-all duration-500 hover:-translate-y-2 shadow-[0_10px_30px_rgba(0,0,0,0.3)] flex items-center gap-4 group"
+                                    href={btn.href}
+                                    className="flex flex-col items-center gap-4 p-8 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-white/[0.05] transition-all group"
                                 >
-                                    <span className="text-[10px] text-[#FFD700] group-hover:text-black/40 transition-colors">0{i + 1}</span>
-                                    {place.city}
-                                    <ArrowRight size={14} className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-black" />
+                                    <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#FFD700] group-hover:bg-[#FFD700]/10 transition-all">
+                                        <btn.icon size={20} className="text-white/30 group-hover:text-[#FFD700]" />
+                                    </div>
+                                    <span className="text-[10px] font-black text-white/50 uppercase tracking-[0.2em] group-hover:text-white transition-colors">{btn.label}</span>
                                 </Link>
                             ))}
                         </div>
                     </div>
-
-                    {/* Faded Background Text */}
-                    <div className="absolute -bottom-10 -right-20 text-[15vw] font-black text-white/[0.02] uppercase select-none pointer-events-none tracking-tighter overflow-hidden">
-                        {name}
-                    </div>
                 </section>
 
-                {/* B. UTILITY CARDS GRID */}
-                <section id="utility-cards" className="py-20 bg-[#0c0c0c] border-b border-white/5">
-                    <div className="container mx-auto px-4">
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-                            {utilityButtons.map((btn, i) => (
-                                <a
-                                    key={i}
-                                    href={getPartnerRedirectUrl(btn.sub, { countryName: name })}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex flex-col sm:flex-row items-center gap-4 p-6 bg-[#18181b] rounded-xl border border-white/5 hover:border-white/30 transition-all group hover:bg-[#1c1c21] hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:-translate-y-1"
-                                >
-                                    <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#FFD700] group-hover:bg-[#FFD700]/5 transition-all">
-                                        <btn.icon size={20} className="text-white/40 group-hover:text-[#FFD700]" />
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <span className="text-[10px] font-black text-white/90 uppercase tracking-[0.2em] group-hover:text-white">{btn.label}</span>
-                                        <span className="text-[9px] font-bold text-white/30 uppercase tracking-widest mt-1">via {btn.sub}</span>
-                                    </div>
-                                </a>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* C. FEATURED GUIDES GRID */}
-                <section className="py-32 container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                        {content.blogPosts.map((post, i) => (
-                            <Link key={i} href={`/posts/${post.slug || getPostSlug(name)}`} className="group flex flex-col no-underline">
-                                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6 shadow-xl">
-                                    <SafeImage
-                                        src={images[Math.min(i + 2, images.length - 1)]?.url || images[0]?.url}
-                                        alt={post.title}
-                                        fill
-                                        className="object-cover transition-all duration-1000 group-hover:scale-105 brightness-[0.7] group-hover:brightness-[0.9]"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                                    <div className="absolute inset-x-0 bottom-0 p-10">
-                                        <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[#FFD700] mb-3 block">
-                                            {name}
-                                        </span>
-                                        <h3 className="text-2xl font-black text-white leading-[1.2] font-inter group-hover:text-[#FFD700] transition-colors">
-                                            {post.title}
-                                        </h3>
-                                        <div className="flex items-center gap-4 mt-6 text-[9px] text-white/40 font-black uppercase tracking-widest">
-                                            <span>By {post.author}</span>
-                                            <span className="w-1 h-1 bg-white/10 rounded-full"></span>
-                                            <span>{post.date}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                </section>
-
-                {/* D. VIDEO SECTION */}
-                <section className="bg-black py-32 overflow-hidden border-y border-white/5">
-                    <div className="container mx-auto px-4">
-                        <div className="text-center mb-16">
-                            <span className="text-[12px] font-black uppercase tracking-[0.6em] text-white/40 mb-4 block">VIDEOS</span>
-                        </div>
-                        <div className="max-w-6xl mx-auto aspect-video rounded-3xl overflow-hidden relative group shadow-2xl">
-                            <SafeImage
-                                src={images[Math.min(images.length - 1, 5)]?.url || heroImage}
-                                fill
-                                alt="Video Preview"
-                                className="object-cover brightness-[0.5] transition-all duration-1000 group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-                                <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur-3xl border border-white/20 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform mb-8 group-hover:bg-[#FFD700] group-hover:border-[#FFD700]">
-                                    <Play size={32} fill="white" className="ml-1 group-hover:fill-black group-hover:text-black transition-colors" />
-                                </div>
-                                <span className="text-[12px] font-black uppercase tracking-[0.5em] text-white/60 mb-4">A TRAVEL VIDEO</span>
-                                <h3 className="text-5xl md:text-8xl font-black uppercase tracking-widest text-white font-serif italic">
-                                    IMAGINE {name}
-                                </h3>
-                            </div>
-                            <div className="absolute bottom-6 right-8 text-[10px] font-bold text-white/50 tracking-widest">03:42</div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* E. LONG-FORM TRAVEL CONTENT */}
-                <section id="guide-content" className="py-32 container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row gap-20">
-                        {/* Sticky TOC */}
-                        <aside className="lg:w-1/4 hidden lg:block">
-                            <div className="sticky top-32 space-y-8">
-                                <h4 className="text-[11px] font-black uppercase tracking-[0.3em] text-white/30 border-b border-white/10 pb-4">
-                                    TABLE OF CONTENTS
-                                </h4>
-                                <nav className="flex flex-col gap-6">
-                                    {Object.keys(content.sections).map((key) => (
-                                        <a
-                                            key={key}
-                                            href={`#${key}`}
-                                            className="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors"
-                                        >
-                                            {key.replace(/([A-Z])/g, ' $1').trim()}
-                                        </a>
-                                    ))}
-                                </nav>
-                            </div>
-                        </aside>
-
-                        {/* Content Sections */}
-                        <div className="lg:w-3/4 max-w-3xl">
-                            {Object.entries(content.sections).map(([key, value], idx) => (
-                                <div key={key} id={key} className="mb-32 last:mb-0 scroll-mt-32">
-                                    <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-16 font-inter leading-[1.1]">
-                                        {key === "bestTime" ? `When To Visit ${name}?` :
-                                            key === "transport" ? `How To Get Around ${name}?` :
-                                                key === "budget" ? "Daily Budget" :
-                                                    key === "stay" ? "Where To Stay" : key.replace(/([A-Z])/g, ' $1').trim()}
-                                    </h2>
-
-                                    {/* Section Image */}
-                                    <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12 shadow-2xl">
-                                        <SafeImage
-                                            src={images[Math.min(idx + 3, images.length - 1)]?.url || images[1]?.url}
-                                            alt={key}
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-
-                                    <div className="text-lg md:text-xl text-white/80 font-inter leading-[1.8] space-y-8">
-                                        {value.split('\n\n').map((p, i) => (
-                                            <p key={i}>{p}</p>
-                                        ))}
+                {/* 6. RECENT POSTS */}
+                <section className="py-24 bg-[#0b0b0b]">
+                    <div className="container mx-auto px-4 max-w-6xl">
+                        <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-12 text-center">Recent Posts About {name}</h2>
+                        <div className="space-y-6">
+                            {recentPosts.map((post, i) => (
+                                <div key={i} className="flex flex-col md:flex-row md:items-center justify-between p-8 bg-white/[0.02] border-b border-white/5 hover:bg-white/[0.03] transition-all group cursor-default">
+                                    <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors">{post.title}</h3>
+                                    <div className="flex items-center gap-6 mt-4 md:mt-0 text-[10px] font-black uppercase tracking-[0.2em] text-white/20">
+                                        <span>BY {post.author}</span>
+                                        <span>{post.date}</span>
                                     </div>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* 7. NEWSLETTER CTA (Optional) */}
+                <section className="py-32 bg-[#FFD700]">
+                    <div className="container mx-auto px-4 max-w-4xl text-center">
+                        <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter mb-8 italic">Never miss an adventure.</h2>
+                        <p className="text-black/60 font-medium mb-10 uppercase tracking-widest text-sm">Join 50,000+ travelers getting our monthly editorial guide.</p>
+                        <div className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                            <input type="email" placeholder="YOUR EMAIL" className="flex-1 px-8 py-4 bg-black/5 border-2 border-black/10 rounded-full text-black placeholder:text-black/30 font-bold focus:outline-none focus:border-black transition-colors" />
+                            <button className="px-10 py-4 bg-black text-white font-black uppercase tracking-widest rounded-full hover:bg-black/80 transition-all">Join</button>
                         </div>
                     </div>
                 </section>

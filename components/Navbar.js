@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Search, Menu, X, ChevronDown, ChevronRight, Flag, Instagram, Youtube, Twitter, Plane, Bed, Home, Bus, Train, Car, Compass, Ticket, Shield, Smartphone, Lock } from "lucide-react";
+import { Search, Menu, X, ChevronDown, ChevronRight, Instagram, Youtube, Twitter, Plane, Bed, Home, Bus, Train, Car, Compass, Ticket, Shield, Smartphone, Lock } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import DestinationsMegaMenu from "./DestinationsMegaMenu";
@@ -104,8 +104,8 @@ export default function Navbar() {
                     <div className="flex items-center justify-between h-20">
                         {/* Logo Section */}
                         <Link href="/" onClick={() => { setActiveMenu(null); setIsOpen(false); }} className="flex items-center gap-3 group shrink-0">
-                            <div className="w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-[#ffed4a] transition-colors shadow-[0_0_15px_rgba(255,215,0,0.3)]">
-                                <Flag size={20} className="text-black fill-black" />
+                            <div className="w-14 h-14 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-105">
+                                <img src="/logo.png" alt="The Explorer Logo" className="w-full h-full object-cover rounded-full border-2 border-[#FFD700] shadow-[0_0_20px_rgba(255,215,0,0.3)]" />
                             </div>
                             <span className="text-xl font-bold text-white tracking-tight italic font-serif hidden sm:block">The Explorer</span>
                         </Link>
