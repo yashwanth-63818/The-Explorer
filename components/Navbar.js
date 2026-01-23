@@ -1,15 +1,19 @@
 "use client";
 import Link from "next/link";
-import { Search, Menu, X, ChevronDown, Flag, Instagram, Youtube, Twitter, Plane, Bed, Home, Bus, Train, Car, Compass, Ticket, Shield, Smartphone, Lock } from "lucide-react";
+import { Search, Menu, X, ChevronDown, ChevronRight, Flag, Instagram, Youtube, Twitter, Plane, Bed, Home, Bus, Train, Car, Compass, Ticket, Shield, Smartphone, Lock } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import DestinationsMegaMenu from "./DestinationsMegaMenu";
+import { ALL_DESTINATIONS } from "../lib/destinationList";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [activeMenu, setActiveMenu] = useState(null);
+    const [searchQuery, setSearchQuery] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
     const pathname = usePathname();
+    const router = useRouter();
 
     // Close menus on route change
     useEffect(() => {
@@ -43,11 +47,17 @@ export default function Navbar() {
                 setActiveMenu(null);
                 setIsOpen(false);
             }
+            if (e.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
+                e.preventDefault();
+                document.getElementById("nav-search")?.focus();
+            }
         };
 
         const handleClickOutside = (e) => {
             if (!e.target.closest("header")) {
                 setActiveMenu(null);
+                setSearchResults([]);
+                setSearchQuery("");
             }
         };
 
@@ -58,6 +68,18 @@ export default function Navbar() {
             window.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
+
+    const handleSearch = (query) => {
+        setSearchQuery(query);
+        if (query.trim().length > 1) {
+            const filtered = ALL_DESTINATIONS.filter(d =>
+                d.name.toLowerCase().includes(query.toLowerCase())
+            ).slice(0, 8);
+            setSearchResults(filtered);
+        } else {
+            setSearchResults([]);
+        }
+    };
 
     const navItems = [
         { name: "Destinations", href: "/destinations", hasDropdown: true },
@@ -81,12 +103,65 @@ export default function Navbar() {
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="flex items-center justify-between h-20">
                         {/* Logo Section */}
-                        <Link href="/" onClick={() => { setActiveMenu(null); setIsOpen(false); }} className="flex items-center gap-3 group">
-                            <div className="w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-[#ffed4a] transition-colors">
+                        <Link href="/" onClick={() => { setActiveMenu(null); setIsOpen(false); }} className="flex items-center gap-3 group shrink-0">
+                            <div className="w-10 h-10 bg-[#FFD700] rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-[#ffed4a] transition-colors shadow-[0_0_15px_rgba(255,215,0,0.3)]">
                                 <Flag size={20} className="text-black fill-black" />
                             </div>
-                            <span className="text-xl font-bold text-white tracking-tight italic font-serif">The Explorer</span>
+                            <span className="text-xl font-bold text-white tracking-tight italic font-serif hidden sm:block">The Explorer</span>
                         </Link>
+
+                        {/* Search Box - Center */}
+                        <div className="hidden md:flex items-center flex-1 max-w-sm mx-auto relative group px-6">
+                            <div className="relative w-full">
+                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <Search size={14} className="text-white/20 group-focus-within:text-[#FFD700] transition-colors" />
+                                </div>
+                                <input
+                                    id="nav-search"
+                                    type="text"
+                                    placeholder="Search destinations..."
+                                    value={searchQuery}
+                                    onChange={(e) => handleSearch(e.target.value)}
+                                    className="block w-full bg-white/5 border border-white/10 rounded-full py-2 pl-9 pr-10 text-[11px] font-medium tracking-wider text-white placeholder-white/20 focus:outline-none focus:ring-1 focus:ring-[#FFD700] focus:border-[#FFD700] focus:bg-white/10 transition-all uppercase"
+                                />
+                                <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                    <span className="text-[9px] font-black text-white/20 border border-white/10 px-1.5 py-0.5 rounded-md bg-white/5 uppercase">/</span>
+                                </div>
+
+                                {/* Search Results Dropdown */}
+                                {searchResults.length > 0 && (
+                                    <div className="absolute top-full left-0 right-0 mt-3 bg-[#1e1e1e] border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                                        <div className="max-h-[320px] overflow-y-auto custom-scrollbar">
+                                            {searchResults.map((result) => (
+                                                <button
+                                                    key={result.name}
+                                                    onClick={() => {
+                                                        router.push(`/destinations/${result.name.toLowerCase().replace(/ /g, '-')}`);
+                                                        setSearchQuery("");
+                                                        setSearchResults([]);
+                                                    }}
+                                                    className="w-full flex items-center gap-4 px-5 py-3.5 hover:bg-white/5 transition-all group/item text-left border-b border-white/5 last:border-none"
+                                                >
+                                                    <img
+                                                        src={`https://flagcdn.com/w40/${result.code}.png`}
+                                                        alt={result.name}
+                                                        className="w-5 h-3.5 object-cover rounded-[2px] opacity-60 group-hover/item:opacity-100 transition-opacity"
+                                                    />
+                                                    <div className="flex flex-col">
+                                                        <span className="text-[12px] font-bold text-white/80 group-hover/item:text-[#FFD700] transition-colors">{result.name}</span>
+                                                        <span className="text-[9px] text-white/30 uppercase tracking-widest mt-0.5">Destination Guide</span>
+                                                    </div>
+                                                    <ChevronRight size={14} className="ml-auto text-white/10 group-hover/item:text-[#FFD700] group-hover/item:translate-x-1 transition-all" />
+                                                </button>
+                                            ))}
+                                        </div>
+                                        <div className="bg-black/20 px-5 py-2 border-t border-white/5">
+                                            <span className="text-[9px] text-white/20 uppercase font-black tracking-widest">Showing {searchResults.length} results</span>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
 
                         {/* Social Icons */}
                         <div className="hidden lg:flex items-center gap-8">
