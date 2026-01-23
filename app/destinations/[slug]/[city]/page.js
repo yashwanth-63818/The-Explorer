@@ -2,6 +2,7 @@ import { getCityData, getDynamicDestinationData } from "@/lib/destinationService
 import { ArrowLeft, ArrowRight, Clock, Calendar, Info, MapPin, Star, ShieldCheck, Plane, Bed, Compass, Ticket, Car, Bus, Train, Shield } from "lucide-react";
 import Link from "next/link";
 import SafeImage from "@/components/SafeImage";
+import CountryHero from "@/components/CountryHero";
 import { EXTERNAL_PARTNERS, getPartnerRedirectUrl } from "@/lib/navigationService";
 
 export async function generateMetadata({ params }) {
@@ -45,46 +46,16 @@ export default async function CityDetailPage({ params }) {
     return (
         <main className="bg-[#0f0f0f] min-h-screen text-gray-200 font-inter selection:bg-[#FFD700] selection:text-black scroll-smooth">
             {/* 1. CINEMATIC HERO SECTION */}
-            <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden pt-[var(--nav-height)] pb-24">
-                {/* Background Image */}
-                <div className="absolute inset-0 z-0">
-                    <SafeImage
-                        src={`https://images.unsplash.com/photo-1540959733332-e94e270b2d42?q=80&w=2000`}
-                        alt={cityData.name}
-                        fill
-                        priority
-                        className="object-cover scale-100 brightness-[0.45] transition-all duration-1000"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/10 to-[#0f0f0f]"></div>
-                </div>
+            <CountryHero
+                name={cityData.name}
+                facts={countryData?.facts || { region: "Destinations" }}
+                intro={cityData.heroDescription}
+                parentName={countryData?.name || slug}
+                parentSlug={`/destinations/${slug}`}
+                scrollId="why-visit"
+                isCity={true}
+            />
 
-                {/* Content Container */}
-                <div className="relative z-10 container mx-auto px-4 text-center">
-                    {/* Breadcrumbs */}
-                    <nav className="flex justify-center items-center gap-3 text-[11px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-6 font-inter opacity-80">
-                        <Link href={`/destinations/${slug}`} className="hover:text-white transition-colors">{countryData?.name || slug}</Link>
-                        <span className="text-white/20 select-none">/</span>
-                        <span className="text-white cursor-default">Destinations</span>
-                    </nav>
-
-                    {/* City Title - Matching Country serif style */}
-                    <h1 className="text-[clamp(4.5rem,15vw,13rem)] font-black uppercase tracking-tighter leading-[0.8] mb-12 text-white font-serif drop-shadow-[0_20px_50px_rgba(0,0,0,0.8)] selection:bg-[#FFD700] selection:text-black">
-                        {cityData.name}
-                    </h1>
-
-                    {/* Editorial Description */}
-                    <p
-                        className="max-w-4xl mx-auto font-medium text-white/90 px-6 italic"
-                        style={{
-                            fontSize: 'clamp(1rem, 1.4vw, 1.25rem)',
-                            lineHeight: '1.8',
-                            textShadow: '0 2px 15px rgba(0,0,0,0.6)'
-                        }}
-                    >
-                        {cityData.heroDescription}
-                    </p>
-                </div>
-            </section>
 
             {/* 2. OVERVIEW STRIP */}
             <section className="border-y border-white/5 bg-white/[0.02] py-10 relative z-20 -mt-px shadow-2xl">

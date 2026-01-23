@@ -74,11 +74,6 @@ export default async function CountryPage({ params }) {
 
         const { name, facts, images, content } = data;
 
-        // Pick a random image from the first 3 Unsplash results for variety, or fallback
-        const heroImage = images.length > 0
-            ? images[Math.floor(Math.random() * Math.min(images.length, 3))]?.url
-            : "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800";
-
         const getPostSlug = (cityName) => {
             const cityPart = cityName.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]/g, '');
             const countryPart = name.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]/g, '');
@@ -102,8 +97,8 @@ export default async function CountryPage({ params }) {
                 <CountryHero
                     name={name}
                     facts={facts}
-                    heroImage={heroImage}
                     intro={content.intro}
+                    isCity={false}
                 />
 
                 {/* B. PLACES TO VISIT SECTION - Bucketlistly Styled */}
