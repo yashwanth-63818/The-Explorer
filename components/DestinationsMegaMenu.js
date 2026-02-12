@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import SafeImage from "./SafeImage";
 
 // COMPLETE list of countries/territories by Continent
 // codes from https://flagcdn.com/en/codes.json
@@ -145,11 +146,13 @@ export default function DestinationsMegaMenu({ onClose }) {
                                 onClick={onClose}
                                 className="flex items-center gap-2.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FFD700] px-3 py-1.5 rounded-md transition-all group"
                             >
-                                <img
+                                <SafeImage
                                     src={`https://flagcdn.com/w40/${dest.code}.png`}
-                                    srcSet={`https://flagcdn.com/w80/${dest.code}.png 2x`}
                                     alt={`Flag of ${dest.name}`}
                                     className="w-5 h-3.5 object-cover rounded-[2px]"
+                                    width={20}
+                                    height={14}
+                                    fallbackSrc="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
                                 />
                                 <span className="text-sm font-medium text-gray-300 group-hover:text-white">{dest.name}</span>
                                 <div className="w-1.5 h-1.5 rounded-full bg-red-500 ml-1 opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -191,10 +194,13 @@ export default function DestinationsMegaMenu({ onClose }) {
                                     onClick={onClose}
                                     className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-[13px] font-medium group py-0.5 hover:pl-1 transition-all"
                                 >
-                                    <img
+                                    <SafeImage
                                         src={`https://flagcdn.com/w40/${country.code}.png`}
                                         alt={country.name}
                                         className="w-[20px] h-[14px] object-cover rounded-[2px] opacity-80 group-hover:opacity-100 transition-opacity shadow-sm"
+                                        width={20}
+                                        height={14}
+                                        fallbackSrc="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
                                     />
                                     {country.name}
                                 </Link>

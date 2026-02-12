@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Hero({
-    backgroundImage = "/images/premium-hero-dark.png",
+    backgroundImage = "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop",
     headline = "Nights Under the Alpine Stars",
     description = "Explore the quiet beauty of snow-drenched cities and frozen wonders across the Nordic and Alpine frontiers.",
     primaryCTA = { text: "Start Exploring", href: "/destinations" },
@@ -37,15 +37,22 @@ export default function Hero({
             >
                 <img
                     src={backgroundImage}
-                    alt="Scenic landscape at night"
-                    className="w-full h-full object-cover filter brightness-[0.8]"
+                    alt="Majestic Mountains"
+                    className="w-full h-full object-cover filter grayscale contrast-125 brightness-75"
                 />
 
-                {/* Refined Cinematic Overlay for perfect readability */}
+                {/* Theme-Correct Cinematic Overlay (Black & Yellow) */}
                 <div
                     className="absolute inset-0 z-10"
                     style={{
-                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.35), rgba(0,0,0,0.85))'
+                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(255,215,0,0.05), rgba(0,0,0,0.9))',
+                        mixBlendMode: 'multiply'
+                    }}
+                ></div>
+                <div
+                    className="absolute inset-0 z-10"
+                    style={{
+                        background: 'radial-gradient(circle at 30% 50%, rgba(255,215,0,0.1), transparent 70%)',
                     }}
                 ></div>
             </div>
