@@ -1,118 +1,147 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 
-// Precise SVG paths to mimic the real map outlines shown in the user's reference.
-// The "Thailand" shape includes a separate red dot element.
+/**
+ * Premium Country Card Grid
+ * Replaces the minimalist icon strip with high-impact visual cards.
+ * Updated to use confirmed editorial countries.
+ */
 
-const mapShapes = {
-    // Thailand: Long vertical shape with a "tail" and a "head"
-    thailand: (
-        <g transform="translate(4, 2) scale(0.8)">
-            <path d="M10,2 C12,0 16,3 15,6 C16,8 14,12 12,14 C12,18 9,23 9,23 C9,23 7,20 8,17 C9,14 11,12 10,10 C9,8 7,5 10,2 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-            {/* The signature Red Dot */}
-            <circle cx="18" cy="5" r="2.5" fill="#EF4444" stroke="none" className="animate-pulse" />
-        </g>
-    ),
-    // Italy: The "Boot" shape
-    italy: (
-        <g transform="translate(6, 2) scale(0.9)">
-            <path d="M4,2 C8,1 12,2 14,4 C15,6 14,9 13,11 C13,12 15,16 14,19 C13,21 11,21 11,21 L10,17 C10,17 9,14 8,12 C7,10 5,6 4,2 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-    // Iceland: Oval-ish island with bumpy coast
-    iceland: (
-        <g transform="translate(2, 6) scale(0.9)">
-            <path d="M2,6 C4,4 8,2 12,3 C16,4 18,5 19,8 C20,10 18,12 15,13 C12,14 8,14 5,12 C3,11 1,8 2,6 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-    // Albania: Long vertical strip
-    albania: (
-        <g transform="translate(8, 2) scale(0.9)">
-            <path d="M3,2 L7,2 C9,4 8,8 7,12 C6,16 5,19 4,20 L2,18 C3,15 4,12 3,8 L1,4 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-    // Southeast Asia: Complex archipelago cluster
-    "southeast-asia": (
-        <g transform="translate(2, 4) scale(0.8)">
-            <path d="M2,2 L6,4 L5,8 L2,6 Z M8,2 L12,3 L11,7 L7,6 Z M14,5 L18,6 L17,10 L13,9 Z M5,12 L10,13 L9,17 L4,16 Z M12,11 L16,12 L15,16 L11,15 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-    // Europe: Solid landmass block
-    europe: (
-        <g transform="translate(2, 4) scale(0.8)">
-            <path d="M2,14 L5,8 L10,6 L16,4 L20,8 L18,14 L12,18 L6,18 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-    // South America: Triangle pointing down
-    "south-america": (
-        <g transform="translate(6, 2) scale(0.9)">
-            <path d="M2,4 L8,2 L13,5 L11,14 L7,19 L3,10 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-    // Central Asia: Horizontal block
-    "central-asia": (
-        <g transform="translate(2, 6) scale(0.9)">
-            <path d="M2,6 L8,4 L14,4 L19,7 L16,12 L10,14 L4,12 Z" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-    ),
-};
-
-const destinations = [
-    { name: "Thailand", slug: "thailand" },
-    { name: "Italy", slug: "italy" },
-    { name: "Iceland", slug: "iceland" },
-    { name: "Albania", slug: "albania" },
-    { name: "Southeast Asia", slug: "southeast-asia" },
-    { name: "Europe", slug: "europe" },
-    { name: "South America", slug: "south-america" },
-    { name: "Central Asia", slug: "central-asia" },
+const featuredCountries = [
+    {
+        name: "Thailand",
+        slug: "thailand",
+        image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=1000&auto=format&fit=crop",
+        guides: "12 Guides",
+        tagline: "Tropical Paradise"
+    },
+    {
+        name: "Japan",
+        slug: "japan",
+        image: "https://images.unsplash.com/photo-1480796275477-9dc144b54701?q=80&w=1000&auto=format&fit=crop",
+        guides: "15 Guides",
+        tagline: "Land of the Rising Sun"
+    },
+    {
+        name: "Italy",
+        slug: "italy",
+        image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1000&auto=format&fit=crop",
+        guides: "18 Guides",
+        tagline: "The Eternal Beauty"
+    },
+    {
+        name: "China",
+        slug: "china",
+        image: "https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?q=80&w=1000&auto=format&fit=crop",
+        guides: "10 Guides",
+        tagline: "Empire of Dreams"
+    },
+    {
+        name: "Indonesia",
+        slug: "indonesia",
+        image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1000&auto=format&fit=crop",
+        guides: "14 Guides",
+        tagline: "Island of Gods"
+    },
+    {
+        name: "France",
+        slug: "france",
+        image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1000&auto=format&fit=crop",
+        guides: "16 Guides",
+        tagline: "Art of Living"
+    },
+    {
+        name: "Australia",
+        slug: "australia",
+        image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=1000&auto=format&fit=crop",
+        guides: "9 Guides",
+        tagline: "The Great Southern Land"
+    },
+    {
+        name: "Switzerland",
+        slug: "switzerland",
+        image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=1000&auto=format&fit=crop",
+        guides: "11 Guides",
+        tagline: "Alpine Serenity"
+    }
 ];
 
 export default function DestinationStrip() {
     return (
-        <section className="bg-[#18181b] pt-12 pb-20 border-b border-white/5 relative z-20">
-            {/* Background Texture matching the reference image's dark grey */}
+        <section className="bg-[#121212] py-24 relative overflow-hidden">
+            {/* Background Decorative Element */}
+            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
-            <div className="container mx-auto px-4 lg:px-8 text-center">
+            <div className="container mx-auto px-4 lg:px-8">
+                <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
+                    <div className="text-left">
+                        <h2 className="text-gray-400 text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-3">
+                            Destinations
+                        </h2>
+                        <h3 className="text-3xl md:text-5xl font-serif font-bold text-white tracking-tight">
+                            Where do you <span className="text-yellow-400 italic">want to go?</span>
+                        </h3>
+                    </div>
 
-                <h2 className="text-gray-400 text-[11px] md:text-xs font-bold tracking-[0.25em] uppercase mb-16 opacity-80">
-                    Where do you want to go?
-                </h2>
+                    <Link
+                        href="/destinations"
+                        className="group flex items-center gap-3 bg-white/5 hover:bg-white/10 py-3 px-6 rounded-full border border-white/10 transition-all duration-300"
+                    >
+                        <span className="text-white text-sm font-bold uppercase tracking-wider">Explore All</span>
+                        <div className="bg-yellow-400 p-1.5 rounded-full text-black transition-transform duration-300 group-hover:translate-x-1">
+                            <ArrowRight size={14} strokeWidth={3} />
+                        </div>
+                    </Link>
+                </div>
 
-                <div className="flex flex-wrap justify-center gap-x-12 gap-y-12">
-                    {/* Country Items */}
-                    {destinations.map((dest, i) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {featuredCountries.map((country) => (
                         <Link
-                            key={dest.slug}
-                            href={dest.slug.includes('asia') || dest.slug.includes('europe') || dest.slug.includes('america') ? `/region/${dest.slug}` : `/destinations/${dest.slug}`}
-                            className="group flex flex-col items-center gap-6"
+                            key={country.slug}
+                            href={`/destinations/${country.slug}`}
+                            className="group relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#1c1c1c] cursor-pointer"
                         >
-                            {/* Map Container */}
-                            <div className="w-16 h-12 flex items-center justify-center relative transition-transform duration-300 group-hover:-translate-y-1">
-                                <svg viewBox="0 0 24 24" className="w-full h-full text-gray-300 group-hover:text-white transition-colors duration-300 drop-shadow-lg">
-                                    {mapShapes[dest.slug] || <circle cx="12" cy="12" r="8" stroke="currentColor" fill="none" />}
-                                </svg>
+                            {/* Gradient Overlay for better text contrast */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-100" />
+
+                            {/* Main Image */}
+                            <img
+                                src={country.image}
+                                alt={country.name}
+                                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0 group-hover:rotate-1"
+                            />
+
+                            {/* Hover Border Glow */}
+                            <div className="absolute inset-0 border border-white/0 group-hover:border-yellow-400/30 rounded-2xl z-20 transition-all duration-500 pointer-events-none" />
+
+                            {/* Content Layout - All interactive elements inside Link */}
+                            <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end">
+                                <div className="flex items-center gap-2 mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100 delay-75">
+                                    <MapPin size={12} className="text-yellow-400" />
+                                    <span className="text-[10px] text-gray-300 font-bold uppercase tracking-widest leading-none">
+                                        {country.guides}
+                                    </span>
+                                </div>
+
+                                <h4 className="text-3xl font-serif font-bold text-white mb-1 group-hover:text-yellow-400 transition-colors duration-300">
+                                    {country.name}
+                                </h4>
+
+                                <p className="text-gray-400 text-xs font-medium translate-y-2 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100 delay-150">
+                                    {country.tagline}
+                                </p>
                             </div>
 
-                            {/* Label */}
-                            <span className="text-[10px] md:text-[11px] font-bold text-gray-400 uppercase tracking-[0.15em] group-hover:text-white transition-colors text-center w-24 leading-normal">
-                                {dest.name}
-                            </span>
+                            {/* Modern Decorative Accent */}
+                            <div className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 z-20">
+                                <ArrowRight size={18} className="text-white -rotate-45" />
+                            </div>
                         </Link>
                     ))}
-
-                    {/* Explore More Item */}
-                    <Link href="/destinations" className="group flex flex-col items-center gap-6 cursor-pointer ml-4">
-                        <div className="w-16 h-12 flex items-center justify-center relative transition-transform duration-300 group-hover:translate-x-1">
-                            <ArrowRight className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors opacity-80" strokeWidth={1.5} />
-                        </div>
-                        <span className="text-[10px] md:text-[11px] font-bold text-gray-400 uppercase tracking-[0.15em] group-hover:text-white transition-colors text-center w-24 leading-normal">
-                            Explore<br />More
-                        </span>
-                    </Link>
-
                 </div>
             </div>
         </section>
     );
 }
+
+
