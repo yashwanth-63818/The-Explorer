@@ -105,12 +105,12 @@ const continents = [
 ];
 
 const topDestinations = [
-    { name: "Thailand", code: "th" },
-    { name: "Indonesia", code: "id" },
-    { name: "Italy", code: "it" },
-    { name: "Albania", code: "al" },
-    { name: "Canada", code: "ca" },
-    { name: "Switzerland", code: "ch" },
+    { name: "Thailand", code: "th", image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=1000&auto=format&fit=crop" },
+    { name: "Indonesia", code: "id", image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1000&auto=format&fit=crop" },
+    { name: "Italy", code: "it", image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1000&auto=format&fit=crop" },
+    { name: "Albania", code: "al", image: "https://images.unsplash.com/photo-1580216643062-cf460548a66a?q=80&w=1000&auto=format&fit=crop" },
+    { name: "Canada", code: "ca", image: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1000&auto=format&fit=crop" },
+    { name: "Switzerland", code: "ch", image: "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=1000&auto=format&fit=crop" },
 ];
 
 export const metadata = {
@@ -148,21 +148,36 @@ export default function DestinationsPage() {
                             </div>
                             <h3 className="text-xl font-serif font-bold text-white uppercase tracking-wider">Top Destinations</h3>
                         </div>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
                             {topDestinations.map(dest => (
                                 <Link
                                     key={dest.name}
                                     href={`/destinations/${dest.name.toLowerCase().replace(/ /g, '-')}`}
-                                    className="flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-yellow-400/50 p-4 rounded-xl transition-all group"
+                                    className="group relative h-80 overflow-hidden rounded-3xl bg-white/5 border border-white/10 hover:border-yellow-400/50 transition-all duration-700 hover:-translate-y-2 shadow-2xl"
                                 >
-                                    <SafeImage
-                                        src={`https://flagcdn.com/w40/${dest.code}.png`}
-                                        alt={`Flag of ${dest.name}`}
-                                        className="w-6 h-4 object-cover rounded-[2px]"
-                                        width={24}
-                                        height={16}
-                                    />
-                                    <span className="text-sm font-bold text-gray-300 group-hover:text-white transition-colors">{dest.name}</span>
+                                    <div className="absolute inset-0">
+                                        <SafeImage
+                                            src={dest.image}
+                                            alt={dest.name}
+                                            fill
+                                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent group-hover:via-black/40 transition-all duration-500"></div>
+                                    </div>
+
+                                    <div className="absolute inset-x-0 bottom-0 p-6">
+                                        <div className="flex items-center gap-3 mb-2">
+                                            <SafeImage
+                                                src={`https://flagcdn.com/w40/${dest.code}.png`}
+                                                alt={`Flag of ${dest.name}`}
+                                                className="w-5 h-3.5 object-cover rounded-[2px] shadow-lg border border-white/20"
+                                                width={20}
+                                                height={14}
+                                            />
+                                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#FFD700]">Explore</span>
+                                        </div>
+                                        <h4 className="text-xl font-serif font-black text-white group-hover:text-yellow-400 transition-colors uppercase tracking-tight">{dest.name}</h4>
+                                    </div>
                                 </Link>
                             ))}
                         </div>

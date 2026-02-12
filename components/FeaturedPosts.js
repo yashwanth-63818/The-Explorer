@@ -28,11 +28,11 @@ const featuredPosts = [
 
 export default function FeaturedPosts() {
     return (
-        <section className="py-20 lg:py-28 bg-gray-50">
+        <section className="py-20 lg:py-28 bg-black">
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex justify-between items-end mb-12">
-                    <h2 className="text-4xl lg:text-5xl font-serif font-bold text-gray-900">Featured Stories</h2>
-                    <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-medium uppercase tracking-wide hover:gap-3 transition-all">
+                    <h2 className="text-4xl lg:text-5xl font-serif font-bold text-white">Featured Stories</h2>
+                    <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-medium uppercase tracking-wide hover:gap-3 transition-all text-white hover:text-yellow-400">
                         View All <ArrowRight size={16} />
                     </Link>
                 </div>

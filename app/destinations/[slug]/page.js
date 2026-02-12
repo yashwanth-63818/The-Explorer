@@ -62,7 +62,7 @@ export default async function CountryPage({ params }) {
 
         if (!data) {
             return (
-                <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center p-8 pt-[var(--nav-height)]">
+                <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center p-8 pt-[calc(var(--nav-height)+60px)]">
                     <div className="text-center max-w-2xl bg-[#151515] p-16 rounded-3xl border border-white/5 shadow-2xl">
                         <h1 className="text-4xl font-black text-white mb-6 uppercase tracking-widest">Discovery in Progress</h1>
                         <p className="text-gray-400 mb-8 italic">We're gathering the most editorial content for {countryName}.</p>
@@ -115,19 +115,47 @@ export default async function CountryPage({ params }) {
                         <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-12 text-center">Places to Visit</h2>
 
                         {/* Popular Places */}
-                        <div className="mb-20">
-                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-8 flex items-center gap-4">
-                                <span className="w-8 h-px bg-white/10"></span>
-                                Popular Places
+                        <div className="mb-24">
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-10 flex items-center gap-4">
+                                <span className="w-8 h-px bg-[#FFD700]"></span>
+                                Top Discoveries
                             </h3>
-                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                                 {content.bestPlaces.popular.map((place, i) => (
                                     <Link
                                         key={i}
                                         href={`/destinations/${slug}/${place.slug}`}
-                                        className="group p-6 bg-white/[0.02] border border-white/5 rounded-2xl hover:bg-[#FFD700] hover:text-black hover:border-[#FFD700] transition-all duration-500 text-center"
+                                        className="group relative aspect-[14/16] overflow-hidden rounded-[2rem] bg-black/40 border border-white/5 hover:border-[#FFD700]/30 transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)]"
                                     >
-                                        <div className="text-[13px] font-black uppercase tracking-wider">{place.city}</div>
+                                        {/* Image Background */}
+                                        <div className="absolute inset-0">
+                                            <SafeImage
+                                                src={place.image}
+                                                alt={place.city}
+                                                fill
+                                                className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent group-hover:via-black/40 transition-all duration-500"></div>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                                            <div className="flex items-center gap-3 mb-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+                                                <span className="w-6 h-px bg-[#FFD700]"></span>
+                                                <span className="text-[9px] font-black uppercase tracking-widest text-[#FFD700]">{place.category}</span>
+                                            </div>
+                                            <h4 className="text-3xl font-serif font-bold text-white mb-2 leading-tight">
+                                                {place.city}
+                                            </h4>
+                                            <p className="text-gray-400 text-xs font-medium translate-y-2 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
+                                                Click to scout this location
+                                            </p>
+                                        </div>
+
+                                        {/* Accent Overlay */}
+                                        <div className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                                            <ArrowRight size={18} className="text-[#FFD700] -rotate-45" />
+                                        </div>
                                     </Link>
                                 ))}
                             </div>
@@ -135,18 +163,34 @@ export default async function CountryPage({ params }) {
 
                         {/* Underrated Places */}
                         <div>
-                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-8 flex items-center gap-4">
+                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-10 flex items-center gap-4">
                                 <span className="w-8 h-px bg-white/10"></span>
-                                Underrated Places
+                                Hidden Gems
                             </h3>
-                            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                                 {content.bestPlaces.underrated.map((place, i) => (
                                     <Link
                                         key={i}
                                         href={`/destinations/${slug}/${place.slug}`}
-                                        className="group p-6 bg-white/[0.02] border border-white/5 rounded-xl hover:bg-white/10 transition-all text-center"
+                                        className="group relative aspect-video overflow-hidden rounded-3xl bg-black/40 border border-white/5 hover:border-white/20 transition-all"
                                     >
-                                        <div className="text-[12px] font-bold text-white/60 group-hover:text-white transition-colors">{place.city}</div>
+                                        {/* Small Image Background */}
+                                        <div className="absolute inset-0">
+                                            <SafeImage
+                                                src={place.image}
+                                                alt={place.city}
+                                                fill
+                                                className="w-full h-full object-cover brightness-75 group-hover:brightness-50 transition-all duration-700 group-hover:scale-105"
+                                            />
+                                            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
+                                        </div>
+
+                                        <div className="absolute inset-0 p-6 flex items-center justify-center text-center">
+                                            <div>
+                                                <p className="text-[8px] font-black uppercase tracking-widest text-[#FFD700] mb-2 scale-90 group-hover:scale-100 transition-transform">{place.category}</p>
+                                                <h4 className="text-xl font-serif font-black text-white group-hover:text-yellow-400 transition-colors">{place.city}</h4>
+                                            </div>
+                                        </div>
                                     </Link>
                                 ))}
                             </div>
@@ -225,7 +269,7 @@ export default async function CountryPage({ params }) {
     } catch (error) {
         console.error("Destination Page Error:", error);
         return (
-            <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center p-8 pt-[var(--nav-height)]">
+            <div className="min-h-screen bg-[#0f0f0f] flex items-center justify-center p-8 pt-[calc(var(--nav-height)+60px)]">
                 <div className="text-center max-w-2xl bg-[#151515] p-16 rounded-3xl border border-white/5 shadow-2xl">
                     <h1 className="text-4xl font-black text-white mb-6 uppercase tracking-widest">Discovery in Progress</h1>
                     <p className="text-gray-400 mb-8 italic">We're gathering the most editorial content for you.</p>

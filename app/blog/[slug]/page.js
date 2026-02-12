@@ -42,7 +42,7 @@ export default async function BlogPost({ params }) {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/40"></div>
-                <div className="absolute inset-0 flex flex-col justify-end pb-12 lg:pb-24 px-4 lg:px-8 container mx-auto">
+                <div className="absolute inset-0 flex flex-col justify-end pt-[calc(var(--nav-height)+100px)] pb-12 lg:pb-24 px-4 lg:px-8 container mx-auto">
                     <Link href="/" className="text-white/80 hover:text-white mb-6 flex items-center gap-2 text-sm uppercase tracking-widest font-medium transition-colors w-fit">
                         <ArrowLeft size={16} /> Back to Home
                     </Link>

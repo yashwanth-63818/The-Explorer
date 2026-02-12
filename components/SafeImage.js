@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 /**
@@ -22,25 +22,42 @@ export default function SafeImage({
 }) {
     const [imgSrc, setImgSrc] = useState(src);
     const [hasError, setHasError] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+
+    // Sync state if src changes (crucial for dynamic routes)
+    useEffect(() => {
+        setImgSrc(src);
+        setHasError(false);
+        setIsLoading(true);
+    }, [src]);
 
     const handleError = () => {
         if (!hasError) {
             setImgSrc(fallbackSrc);
             setHasError(true);
+            setIsLoading(false);
         }
     };
 
+    const finalSrc = imgSrc || fallbackSrc;
+
     // If fill is true, Next.js Image requires absolute positioning and doesn't want width/height
     const imageProps = fill
-        ? { fill, priority, quality, className, alt, ...props }
-        : { width, height, priority, quality, className, alt, ...props };
+        ? { fill, priority, quality, className: `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`, alt: alt || "", ...props }
+        : { width, height, priority, quality, className: `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`, alt: alt || "", ...props };
 
     return (
-        <Image
-            {...imageProps}
-            src={imgSrc || fallbackSrc}
-            onError={handleError}
-            unoptimized={imgSrc?.startsWith('http')} // Unsplash etc might need this if loader not configured
-        />
+        <div className={`relative ${fill ? 'w-full h-full' : ''} bg-white/[0.03] overflow-hidden`}>
+            {isLoading && (
+                <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-white/[0.02] via-white/[0.05] to-white/[0.02]"></div>
+            )}
+            <Image
+                {...imageProps}
+                src={finalSrc}
+                onError={handleError}
+                onLoad={() => setIsLoading(false)}
+                unoptimized={typeof finalSrc === 'string' && finalSrc.startsWith('http')}
+            />
+        </div>
     );
 }

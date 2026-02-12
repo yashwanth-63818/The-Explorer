@@ -32,9 +32,9 @@ const posts = [
 
 export default function LatestPosts() {
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-black">
             <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
-                <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-12 text-center">Latest from the Journal</h2>
+                <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-12 text-center text-white">Latest from the Journal</h2>
                 <div className="space-y-16">
                     {posts.map((post) => (
                         <article key={post.id} className="group grid grid-cols-1 md:grid-cols-2 gap-8 items-center cursor-pointer">
@@ -54,15 +54,15 @@ export default function LatestPosts() {
                                     <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
                                     <span>{post.readTime}</span>
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4 leading-tight group-hover:text-gray-600 transition-colors">
+                                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4 leading-tight text-white group-hover:text-yellow-400 transition-colors">
                                     <Link href={`/blog/${post.slug}`}>
                                         {post.title}
                                     </Link>
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed mb-6">
+                                <p className="text-gray-400 leading-relaxed mb-6">
                                     {post.excerpt}
                                 </p>
-                                <Link href={`/blog/${post.slug}`} className="text-sm font-bold uppercase tracking-wide border-b border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-all">
+                                <Link href={`/blog/${post.slug}`} className="text-sm font-bold uppercase tracking-wide border-b border-yellow-400 pb-1 text-white hover:text-yellow-400 hover:border-white transition-all">
                                     Read Article
                                 </Link>
                             </div>

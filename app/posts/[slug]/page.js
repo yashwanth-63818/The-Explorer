@@ -84,7 +84,7 @@ export default async function BlogPostPage({ params }) {
 
                     <div
                         className="relative z-10 container mx-auto px-4 text-center"
-                        style={{ paddingTop: 'var(--nav-height)' }}
+                        style={{ paddingTop: 'calc(var(--nav-height) + 100px)' }}
                     >
                         <nav className="flex justify-center items-center gap-2 text-[10px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-10">
                             <Link href="/" className="hover:text-white transition-colors">Explorer</Link>

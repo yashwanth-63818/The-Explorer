@@ -68,7 +68,7 @@ const featuredCountries = [
 
 export default function DestinationStrip() {
     return (
-        <section className="bg-[#121212] py-24 relative overflow-hidden">
+        <section className="bg-black py-24 relative overflow-hidden">
             {/* Background Decorative Element */}
             <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 

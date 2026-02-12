@@ -27,7 +27,7 @@ export default function Hero({
     }, []);
 
     return (
-        <section className="relative h-screen min-h-[850px] flex items-center overflow-hidden bg-black pt-[var(--nav-height)] md:pt-[calc(var(--nav-height)+40px)]">
+        <section className="relative h-screen min-h-[850px] flex items-center overflow-hidden bg-black pt-[var(--nav-height)] md:pt-[calc(var(--nav-height)+100px)]">
             {/* SVG Filter for Strict Color Mapping */}
             <svg style={{ position: 'absolute', width: 0, height: 0 }}>
                 <filter id="ybw-theme">
