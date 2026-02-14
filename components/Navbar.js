@@ -99,7 +99,8 @@ export default function Navbar() {
     ];
 
     const planningItems = [
-        { name: "Find Hotels", sub: "Premium Stays", icon: Bed, href: "https://www.booking.com" },
+        { name: "Find Flights", sub: "Global Deals", icon: Plane, href: "/planning/find-cheap-flights" },
+        { name: "Find Hotels", sub: "Premium Stays", icon: Bed, href: "/planning/find-hotels" },
         { name: "Things to Do", sub: "Guided Tours", icon: Compass, href: "https://www.viator.com" },
         { name: "Ticket Deals", sub: "Fast Track", icon: Ticket, href: "https://www.getyourguide.com" },
         { name: "SIM Cards", sub: "Global Data", icon: Smartphone, href: "https://www.airalo.com" },
@@ -240,25 +241,30 @@ export default function Navbar() {
                     <div className="absolute top-full left-0 w-full bg-black border-t border-[#FFD700]/20 shadow-[0_40px_60px_rgba(0,0,0,0.8)] z-50 animate-in fade-in slide-in-from-top-4 duration-300">
                         {activeMenu === "Planning" ? (
                             <div className="container mx-auto px-4 py-16">
-                                <div className="grid grid-cols-4 gap-12 max-w-5xl mx-auto">
-                                    {planningItems.map((tool) => (
-                                        <a
-                                            key={tool.name}
-                                            href={tool.href}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            onClick={() => setActiveMenu(null)}
-                                            className="flex flex-col items-center gap-6 group/item p-8 rounded-[32px] hover:bg-white/5 transition-all text-center border border-transparent hover:border-[#FFD700]/30"
-                                        >
-                                            <div className="w-16 h-16 rounded-3xl bg-[#FFD700] flex items-center justify-center flex-shrink-0 text-black group-hover/item:scale-110 group-hover/item:rotate-3 transition-all shadow-xl">
-                                                <tool.icon size={28} strokeWidth={2.5} />
-                                            </div>
-                                            <div>
-                                                <div className="font-black text-[14px] uppercase tracking-[0.1em] text-white group-hover/item:text-[#FFD700] transition-colors">{tool.name}</div>
-                                                <div className="text-[#FFD700]/40 text-[10px] uppercase font-black tracking-widest mt-2">{tool.sub}</div>
-                                            </div>
-                                        </a>
-                                    ))}
+                                <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
+                                    {planningItems.map((tool) => {
+                                        const isInternal = tool.href.startsWith("/");
+                                        const Component = isInternal ? Link : "a";
+                                        const extraProps = isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" };
+
+                                        return (
+                                            <Component
+                                                key={tool.name}
+                                                href={tool.href}
+                                                {...extraProps}
+                                                onClick={() => setActiveMenu(null)}
+                                                className="flex flex-col items-center gap-6 group/item p-8 rounded-[32px] hover:bg-white/5 transition-all text-center border border-transparent hover:border-[#FFD700]/30"
+                                            >
+                                                <div className="w-16 h-16 rounded-3xl bg-[#FFD700] flex items-center justify-center flex-shrink-0 text-black group-hover/item:scale-110 group-hover/item:rotate-3 transition-all shadow-xl">
+                                                    <tool.icon size={28} strokeWidth={2.5} />
+                                                </div>
+                                                <div>
+                                                    <div className="font-black text-[14px] uppercase tracking-[0.1em] text-white group-hover/item:text-[#FFD700] transition-colors">{tool.name}</div>
+                                                    <div className="text-[#FFD700]/40 text-[10px] uppercase font-black tracking-widest mt-2">{tool.sub}</div>
+                                                </div>
+                                            </Component>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         ) : activeMenu === "Destinations" ? (

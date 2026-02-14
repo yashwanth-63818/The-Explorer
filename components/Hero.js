@@ -3,6 +3,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import SafeImage from "./SafeImage";
 
 export default function Hero({
     backgroundImage = "https://images.unsplash.com/photo-1549103930-67e3ee255208?q=80&w=2070&auto=format&fit=crop",
@@ -50,9 +51,11 @@ export default function Hero({
                     transform: `translateY(${scrollY * 0.25}px) scale(1.1)`,
                 }}
             >
-                <img
+                <SafeImage
                     src={backgroundImage}
                     alt="The Explorer Peak"
+                    fill
+                    priority
                     className="w-full h-full object-cover brightness-75 contrast-125"
                     style={{ filter: 'url(#ybw-theme)' }}
                 />
@@ -122,9 +125,10 @@ export default function Hero({
                             <div className="absolute -top-24 -right-24 w-48 h-48 bg-white/20 blur-[80px] rounded-full"></div>
 
                             <div className="relative aspect-video rounded-3xl overflow-hidden mb-8 border-2 border-black/10">
-                                <img
+                                <SafeImage
                                     src={latestVideo.thumbnail}
                                     alt={latestVideo.title}
+                                    fill
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
                                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all flex items-center justify-center">

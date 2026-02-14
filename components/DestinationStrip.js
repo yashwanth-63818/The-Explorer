@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
+import SafeImage from "./SafeImage";
 
 /**
  * Premium Country Card Grid
@@ -18,7 +19,7 @@ const featuredCountries = [
     {
         name: "Japan",
         slug: "japan",
-        image: "https://images.unsplash.com/photo-1480796275477-9dc144b54701?q=80&w=1000&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1500&auto=format&fit=crop",
         guides: "15 Guides",
         tagline: "Land of the Rising Sun"
     },
@@ -105,10 +106,11 @@ export default function DestinationStrip() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 transition-opacity duration-500 opacity-90 group-hover:opacity-100" />
 
                             {/* Main Image */}
-                            <img
+                            <SafeImage
                                 src={country.image}
                                 alt={country.name}
-                                className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0 group-hover:rotate-1"
+                                fill
+                                className="transition-all duration-700 ease-out group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0 group-hover:rotate-1 object-cover"
                             />
 
                             {/* Hover Border Glow */}

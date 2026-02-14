@@ -15,7 +15,8 @@ import {
     Smartphone,
     Play,
     Clock,
-    User
+    User,
+    MapPin
 } from "lucide-react";
 import Link from "next/link";
 import CountryHero from "@/components/CountryHero";
@@ -106,97 +107,78 @@ export default async function CountryPage({ params }) {
                     name={name}
                     facts={facts}
                     intro={content.intro}
-                    scrollId="places-to-visit"
+                    scrollId="destinations"
                 />
 
-                {/* 3. PLACES TO VISIT */}
-                <section id="places-to-visit" className="py-24 bg-[#0f0f0f] border-y border-white/5">
-                    <div className="container mx-auto px-4 max-w-6xl">
-                        <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-12 text-center">Places to Visit</h2>
+                {/* 3. STATES / REGIONS SECTION */}
+                {content.states && content.states.length > 0 ? (
+                    <section id="destinations" className="py-24 bg-[#0f0f0f] border-y border-white/5 scroll-mt-20">
+                        <div id="states" className="hidden" /> {/* Anchor for old ID */}
+                        <div id="places-to-visit" className="hidden" /> {/* Anchor for old ID */}
 
-                        {/* Popular Places */}
-                        <div className="mb-24">
-                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-10 flex items-center gap-4">
-                                <span className="w-8 h-px bg-[#FFD700]"></span>
-                                Top Discoveries
-                            </h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                        <div className="container mx-auto px-4 max-w-6xl">
+                            <div className="flex flex-col items-center mb-16">
+                                <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-4 text-center">Explore by State</h2>
+                                <div className="w-12 h-0.5 bg-white/10"></div>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-6">
+                                {content.states.map((state, i) => (
+                                    <Link
+                                        key={i}
+                                        href={`/destinations/${slug}/${state.slug}`}
+                                        className="flex items-center gap-4 text-gray-400 hover:text-white transition-all group py-1"
+                                    >
+                                        <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 group-hover:border-[#FFD700]/30 group-hover:bg-[#FFD700]/10 transition-all shrink-0">
+                                            <MapPin size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <span className="text-[11px] font-black uppercase tracking-[0.25em] group-hover:text-[#FFD700] transition-colors">
+                                                {state.name}
+                                            </span>
+                                            <span className="text-[9px] font-bold text-white/10 uppercase tracking-widest group-hover:text-white/30 transition-colors">
+                                                {state.type || "State"}
+                                            </span>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+                ) : (
+                    /* Fallback: Standard Places to Visit for countries without state data */
+                    <section id="destinations" className="py-24 bg-[#0f0f0f] border-y border-white/5 scroll-mt-20">
+                        <div id="places-to-visit" className="hidden" />
+                        <div className="container mx-auto px-4 max-w-6xl">
+                            <div className="flex flex-col items-center mb-16">
+                                <h2 className="text-[12px] font-black uppercase tracking-[0.5em] text-[#FFD700] mb-4 text-center">Places to Visit</h2>
+                                <div className="w-12 h-0.5 bg-white/10"></div>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-6">
                                 {content.bestPlaces.popular.map((place, i) => (
                                     <Link
                                         key={i}
                                         href={`/destinations/${slug}/${place.slug}`}
-                                        className="group relative aspect-[14/16] overflow-hidden rounded-[2rem] bg-black/40 border border-white/5 hover:border-[#FFD700]/30 transition-all duration-700 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)]"
+                                        className="flex items-center gap-4 text-gray-400 hover:text-white transition-all group py-1"
                                     >
-                                        {/* Image Background */}
-                                        <div className="absolute inset-0">
-                                            <SafeImage
-                                                src={place.image}
-                                                alt={place.city}
-                                                fill
-                                                className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent group-hover:via-black/40 transition-all duration-500"></div>
+                                        <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 group-hover:border-[#FFD700]/30 group-hover:bg-[#FFD700]/10 transition-all shrink-0">
+                                            <MapPin size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                                         </div>
-
-                                        {/* Content */}
-                                        <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                                            <div className="flex items-center gap-3 mb-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
-                                                <span className="w-6 h-px bg-[#FFD700]"></span>
-                                                <span className="text-[9px] font-black uppercase tracking-widest text-[#FFD700]">{place.category}</span>
-                                            </div>
-                                            <h4 className="text-3xl font-serif font-bold text-white mb-2 leading-tight">
+                                        <div className="flex flex-col">
+                                            <span className="text-[11px] font-black uppercase tracking-[0.25em] group-hover:text-[#FFD700] transition-colors">
                                                 {place.city}
-                                            </h4>
-                                            <p className="text-gray-400 text-xs font-medium translate-y-2 group-hover:translate-y-0 transition-transform duration-500 opacity-0 group-hover:opacity-100">
-                                                Click to scout this location
-                                            </p>
-                                        </div>
-
-                                        {/* Accent Overlay */}
-                                        <div className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                                            <ArrowRight size={18} className="text-[#FFD700] -rotate-45" />
+                                            </span>
+                                            <span className="text-[9px] font-bold text-white/10 uppercase tracking-widest group-hover:text-white/30 transition-colors">
+                                                {place.category || "Destination"}
+                                            </span>
                                         </div>
                                     </Link>
                                 ))}
                             </div>
                         </div>
-
-                        {/* Underrated Places */}
-                        <div>
-                            <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40 mb-10 flex items-center gap-4">
-                                <span className="w-8 h-px bg-white/10"></span>
-                                Hidden Gems
-                            </h3>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                                {content.bestPlaces.underrated.map((place, i) => (
-                                    <Link
-                                        key={i}
-                                        href={`/destinations/${slug}/${place.slug}`}
-                                        className="group relative aspect-video overflow-hidden rounded-3xl bg-black/40 border border-white/5 hover:border-white/20 transition-all"
-                                    >
-                                        {/* Small Image Background */}
-                                        <div className="absolute inset-0">
-                                            <SafeImage
-                                                src={place.image}
-                                                alt={place.city}
-                                                fill
-                                                className="w-full h-full object-cover brightness-75 group-hover:brightness-50 transition-all duration-700 group-hover:scale-105"
-                                            />
-                                            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors"></div>
-                                        </div>
-
-                                        <div className="absolute inset-0 p-6 flex items-center justify-center text-center">
-                                            <div>
-                                                <p className="text-[8px] font-black uppercase tracking-widest text-[#FFD700] mb-2 scale-90 group-hover:scale-100 transition-transform">{place.category}</p>
-                                                <h4 className="text-xl font-serif font-black text-white group-hover:text-yellow-400 transition-colors">{place.city}</h4>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                )}
 
                 {/* 4. ITINERARIES */}
                 <section className="py-24 bg-[#0b0b0b]">

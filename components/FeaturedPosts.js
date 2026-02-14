@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import SafeImage from "./SafeImage";
 
 const featuredPosts = [
     {
@@ -14,14 +15,14 @@ const featuredPosts = [
         id: 2,
         title: "Hidden Gems of the Amalfi Coast",
         category: "Destinations",
-        image: "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?q=80&w=2070&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=2070&auto=format&fit=crop",
         slug: "amalfi-coast",
     },
     {
         id: 3,
         title: "Safari Photography Tips for Beginners",
         category: "Photography",
-        image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1501705388883-4ed8a543392c?q=80&w=2068&auto=format&fit=crop",
         slug: "safari-photography",
     }
 ];
@@ -40,9 +41,10 @@ export default function FeaturedPosts() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Large Post */}
                     <Link href={`/blog/${featuredPosts[0].slug}`} className="group relative h-[500px] lg:h-[600px] overflow-hidden block rounded-none">
-                        <img
+                        <SafeImage
                             src={featuredPosts[0].image}
                             alt={featuredPosts[0].title}
+                            fill
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
@@ -63,9 +65,10 @@ export default function FeaturedPosts() {
                     <div className="flex flex-col gap-8">
                         {featuredPosts.slice(1).map((post) => (
                             <Link key={post.id} href={`/blog/${post.slug}`} className="group relative h-[240px] lg:h-[284px] overflow-hidden block flex-1 rounded-none">
-                                <img
+                                <SafeImage
                                     src={post.image}
                                     alt={post.title}
+                                    fill
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>

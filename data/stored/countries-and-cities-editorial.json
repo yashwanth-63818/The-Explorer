@@ -3,7 +3,39 @@
         "thailand": {
             "name": "Thailand",
             "region": "Asia",
-            "heroDescription": "Thailand is a sensory tapestry of golden temples, emerald jungles, and sapphire waters that feels both exhilaratingly chaotic and profoundy serene. Beyond the neon hum of Bangkok lies a soul rooted in Buddhist mindfulness and a heritage of independence that has never been colonized. From the misty highlands of the north to the limestone karsts of the Andaman Sea, it offers a journey through layers of ancient kingdoms and modern island escapes. It is a land where the warmth of the people is as constant as the tropical sun, inviting a deeper connection with the rhythm of Southeast Asia.",
+            "heroDescription": "Thailand is a sensory tapestry of golden temples, emerald jungles, and sapphire waters that feels both exhilaratingly chaotic and profoundy serene...",
+            "states": [
+                {
+                    "name": "Bangkok",
+                    "slug": "bangkok",
+                    "type": "Metropolis"
+                },
+                {
+                    "name": "Chiang Mai",
+                    "slug": "chiang-mai",
+                    "type": "Province"
+                },
+                {
+                    "name": "Phuket",
+                    "slug": "phuket",
+                    "type": "Province"
+                },
+                {
+                    "name": "Krabi",
+                    "slug": "krabi",
+                    "type": "Province"
+                },
+                {
+                    "name": "Surat Thani",
+                    "slug": "surat-thani",
+                    "type": "Province"
+                },
+                {
+                    "name": "Chon Buri",
+                    "slug": "chon-buri",
+                    "type": "Province"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
@@ -15,66 +47,214 @@
                         "slug": "chiang-mai",
                         "name": "Chiang Mai",
                         "type": "City"
-                    },
-                    {
-                        "slug": "phuket",
-                        "name": "Phuket",
-                        "type": "Island"
-                    },
-                    {
-                        "slug": "ayutthaya",
-                        "name": "Ayutthaya",
-                        "type": "History"
-                    },
-                    {
-                        "slug": "krabi",
-                        "name": "Krabi",
-                        "type": "Province"
-                    },
-                    {
-                        "slug": "pai",
-                        "name": "Pai",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "koh-samui",
-                        "name": "Koh Samui",
-                        "type": "Island"
-                    },
-                    {
-                        "slug": "koh-tao",
-                        "name": "Koh Tao",
-                        "type": "Island"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "chiang-dao",
-                        "name": "Chiang Dao",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "koh-kood",
-                        "name": "Koh Kood",
-                        "type": "Island"
-                    },
-                    {
-                        "slug": "phrae",
-                        "name": "Phrae",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "phetchaburi",
-                        "name": "Phetchaburi",
-                        "type": "City"
-                    }
-                ]
+                "underrated": []
             }
+        },
+        "india": {
+            "name": "India",
+            "region": "Asia",
+            "heroDescription": "India is a sensory explosion, a land where ancient traditions and futuristic ambitions exist in a vibrant, chaotic, and beautiful dance. From the snow-capped Himalayas in the north to the tropical backwaters of Kerala in the south, it is a country of immense scale and profound diversity. It is a place where every corner revealed a thousand years of history, and where the warmth of the people is as legendary as the food. India is not just a destination; it's an immersive experience that challenges and enriches the soul.",
+            "states": [
+                {
+                    "name": "Andhra Pradesh",
+                    "slug": "andhra-pradesh",
+                    "type": "State"
+                },
+                {
+                    "name": "Arunachal Pradesh",
+                    "slug": "arunachal-pradesh",
+                    "type": "State"
+                },
+                {
+                    "name": "Assam",
+                    "slug": "assam",
+                    "type": "State"
+                },
+                {
+                    "name": "Bihar",
+                    "slug": "bihar",
+                    "type": "State"
+                },
+                {
+                    "name": "Chhattisgarh",
+                    "slug": "chhattisgarh",
+                    "type": "State"
+                },
+                {
+                    "name": "Goa",
+                    "slug": "goa",
+                    "type": "State"
+                },
+                {
+                    "name": "Gujarat",
+                    "slug": "gujarat",
+                    "type": "State"
+                },
+                {
+                    "name": "Haryana",
+                    "slug": "haryana",
+                    "type": "State"
+                },
+                {
+                    "name": "Himachal Pradesh",
+                    "slug": "himachal-pradesh",
+                    "type": "State"
+                },
+                {
+                    "name": "Jharkhand",
+                    "slug": "jharkhand",
+                    "type": "State"
+                },
+                {
+                    "name": "Karnataka",
+                    "slug": "karnataka",
+                    "type": "State"
+                },
+                {
+                    "name": "Kerala",
+                    "slug": "kerala",
+                    "type": "State"
+                },
+                {
+                    "name": "Madhya Pradesh",
+                    "slug": "madhya-pradesh",
+                    "type": "State"
+                },
+                {
+                    "name": "Maharashtra",
+                    "slug": "maharashtra",
+                    "type": "State"
+                },
+                {
+                    "name": "Manipur",
+                    "slug": "manipur",
+                    "type": "State"
+                },
+                {
+                    "name": "Meghalaya",
+                    "slug": "meghalaya",
+                    "type": "State"
+                },
+                {
+                    "name": "Mizoram",
+                    "slug": "mizoram",
+                    "type": "State"
+                },
+                {
+                    "name": "Nagaland",
+                    "slug": "nagaland",
+                    "type": "State"
+                },
+                {
+                    "name": "Odisha",
+                    "slug": "odisha",
+                    "type": "State"
+                },
+                {
+                    "name": "Punjab",
+                    "slug": "punjab",
+                    "type": "State"
+                },
+                {
+                    "name": "Rajasthan",
+                    "slug": "rajasthan",
+                    "type": "State"
+                },
+                {
+                    "name": "Sikkim",
+                    "slug": "sikkim",
+                    "type": "State"
+                },
+                {
+                    "name": "Tamil Nadu",
+                    "slug": "tamil-nadu",
+                    "type": "State"
+                },
+                {
+                    "name": "Telangana",
+                    "slug": "telangana",
+                    "type": "State"
+                },
+                {
+                    "name": "Tripura",
+                    "slug": "tripura",
+                    "type": "State"
+                },
+                {
+                    "name": "Uttar Pradesh",
+                    "slug": "uttar-pradesh",
+                    "type": "State"
+                },
+                {
+                    "name": "Uttarakhand",
+                    "slug": "uttarakhand",
+                    "type": "State"
+                },
+                {
+                    "name": "West Bengal",
+                    "slug": "west-bengal",
+                    "type": "State"
+                },
+                {
+                    "name": "Delhi",
+                    "slug": "delhi",
+                    "type": "UT"
+                },
+                {
+                    "name": "Jammu & Kashmir",
+                    "slug": "jammu-kashmir",
+                    "type": "UT"
+                },
+                {
+                    "name": "Ladakh",
+                    "slug": "ladakh",
+                    "type": "UT"
+                }
+            ],
+            "travelTips": [
+                "Book train tickets weeks in advance using IRCTC or authorized platforms",
+                "Dress modestly especially when visiting temples and rural areas",
+                "Try local street food but stick to busy stalls with high turnover"
+            ]
         },
         "japan": {
             "name": "Japan",
             "region": "Asia",
-            "heroDescription": "Japan is a masterclass in the art of contradiction, where hyper-modern technology exists in perfect harmony with centuries-old Zen traditions. Shifting seamlessly from the neon-drenched canyons of Tokyo to the silent, moss-covered shrines of Kyoto, the country reveals a profound respect for seasonal change and meticulous craftsmanship. The landscape is a canvas of volcanic peaks, cedar forests, and rugged coastlines, all connected by a rhythmic precision that feels like a quiet symphony. Here, every meal, every garden, and every interaction is an exercise in intentionality and grace.",
+            "heroDescription": "Japan is a masterclass in the art of contradiction, where hyper-modern technology exists in perfect harmony with centuries-old Zen traditions...",
+            "states": [
+                {
+                    "name": "Tokyo",
+                    "slug": "tokyo",
+                    "type": "Prefecture"
+                },
+                {
+                    "name": "Kyoto",
+                    "slug": "kyoto",
+                    "type": "Prefecture"
+                },
+                {
+                    "name": "Osaka",
+                    "slug": "osaka",
+                    "type": "Prefecture"
+                },
+                {
+                    "name": "Hokkaido",
+                    "slug": "hokkaido",
+                    "type": "Region"
+                },
+                {
+                    "name": "Okinawa",
+                    "slug": "okinawa",
+                    "type": "Prefecture"
+                },
+                {
+                    "name": "Kanagawa",
+                    "slug": "kanagawa",
+                    "type": "Prefecture"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
@@ -86,66 +266,47 @@
                         "slug": "kyoto",
                         "name": "Kyoto",
                         "type": "City"
-                    },
-                    {
-                        "slug": "osaka",
-                        "name": "Osaka",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "nara",
-                        "name": "Nara",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "hiroshima",
-                        "name": "Hiroshima",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "hakone",
-                        "name": "Hakone",
-                        "type": "Mountain"
-                    },
-                    {
-                        "slug": "kanazawa",
-                        "name": "Kanazawa",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "fuji-five-lakes",
-                        "name": "Fuji Five Lakes",
-                        "type": "Region"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "takayama",
-                        "name": "Takayama",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "koya-san",
-                        "name": "Koya-san",
-                        "type": "Village"
-                    },
-                    {
-                        "slug": "naoshima",
-                        "name": "Naoshima",
-                        "type": "Island"
-                    },
-                    {
-                        "slug": "yakushima",
-                        "name": "Yakushima",
-                        "type": "Island"
-                    }
-                ]
+                "underrated": []
             }
         },
         "italy": {
             "name": "Italy",
             "region": "Europe",
-            "heroDescription": "Italy is a living museum of Western civilization, a land where every cobblestone has a story and every meal is a celebration of life. From the sun-drenched ruins of Rome to the misty canals of Venice and the rolling cypress-lined hills of Tuscany, the country offers an unparalleled sensory feast. The air is thick with the scent of espresso, jasmine, and ancient dust, reflecting a culture that has perfected the art of 'la dolce vita' over millennia. It is a place that demands a slower pace, inviting travelers to lose themselves in the grandeur of the Renaissance and the simple beauty of a village square.",
+            "heroDescription": "Italy is a living museum of Western civilization, a land where every cobblestone has a story and every meal is a celebration of life...",
+            "states": [
+                {
+                    "name": "Tuscany",
+                    "slug": "tuscany",
+                    "type": "Region"
+                },
+                {
+                    "name": "Sicily",
+                    "slug": "sicily",
+                    "type": "Region"
+                },
+                {
+                    "name": "Lombardy",
+                    "slug": "lombardy",
+                    "type": "Region"
+                },
+                {
+                    "name": "Veneto",
+                    "slug": "veneto",
+                    "type": "Region"
+                },
+                {
+                    "name": "Lazio",
+                    "slug": "lazio",
+                    "type": "Region"
+                },
+                {
+                    "name": "Campania",
+                    "slug": "campania",
+                    "type": "Region"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
@@ -157,535 +318,265 @@
                         "slug": "florence",
                         "name": "Florence",
                         "type": "City"
-                    },
-                    {
-                        "slug": "venice",
-                        "name": "Venice",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "amalfi-coast",
-                        "name": "Amalfi Coast",
-                        "type": "Region"
-                    },
-                    {
-                        "slug": "cinque-terre",
-                        "name": "Cinque Terre",
-                        "type": "Region"
-                    },
-                    {
-                        "slug": "milan",
-                        "name": "Milan",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "naples",
-                        "name": "Naples",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "lake-como",
-                        "name": "Lake Como",
-                        "type": "Region"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "matera",
-                        "name": "Matera",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "puglia",
-                        "name": "Puglia",
-                        "type": "Region"
-                    },
-                    {
-                        "slug": "dolomites",
-                        "name": "Dolomites",
-                        "type": "Mountain"
-                    },
-                    {
-                        "slug": "perugia",
-                        "name": "Perugia",
-                        "type": "City"
-                    }
-                ]
+                "underrated": []
             }
         },
         "china": {
             "name": "China",
             "region": "Asia",
-            "heroDescription": "China is a continental giant where ancient history and futuristic innovation collide in spectacular fashion. From the Great Wall snaking across mountain ridges to the terracotta warriors of Xi'an and the forbidden city of Beijing, the country's imperial past is ever-present. Yet, the neon-lit skylines of Shanghai and Shenzhen reflect a nation at the cutting edge of the 21st century. Beyond the cities, China offers a landscape of breathtaking variety, from the karst peaks of Yangshuo to the high-altitude plateaus of Tibet and the perfectly preserved water towns of the south.",
+            "heroDescription": "China is a continental giant where ancient history and futuristic innovation collide in spectacular fashion...",
+            "states": [
+                {
+                    "name": "Yunnan",
+                    "slug": "yunnan",
+                    "type": "Province"
+                },
+                {
+                    "name": "Sichuan",
+                    "slug": "sichuan",
+                    "type": "Province"
+                },
+                {
+                    "name": "Zhejiang",
+                    "slug": "zhejiang",
+                    "type": "Province"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
                         "slug": "beijing",
                         "name": "Beijing",
                         "type": "City"
-                    },
-                    {
-                        "slug": "shanghai",
-                        "name": "Shanghai",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "chengdu",
-                        "name": "Chengdu",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "xi-an",
-                        "name": "Xi'an",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "guilin",
-                        "name": "Guilin",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "zhangjiajie",
-                        "name": "Zhangjiajie",
-                        "type": "Mountain"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "lijiang",
-                        "name": "Lijiang",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "dali",
-                        "name": "Dali",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "yangshuo",
-                        "name": "Yangshuo",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "pingyao",
-                        "name": "Pingyao",
-                        "type": "History"
-                    }
-                ]
+                "underrated": []
             }
         },
         "indonesia": {
             "name": "Indonesia",
             "region": "Asia",
-            "heroDescription": "Indonesia is a sprawling archipelago of over 17,000 islands, where volcanic peaks rise from emerald jungles and ancient temples stand in the shadow of active craters. From the spiritual heart of Bali to the rugged, prehistoric landscapes of Komodo, it is a country of intense natural diversity and deep-rooted cultures. It is a place of endless surf, vibrant street food, and a sense of adventure that feels limitless.",
+            "heroDescription": "Indonesia is a sprawling archipelago of over 17,000 islands...",
+            "states": [
+                {
+                    "name": "Bali",
+                    "slug": "bali",
+                    "type": "Province"
+                },
+                {
+                    "name": "Java",
+                    "slug": "java",
+                    "type": "Island"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
                         "slug": "bali",
                         "name": "Bali",
                         "type": "Island"
-                    },
-                    {
-                        "slug": "jakarta",
-                        "name": "Jakarta",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "yogyakarta",
-                        "name": "Yogyakarta",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "komodo",
-                        "name": "Komodo",
-                        "type": "Region"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "nusa-penida",
-                        "name": "Nusa Penida",
-                        "type": "Island"
-                    },
-                    {
-                        "slug": "gili-islands",
-                        "name": "Gili Islands",
-                        "type": "Archipelago"
-                    },
-                    {
-                        "slug": "mount-bromo",
-                        "name": "Mount Bromo",
-                        "type": "Mountain"
-                    },
-                    {
-                        "slug": "belitung",
-                        "name": "Belitung",
-                        "type": "Island"
-                    }
-                ]
+                "underrated": []
             }
         },
         "albania": {
             "name": "Albania",
             "region": "Europe",
-            "heroDescription": "Albania is the last great secret of the Mediterranean, a land of rugged Accursed Mountains, turquoise Ionian shores, and Ottoman-era stone towns. Long isolated from the world, it is now emerging as a soulful, authentic destination where hospitality remains a sacred code and the layers of history—from Illyrian ruins to Cold War bunkers—are everywhere.",
-            "placesToVisit": {
-                "popular": [
-                    {
-                        "slug": "tirana",
-                        "name": "Tirana",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "gjirokaster",
-                        "name": "Gjirokaster",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "berat",
-                        "name": "Berat",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "saranda",
-                        "name": "Saranda",
-                        "type": "City"
-                    }
-                ],
-                "underrated": [
-                    {
-                        "slug": "theth",
-                        "name": "Theth",
-                        "type": "Village"
-                    },
-                    {
-                        "slug": "shkoder",
-                        "name": "Shkoder",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "ksamil",
-                        "name": "Ksamil",
-                        "type": "Beach"
-                    },
-                    {
-                        "slug": "valbona",
-                        "name": "Valbona",
-                        "type": "Mountain"
-                    }
-                ]
-            }
+            "heroDescription": "Albania is the last great secret of the Mediterranean...",
+            "states": [
+                {
+                    "name": "Albanian Riviera",
+                    "slug": "albanian-riviera",
+                    "type": "Region"
+                },
+                {
+                    "name": "The Accursed Mountains",
+                    "slug": "theth",
+                    "type": "Region"
+                }
+            ]
         },
         "algeria": {
             "name": "Algeria",
             "region": "Africa",
-            "heroDescription": "Algeria is a vast North African giant, stretching from the sun-drenched Mediterranean coast to the mystical, shifting sands of the Sahara. It is home to some of the world's best-preserved Roman ruins, vibrant Casbahs, and a deep-rooted Berber heritage that predates civilization itself. It is a land of quiet majesty, where the ancient world meets the modern spirit of resilience.",
-            "placesToVisit": {
-                "popular": [
-                    {
-                        "slug": "algiers",
-                        "name": "Algiers",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "oran",
-                        "name": "Oran",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "constantine",
-                        "name": "Constantine",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "tlemcen",
-                        "name": "Tlemcen",
-                        "type": "City"
-                    }
-                ],
-                "underrated": [
-                    {
-                        "slug": "ghardaia",
-                        "name": "Ghardaia",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "djanet",
-                        "name": "Djanet",
-                        "type": "Oasis"
-                    },
-                    {
-                        "slug": "bejaia",
-                        "name": "Bejaia",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "tipaza",
-                        "name": "Tipaza",
-                        "type": "History"
-                    }
-                ]
-            }
+            "heroDescription": "Algeria is a vast North African giant...",
+            "states": [
+                {
+                    "name": "Algiers",
+                    "slug": "algiers",
+                    "type": "Province"
+                },
+                {
+                    "name": "The Sahara",
+                    "slug": "sahara",
+                    "type": "Region"
+                }
+            ]
         },
         "usa": {
             "name": "USA",
             "region": "Americas",
-            "heroDescription": "The United States is a vast, continental tapestry of iconic skylines, sprawling national parks, and a relentless energy that has shaped global culture. From the neon pulse of Times Square to the ethereal silence of the Grand Canyon and the rugged coastlines of the Pacific Northwest, it is a country of extreme scale and diversity. It is a place where the individual spirit meets a collective ambition, offering everything from high-wattage urban exploration to the most profound natural escapes on Earth.",
+            "heroDescription": "The United States is a vast, continental tapestry of iconic skylines...",
+            "states": [
+                {
+                    "name": "California",
+                    "slug": "california",
+                    "type": "State"
+                },
+                {
+                    "name": "New York",
+                    "slug": "new-york-state",
+                    "type": "State"
+                },
+                {
+                    "name": "Texas",
+                    "slug": "texas",
+                    "type": "State"
+                },
+                {
+                    "name": "Florida",
+                    "slug": "florida",
+                    "type": "State"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
                         "slug": "new-york",
-                        "name": "New York",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "los-angeles",
-                        "name": "Los Angeles",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "chicago",
-                        "name": "Chicago",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "san-francisco",
-                        "name": "San Francisco",
+                        "name": "New York City",
                         "type": "City"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "portland",
-                        "name": "Portland",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "austin",
-                        "name": "Austin",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "sedona",
-                        "name": "Sedona",
-                        "type": "Nature"
-                    },
-                    {
-                        "slug": "nashville",
-                        "name": "Nashville",
-                        "type": "City"
-                    }
-                ]
+                "underrated": []
             }
         },
         "france": {
             "name": "France",
             "region": "Europe",
-            "heroDescription": "France is the world's most sophisticated sanctuary of art, gastronomy, and historic elegance. From the wrought-iron silhouette of the Eiffel Tower to the sun-drenched lavender fields of Provence and the rugged cliffs of Normandy, it is a country that has perfected the art of living. It is a landscape of medieval chateaus, world-class vineyards, and a culture that treats every meal and every interaction with a sense of ceremony and grace.",
+            "heroDescription": "France is the world's most sophisticated sanctuary of art, gastronomy, and historic elegance...",
+            "states": [
+                {
+                    "name": "Provence",
+                    "slug": "provence",
+                    "type": "Region"
+                },
+                {
+                    "name": "Normandy",
+                    "slug": "normandy",
+                    "type": "Region"
+                },
+                {
+                    "name": "French Riviera",
+                    "slug": "french-riviera",
+                    "type": "Region"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
                         "slug": "paris",
                         "name": "Paris",
                         "type": "City"
-                    },
-                    {
-                        "slug": "lyon",
-                        "name": "Lyon",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "marseille",
-                        "name": "Marseille",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "nice",
-                        "name": "Nice",
-                        "type": "City"
                     }
                 ],
-                "underrated": [
-                    {
-                        "slug": "bordeaux",
-                        "name": "Bordeaux",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "strasbourg",
-                        "name": "Strasbourg",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "annecy",
-                        "name": "Annecy",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "mont-saint-michel",
-                        "name": "Mont Saint-Michel",
-                        "type": "History"
-                    }
-                ]
+                "underrated": []
             }
         },
         "uk": {
             "name": "United Kingdom",
             "region": "Europe",
-            "heroDescription": "The United Kingdom is a dense, high-contrast matrix of ancient history, royal ceremony, and cutting-edge creativity. From the bustling global crossroads of London to the misty highlands of Scotland and the rolling green hills of the Cotswolds, it is a land defined by its character and its heritage. It is a place where industrial power once reshaped the world and where the echoes of kings, poets, and revolutionaries are heard in every stone alley and village square.",
-            "placesToVisit": {
-                "popular": [
-                    {
-                        "slug": "london",
-                        "name": "London",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "edinburgh",
-                        "name": "Edinburgh",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "manchester",
-                        "name": "Manchester",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "liverpool",
-                        "name": "Liverpool",
-                        "type": "City"
-                    }
-                ],
-                "underrated": [
-                    {
-                        "slug": "bath",
-                        "name": "Bath",
-                        "type": "History"
-                    },
-                    {
-                        "slug": "oxford",
-                        "name": "Oxford",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "isle-of-skye",
-                        "name": "Isle of Skye",
-                        "type": "Nature"
-                    },
-                    {
-                        "slug": "cotswolds",
-                        "name": "Cotswolds",
-                        "type": "Region"
-                    }
-                ]
-            }
+            "heroDescription": "The United Kingdom is a dense, high-contrast matrix of ancient history...",
+            "states": [
+                {
+                    "name": "Scotland",
+                    "slug": "scotland",
+                    "type": "Country"
+                },
+                {
+                    "name": "England",
+                    "slug": "england",
+                    "type": "Country"
+                },
+                {
+                    "name": "Wales",
+                    "slug": "wales",
+                    "type": "Country"
+                }
+            ]
         },
         "germany": {
             "name": "Germany",
             "region": "Europe",
-            "heroDescription": "Germany is a powerhouse of precision, history, and natural beauty, where medieval half-timbered towns sit alongside some of the world's most futuristic urban environments. From the high-energy club culture of Berlin to the fairytale castles of Bavaria and the industrial might of the Ruhr, it is a country of profound depth. It is a land of dense forests, wide rivers, and a philosophical spirit that balances rigorous engineering with a deep-seated love for the arts and the outdoors.",
-            "placesToVisit": {
-                "popular": [
-                    {
-                        "slug": "berlin",
-                        "name": "Berlin",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "munich",
-                        "name": "Munich",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "hamburg",
-                        "name": "Hamburg",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "frankfurt",
-                        "name": "Frankfurt",
-                        "type": "City"
-                    }
-                ],
-                "underrated": [
-                    {
-                        "slug": "dresden",
-                        "name": "Dresden",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "heidelberg",
-                        "name": "Heidelberg",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "black-forest",
-                        "name": "Black Forest",
-                        "type": "Nature"
-                    },
-                    {
-                        "slug": "koln",
-                        "name": "Cologne",
-                        "type": "City"
-                    }
-                ]
-            }
+            "heroDescription": "Germany is a powerhouse of precision, history, and natural beauty...",
+            "states": [
+                {
+                    "name": "Bavaria",
+                    "slug": "bavaria",
+                    "type": "State"
+                },
+                {
+                    "name": "Berlin",
+                    "slug": "berlin-state",
+                    "type": "State"
+                }
+            ]
         },
         "australia": {
             "name": "Australia",
             "region": "Oceania",
-            "heroDescription": "Australia is a vast, sun-drenched island continent of staggering variety and ancient spirit. From the iconic white shells of the Sydney Opera House to the red, spiritual heart of the Outback and the kaleidoscope of the Great Barrier Reef, it is a land of endless scale. It is a place defined by its coastlines, its unique wildlife, and a laid-back lifestyle that thrives on a deep connection with the wild, untamed powers of the natural world.",
-            "placesToVisit": {
-                "popular": [
-                    {
-                        "slug": "sydney",
-                        "name": "Sydney",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "melbourne",
-                        "name": "Melbourne",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "brisbane",
-                        "name": "Brisbane",
-                        "type": "City"
-                    },
-                    {
-                        "slug": "perth",
-                        "name": "Perth",
-                        "type": "City"
-                    }
-                ],
-                "underrated": [
-                    {
-                        "slug": "byron-bay",
-                        "name": "Byron Bay",
-                        "type": "Town"
-                    },
-                    {
-                        "slug": "uluru",
-                        "name": "Uluru",
-                        "type": "Nature"
-                    },
-                    {
-                        "slug": "tasmania",
-                        "name": "Tasmania",
-                        "type": "Island"
-                    },
-                    {
-                        "slug": "gold-coast",
-                        "name": "Gold Coast",
-                        "type": "City"
-                    }
-                ]
-            }
+            "heroDescription": "Australia is a vast, sun-drenched island continent...",
+            "states": [
+                {
+                    "name": "New South Wales",
+                    "slug": "new-south-wales",
+                    "type": "State"
+                },
+                {
+                    "name": "Victoria",
+                    "slug": "victoria",
+                    "type": "State"
+                },
+                {
+                    "name": "Queensland",
+                    "slug": "queensland",
+                    "type": "State"
+                }
+            ]
         },
         "canada": {
             "name": "Canada",
             "region": "North America",
             "heroDescription": "Canada is a vast, untamed wilderness of scale, where emerald lakes reflect snow-capped Rockies and vibrant, multicultural cities sit on the edge of the world's longest coastline. From the French elegance of Quebec to the rugged, ocean-mist charm of Vancouver Island, it is a country that offers a sense of total freedom and breathtaking natural grandeur.",
+            "states": [
+                {
+                    "name": "Ontario",
+                    "slug": "ontario",
+                    "type": "Province"
+                },
+                {
+                    "name": "Quebec",
+                    "slug": "quebec",
+                    "type": "Province"
+                },
+                {
+                    "name": "British Columbia",
+                    "slug": "british-columbia",
+                    "type": "Province"
+                },
+                {
+                    "name": "Alberta",
+                    "slug": "alberta",
+                    "type": "Province"
+                },
+                {
+                    "name": "Nova Scotia",
+                    "slug": "nova-scotia",
+                    "type": "Province"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
@@ -737,6 +628,33 @@
             "name": "Switzerland",
             "region": "Europe",
             "heroDescription": "Switzerland is a high-altitude masterpiece of precision, where mirror-like lakes reflect the jagged silhouettes of the Eiger and the Matterhorn. It is a land of red trains winding through emerald valleys, silent alpine pastures, and cities that blend medieval character with cutting-edge sophistication.",
+            "states": [
+                {
+                    "name": "Zurich",
+                    "slug": "zurich",
+                    "type": "Canton"
+                },
+                {
+                    "name": "Geneva",
+                    "slug": "geneva",
+                    "type": "Canton"
+                },
+                {
+                    "name": "Lucerne",
+                    "slug": "lucerne",
+                    "type": "Canton"
+                },
+                {
+                    "name": "Bernese Oberland",
+                    "slug": "interlaken",
+                    "type": "Region"
+                },
+                {
+                    "name": "Valais",
+                    "slug": "zermatt",
+                    "type": "Canton"
+                }
+            ],
             "placesToVisit": {
                 "popular": [
                     {
@@ -2902,198 +2820,127 @@
             "name": "Sydney",
             "country": "australia",
             "heroTitle": "Sydney: The Harbor City",
-            "heroDescription": "Sydney is a glistening, sun-drenched metropolis carved around one of the world's most spectacular natural harbors. Dominated by the iconic white sails of the Opera House and the massive steel arch of the Harbor Bridge, it is a city of high-contrast living between a high-tech CBD and world-class surf beaches. Known for its laid-back West Coast energy and its incredible culinary diversity, Sydney is a city of salt air, ancient sandstone, and glittering water views. From the historic alleys of The Rocks to the coastal paths of Bondi and the wilderness of the Blue Mountains, it offers a lifestyle that is defined by its profound proximity to the ocean.",
-            "bestTimeToVisit": "September to November (Spring) or February to April (Autumn) for clear skies and the best conditions for outdoor swimming and hiking.",
+            "heroDescription": "Sydney is a glistening, sun-drenched metropolis carved around one of the world's most spectacular natural harbors...",
+            "bestTimeToVisit": "September to November (Spring) or February to April (Autumn).",
             "whyVisit": [
-                "Two of the world's most iconic landmarks—the Sydney Opera House and the Sydney Harbor Bridge",
-                "Spectacular urban beaches like Bondi and Manly, connected by some of the world's best coastal walking paths",
-                "A world-class dining scene that blends high-end experimentation with the freshest Pacific seafood"
+                "Iconic landmarks like the Opera House and Harbor Bridge",
+                "World-class ocean beaches like Bondi and Manly",
+                "A vibrant multicultural dining and arts scene"
             ],
             "topExperiences": [
-                "Take a public ferry from Circular Quay to Manly at sunset for the most spectacular view of the harbor for the price of a coffee",
-                "Walk the 6km coastal path from Bondi to Coogee for breathtaking Pacific views and hidden ocean pools",
-                "Explore the historic sandstone pubs and weekend markets of The Rocks, the city's oldest European settlement"
+                "Take a public ferry across the harbor at sunset",
+                "Walk the coastal path from Bondi to Coogee",
+                "Explore the historic sandstone alleys of The Rocks"
             ],
             "travelTips": [
-                "The Opal card is your key to all public transport (trains, buses, ferries); use your phone or credit card to tap-and-go",
-                "The sun is extremely strong; high-SPF sunscreen is a non-negotiable part of daily life in Sydney",
-                "Sydney is expensive; use the 'early bird' specials at restaurants and the free museums to balance your budget"
+                "Use an Opal card or tap-on/tap-off for all transport",
+                "Apply high-SPF sunscreen daily—the Australian sun is no joke",
+                "Enjoy free entry to major galleries and museums"
             ]
         },
-        "melbourne": {
-            "name": "Melbourne",
-            "country": "australia",
-            "heroTitle": "Melbourne: The Cultural Capital",
-            "heroDescription": "Melbourne is a sophisticated, European-influenced metropolis of hidden laneways, world-class coffee, and intense cultural pride. Widely considered Australia's spiritual home of art, fashion, and sport, it is a city that thrives on subcultures and discovery. From the Victorian elegance of its arcades to the street-art-drenched alleys of Hosier Lane and the high-energy pulse of the MCG (Melbourne Cricket Ground), it is a city of profound depth. It is a place of unpredictable weather and meticulous taste, where the best bars, cafes, and boutiques are often unmarked and found on a rooftop or down a dark side-alley.",
-            "bestTimeToVisit": "March to May (Autumn) for the most stable weather and the stunning park colors, or October to November for the spring festivals and horse racing.",
+        "delhi": {
+            "name": "Delhi",
+            "country": "india",
+            "heroTitle": "Delhi: The Heart of India",
+            "heroDescription": "Delhi is a monumental city where ancient dynasties and modern power intersect. From the Mughal grandeur of the Red Fort to the wide, leafy avenues of Lutyens' Delhi and the chaotic energy of Chandni Chowk, it is a place of intense historical depth and vibrant street life. It is the capital of a nation of over a billion, a city that never stops moving, offering a sensory journey through India's past and its future.",
             "whyVisit": [
-                "The world's premier coffee culture and a high-end dining scene that is consistently ranked among the best in the world",
-                "A vibrant, walkable city center filled with historic architecture, secret laneways, and extraordinary street art",
-                "The global center for sports with world-class facilities for tennis (Australian Open), cricket, and AFL"
+                "A staggering concentration of UNESCO World Heritage sites and historic monuments",
+                "The absolute epicenter of North Indian street food and fine dining",
+                "A vibrant cultural scene that reflects every corner of the vast Indian subcontinent"
             ],
             "topExperiences": [
-                "Spend a morning laneway-hopping in the CBD—start at Degraves Street and find a tiny, high-end espresso bar",
-                "Explore the vibrant, bohemian neighborhood of Fitzroy for its independent boutiques and rooftop bars",
-                "Take a day trip down the Great Ocean Road to see the Twelve Apostles and the rugged Victorian coastline"
+                "Explore the sprawling grounds of Humayun's Tomb, a precursor to the Taj Mahal",
+                "Wander through the narrow lanes of Old Delhi and feast on legendary delicacies",
+                "Visit the Lotus Temple at dusk for a moment of quiet spiritual resonance"
             ],
             "travelTips": [
-                "Melbourne's weather is famous for 'four seasons in one day'; always carry a light jacket and be prepared for changes",
-                "The city has a 'Free Tram Zone' in the CBD; utilize the historic City Circle tram for a free loop of the major sites",
-                "Get a Myki card for all transport outside the free zone; you must touch on and touch off for every journey"
+                "Use the Delhi Metro—it's fast, clean, and the best way to bypass traffic",
+                "Winter (November to February) is the best time for pleasant walking weather",
+                "Be prepared for extreme seasonal shifts; summers can be very hot"
             ]
         },
-        "brisbane": {
-            "name": "Brisbane",
-            "country": "australia",
-            "heroTitle": "Brisbane: The River City",
-            "heroDescription": "Brisbane is a high-growth, sun-soaked city of the future, built around the winding curves of the Brisbane River. Known for its laid-back outdoor lifestyle, its subtropical climate, and its booming creative scene, it is the gateway to the Gold Coast and the Sunshine Coast. From the man-made beach at South Bank to the high-end boutiques of James Street and the panoramic views from Mount Coot-tha, Brisbane is a city that embraces the sun. It is a metropolis of timber-framed 'Queenslander' houses and sleek glass towers, offering a lifestyle that is more relaxed than Sydney but no less ambitious.",
-            "bestTimeToVisit": "April to October. The winters are mild and dry with clear blue skies, while the summers can be intensely hot and humid with tropical storms.",
+        "tamil-nadu": {
+            "name": "Tamil Nadu",
+            "country": "india",
+            "heroTitle": "Tamil Nadu: The Land of Temples",
+            "heroDescription": "Tamil Nadu is the soul of Dravidian culture, a land of soaring granite temples, intricate classical arts, and a heritage of literature that spans two millennia. From the colossal scale of the Brihadisvara Temple to the spiritual silence of Tiruvannamalai and the vibrant filter-coffee culture of Chennai, it is a place of profound spiritual and intellectual depth. It is where the rhythms of the classical Bharatanatyam dance meets the rolling green hills of the Nilgiris and the white-sand shores of the Bay of Bengal.",
             "whyVisit": [
-                "Excellent outdoor urban lifestyle with world-class riverfront parks, galleries, and a man-made inner-city beach",
-                "Direct, easy access to some of the world's most famous surfing beaches and Great Barrier Reef gateways",
-                "A vibrant and rapidly growing culinary and nightlife scene centered around Fortitude Valley"
+                "Home to the 'Great Living Chola Temples' and thousands of active spiritual sites",
+                "A world-class culinary tradition centered on rice, lentils, and unique spice blends",
+                "Breathtaking hill stations like Ooty and Kodaikanal that offer an escape into the clouds"
             ],
             "topExperiences": [
-                "Ride the CityCat ferry along the river for a tranquil and scenic perspective of the city's unique architecture",
-                "Visit the South Bank Parklands for a swim at Streets Beach and a tour of the QAGOMA modern art galleries",
-                "Climb to the summit of Mount Coot-tha at dawn for a spectacular view over the city to Moreton Bay"
+                "Walk through the thousand-pillared halls of the Meenakshi Amman Temple in Madurai",
+                "Explore the shore temples of Mahabalipuram, carved directly into the granite",
+                "Take the heritage mountain toy train through the lush tea gardens"
             ],
             "travelTips": [
-                "The Go Card is the best way to pay for public transport (buses, trains, ferries) and offers a significant discount over paper tickets",
-                "Brisbane is very casual; dress code for most restaurants and bars is 'smart casual' and relaxed",
-                "Visit the Lone Pine Koala Sanctuary—the world's first and largest—to see Australia's iconic wildlife in a natural setting"
+                "Dress modestly and be respectful of temple customs",
+                "Travel between October and March for the most pleasant weather",
+                "Try the 'Thali' (meals on a banana leaf) for an authentic taste"
             ]
         },
-        "perth": {
-            "name": "Perth",
-            "country": "australia",
-            "heroTitle": "Perth: The Isolated Oasis",
-            "heroDescription": "Perth is a remote, wealthy, and sun-soaked metropolis that sits between the vast Indian Ocean and the rugged Darling Scarp. Known for being one of the most isolated major cities in the world, it has developed a unique, high-quality urban life defined by space, light, and incredible natural proximity. From the white sands of Cottesloe Beach to the sprawling Kings Park (one of the world's largest inner-city parks) and the historic port of Fremantle, Perth offers a lifestyle of refined coastal isolation. It is a city of clear blue skies, world-class Swan Valley vineyards, and a sense of quiet prosperity that is distinctly West Australian.",
-            "bestTimeToVisit": "September to November for the wildflower season and perfect hiking weather, or February to March for the best ocean swimming and sunsets.",
+        "maharashtra": {
+            "name": "Maharashtra",
+            "country": "india",
+            "heroTitle": "Maharashtra: The Great Gateway",
+            "heroDescription": "Maharashtra is a vast, high-energy state that serves as India's industrial and cultural engine. From the glittering skyscrapers of Mumbai to the ancient cave temples of Ajanta and Ellora, it is a place of infinite scale and historical significance. It is home to the Sahyadri mountains, a rugged landscape of forts, waterfalls, and hill stations that tell the story of the Maratha Empire.",
             "whyVisit": [
-                "Some of the most pristine and less-crowded urban beaches in the world with legendary Indian Ocean sunsets",
-                "Kings Park and Botanic Garden—a massive, high-altitude sanctuary with views over the Swan River and the skyline",
-                "The historic, bohemian port city of Fremantle with its preserved 19th-century architecture and vibrant markets"
+                "Mumbai, the bustling 'Maximum City' and heart of Bollywood",
+                "Incredible UNESCO-listed cave temples carved deep into volcanic rock",
+                "The rugged Sahyadri mountains and historic hill forts"
             ],
             "topExperiences": [
-                "Take a ferry to Rottnest Island to meet the world-famous Quokkas and cycle between turquoise bays",
-                "Watch the sunset from the iconic surf beach of Cottesloe with a meal at the historic Indiana Tea House",
-                "Spend a day in the Swan Valley, Australia's oldest wine region, just 25 minutes from the city center"
+                "Take a boat to the Elephanta Caves for ancient sea-carved monuments",
+                "Hike to the Lohagad Fort during the monsoon for misty mountain views",
+                "Feast on the diverse street food of Mumbai, from Vada Pav to Pav Bhaji"
             ],
             "travelTips": [
-                "Perth is very spread out; while the central area is walkable, you'll need a car or use the Transperth trains for beaches",
-                "The city has a 'Free Transit Zone' for buses within the CBD—look for the red icons on the bus stops",
-                "Be prepared for the 'Fremantle Doctor'—a strong afternoon sea breeze that cools the city down but can blow sand on the beach"
+                "Mumbai is best explored via the local train network (outside rush hour!)",
+                "The monsoon season (June-September) is beautiful but can disrupt travel",
+                "Learning a few words of Marathi will open many doors and hearts"
             ]
         },
-        "chiang-mai": {
-            "name": "Chiang Mai",
-            "country": "thailand",
-            "heroTitle": "Chiang Mai: The Rose of the North",
-            "heroDescription": "Chiang Mai is a soulful, mist-shrouded sanctuary in the mountains of Northern Thailand, where the scent of incense and woodsmoke fills the air. Once the capital of the Lanna Kingdom, it is a city of over 300 temples, golden spires, and a pace of life that is refreshingly slow compared to Bangkok. From the sacred heights of Wat Phra That Doi Suthep to the vibrant night markets and the lush elephant sanctuaries, it offers a deep connection with Thai culture and nature. It is a place of artisans, digital nomads, and ancient traditions, nestled within a landscape of emerald jungles and rolling hills.",
-            "bestTimeToVisit": "November to February for the cool, dry weather and the spectacular Yi Peng lantern festival.",
+        "rajasthan": {
+            "name": "Rajasthan",
+            "country": "india",
+            "heroTitle": "Rajasthan: The Land of Kings",
+            "heroDescription": "Rajasthan is India's regal heart, a desert landscape of golden sands, shimmering lakes, and colossal hill forts that tell tales of chivalry and honor. From the pink-hued streets of Jaipur to the blue houses of Jodhpur and the white-marble elegance of Udaipur, it is a state defined by its vibrant colors and extraordinary hospitality. It is a place of camels, palace hotels, and ancient temples, where the legacy of the Maharajas is felt in every bazaar and courtyard.",
             "whyVisit": [
-                "The cultural and spiritual heart of Thailand with hundreds of historic temples and a thriving art scene",
-                "Direct access to some of the country's best mountain trekking, waterfalls, and ethical wildlife experiences",
-                "A world-class destination for foodies, especially famous for the unique 'Khao Soi' curry noodles"
+                "Breathtaking palace hotels and historic hill forts",
+                "Incredible textile and jewelry shopping in vibrant local bazaars",
+                "Surreal desert landscapes and camel safaris in the Thar Desert"
             ],
             "topExperiences": [
-                "Hike or drive up to Wat Phra That Doi Suthep at sunset for a panoramic view of the city and the surrounding valley",
-                "Wander through the Sunday Night Market (Walking Street) for local handicrafts and an endless variety of street food",
-                "Visit an ethical elephant sanctuary to learn about conservation and interact with these gentle giants in their natural habitat"
+                "Watch the sunset from the ramparts of Mehrangarh Fort in Jodhpur",
+                "Take a boat ride on Lake Pichola in Udaipur at dusk",
+                "Explore the intricate stone-carved havelis of Jaisalmer"
             ],
             "travelTips": [
-                "Rent a scooter to explore the outlying waterfalls and mountain villages, but be careful on the winding roads",
-                "Participate in a 'Monk Chat' at one of the temples to learn about Buddhism and local life directly from the practitioners",
-                "Chiang Mai is very budget-friendly; stay in a traditional guesthouse in the Old City for an authentic experience"
+                "Visit between October and March to avoid the extreme summer heat",
+                "Hire a local guide for the major forts to understand the complex history",
+                "Pack light, breathable cotton clothing and a good sun hat"
             ]
         },
-        "tokyo": {
-            "name": "Tokyo",
-            "country": "japan",
-            "heroTitle": "Tokyo: The Neon Symphony",
-            "heroDescription": "Tokyo is a high-octane, neon-drenched metropolis that serves as a living laboratory for the future of urban life. From the frantic scramble of Shibuya to the quiet, cedar-lined shrines of Meiji Jingu, it is a city of extreme contrasts and meticulous order. Known for its world-class culinary scene, its cutting-edge subcultures, and its vast, efficient transport network, Tokyo is a place where every corner feels like a scene from another world. It is a city that never stops moving, yet maintains a profound respect for the silence and tradition that define its core.",
-            "bestTimeToVisit": "Late March to early April for the cherry blossom season, or late October to November for the stunning autumn foliage.",
+        "kerala": {
+            "name": "Kerala",
+            "country": "india",
+            "heroTitle": "Kerala: God's Own Country",
+            "heroDescription": "Kerala is a tropical sanctuary of emerald backwaters, sprawling tea estates, and white-sand beaches. Known for its slow pace of life and its deep-rooted spice-trading history, it is a state that feels profoundly connected to nature. From the houseboats of Alleppey to the misty hills of Munnar and the ancient spice markets of Kochi, Kerala offers a serene, soulful escape through layers of tropical beauty and Ayurvedic wisdom.",
             "whyVisit": [
-                "The world's greatest concentration of Michelin-starred restaurants and a diverse, high-quality street food scene",
-                "A premier global hub for technology, fashion, and pop culture, ranging from Akihabara to Harajuku",
-                "Incredible historical depth with landmarks like the Imperial Palace and the ancient Senso-ji temple in Asakusa"
+                "Unique backwater houseboat experiences and tranquil canal networks",
+                "World-class tea gardens and spice hills in the Western Ghats",
+                "The ancient healing traditions of Ayurveda and traditional Kathakali dance"
             ],
             "topExperiences": [
-                "Cross the world's busiest intersection at Shibuya Scramble and watch the flow of humanity from a nearby cafe",
-                "Explore the traditional atmosphere of Asakusa and walk through the Kaminarimon gate to the Senso-ji temple",
-                "Visit the teamLab Borderless or Planets exhibitions for a mind-bending immersive digital art experience"
+                "Spend a night on a traditional houseboat in the backwaters of Alleppey",
+                "Watch a Kathakali performance at dusk in historic Fort Kochi",
+                "Wander through the sprawling tea estates of Munnar at dawn"
             ],
             "travelTips": [
-                "The Tokyo Subway is the most efficient way to get around; buy a Suica or Pasmo card for easy tap-and-go travel",
-                "Most ATMs in convenience stores (like 7-Eleven) accept international cards, which is the easiest way to get cash",
-                "Tokyo is a collection of villages; explore neighborhoods like Shimokitazawa and Daikanyama to find its true soul"
-            ]
-        },
-        "kyoto": {
-            "name": "Kyoto",
-            "country": "japan",
-            "heroTitle": "Kyoto: The Eternal Garden",
-            "heroDescription": "Kyoto is the spiritual heart of Japan, a city of over 2,000 temples, shrines, and meticulously groomed Zen gardens. Once the imperial capital for over a millennium, it is a place where the ancient arts of the tea ceremony, flower arranging, and Geisha culture are still practiced with profound devotion. From the shimmering Golden Pavilion to the thousand red torii gates of Fushimi Inari, Kyoto offers a journey through the very essence of Japanese history and aesthetics. It is a city that invites a slower pace, where the whisper of bamboo and the scent of incense define the rhythm of the day.",
-            "bestTimeToVisit": "April for the cherry blossoms or November for the fiery autumn colors that illuminate the temple gardens.",
-            "whyVisit": [
-                "The most concentrated and well-preserved collection of traditional Japanese architecture and historical sites",
-                "One of the world's best-preserved cultural heritage sites, featuring 17 UNESCO World Heritage monuments",
-                "The birthplace of high-end Kaiseki dining and the most authentic tea ceremony experiences in Japan"
-            ],
-            "topExperiences": [
-                "Walk through the thousand vermillion torii gates of Fushimi Inari-taisha and climb the mountain for a view over the city",
-                "Visit the Kinkaku-ji (Golden Pavilion) to see its stunning reflection in the surrounding pond",
-                "Wander through the Gion district at dusk for a chance to see Geiko and Maiko on their way to traditional appointments"
-            ],
-            "travelTips": [
-                "Kyoto is best explored on foot or by bicycle; many of the most beautiful spots are hidden in quiet side streets",
-                "Many temples require you to remove your shoes; bring comfortable socks for walking on wooden floors",
-                "Book your accommodation in the Kawaramachi area for the best access to transport and dining"
-            ]
-        },
-        "rome": {
-            "name": "Rome",
-            "country": "italy",
-            "heroTitle": "Rome: The Eternal City",
-            "heroDescription": "Rome is a sprawling, high-energy museum of Western civilization, where nearly three thousand years of history are layered into the very fabric of the city. From the colossal ruins of the Colosseum to the hallowed halls of the Vatican and the baroque elegance of the Trevi Fountain, it is a metropolis of unparalleled historical depth. Known for its world-class pasta, its vibrant piazza life, and its irrepressible spirit, Rome is a place where every cobblestone has a story and every meal is a celebration. It is a city that demands a slower pace, inviting travelers to lose themselves in the grandeur of the past and the simple beauty of a neighborhood trattoria.",
-            "bestTimeToVisit": "April to June or September to October for the most pleasant walking weather and any major festivals.",
-            "whyVisit": [
-                "The world's greatest concentration of ancient Roman landmarks and archaeological sites",
-                "Access to the Vatican City, home to the Sistine Chapel and St. Peter's Basilica",
-                "An incredible culinary scene that is the birthplace of Carbonara, Amatriciana, and world-class gelato"
-            ],
-            "topExperiences": [
-                "Take a guided tour of the Colosseum and the Roman Forum to stand in the heart of the ancient empire",
-                "Throw a coin into the Trevi Fountain and wander through the narrow streets of the historic center",
-                "Spend a morning in the Vatican Museums to see the absolute pinnacle of Renaissance art"
-            ],
-            "travelTips": [
-                "Rome is a major walking city; wear your most comfortable shoes with good grip for the cobblestones",
-                "Avoid the restaurants right next to major landmarks; head toward Trastevere or Testaccio for authentic Roman soul food",
-                "Book your tickets for the Colosseum and Vatican Museums weeks in advance—they literally sell out every day"
-            ]
-        },
-        "osaka": {
-            "name": "Osaka",
-            "country": "japan",
-            "heroTitle": "Osaka: The Nation's Kitchen",
-            "heroDescription": "Osaka is a bold, high-energy metropolis of neon, street food, and irrepressible humor. Known as the 'Nation's Kitchen,' it is a city that lives to eat, where the mantra is 'kuidaore'—to eat yourself to ruin. From the neon-drenched Dotonbori canal to the historic heights of Osaka Castle and the futuristic Umeda Sky Building, it is a city of extremes. Osaka is a place of loud laughs, vibrant nightlife, and a welcoming, down-to-earth energy that makes it one of the most approachable and exciting cities in Japan.",
-            "bestTimeToVisit": "Late March to early April for the cherry blossoms at Osaka Castle Park, or October to November for mild weather.",
-            "whyVisit": [
-                "The undisputed capital of Japanese street food, famous for Takoyaki, Okonomiyaki, and Kushikatsu",
-                "A vibrant and energetic nightlife scene centered around the neon-lit Dotonbori and Namba districts",
-                "Home to Universal Studios Japan and one of the world's most impressive aquariums, the Kaiyukan"
-            ],
-            "topExperiences": [
-                "Walk through Dotonbori at night to see the Glico Man neon sign and try as much street food as possible",
-                "Explore the grounds of Osaka Castle and climb to the top for a panoramic view of the city",
-                "Spend a day in the Shinsekai district for a nostalgic look at mid-20th-century urban Japan"
-            ],
-            "travelTips": [
-                "Osaka is the perfect base for exploring the Kansai region; Kyoto, Nara, and Kobe are all under an hour away by train",
-                "The Osaka Amazing Pass offers unlimited transport and free entry to over 40 attractions for a fixed price",
-                "People in Osaka are famously more outgoing and talkative than in Tokyo; don't be afraid to strike up a conversation"
+                "Try the local cuisine—it's distinct, coconut-heavy, and often served on banana leaves",
+                "The monsoon (June-August) is intense but the greenery is at its most beautiful",
+                "The people of Kerala are highly literate and often speak good English"
             ]
         }
     }

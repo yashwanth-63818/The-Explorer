@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SafeImage from "./SafeImage";
 
 const posts = [
     {
@@ -7,7 +8,7 @@ const posts = [
         excerpt: "Patagonia is a vast region at the southern end of South America, shared by Argentina and Chile. Here is why you need to go.",
         date: "Oct 24, 2023",
         readTime: "8 min read",
-        image: "https://images.unsplash.com/photo-1518182170546-0766ce6fecfa?q=80&w=2070&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=2076&auto=format&fit=crop",
         slug: "patagonia-travel-guide"
     },
     {
@@ -25,7 +26,7 @@ const posts = [
         excerpt: "Journey through the Siq to reveal the Treasury and explore the vast archaeological site of Jordan's Rose City.",
         date: "Dec 05, 2023",
         readTime: "12 min read",
-        image: "https://images.unsplash.com/photo-1579606038848-83b6329fc66c?q=80&w=2070&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1551336162-8e99385bf51c?q=80&w=2070&auto=format&fit=crop",
         slug: "explore-petra"
     }
 ];
@@ -40,9 +41,10 @@ export default function LatestPosts() {
                         <article key={post.id} className="group grid grid-cols-1 md:grid-cols-2 gap-8 items-center cursor-pointer">
                             {/* Image */}
                             <div className="relative overflow-hidden aspect-[4/3] md:aspect-[16/10] bg-gray-100">
-                                <img
+                                <SafeImage
                                     src={post.image}
                                     alt={post.title}
+                                    fill
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                             </div>

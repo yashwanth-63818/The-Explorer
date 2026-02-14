@@ -20,44 +20,60 @@ export default function SafeImage({
     quality = 75,
     ...props
 }) {
-    const [imgSrc, setImgSrc] = useState(src);
+    // Determine initial state. If src is missing, we use fallback immediately.
+    const initialSrc = src || fallbackSrc;
+    const [imgSrc, setImgSrc] = useState(initialSrc);
     const [hasError, setHasError] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
-    // Sync state if src changes (crucial for dynamic routes)
+    // Reset state if the source changes (important for navigation between destinations)
     useEffect(() => {
-        setImgSrc(src);
+        setImgSrc(src || fallbackSrc);
         setHasError(false);
         setIsLoading(true);
-    }, [src]);
+    }, [src, fallbackSrc]);
 
     const handleError = () => {
         if (!hasError) {
+            console.warn(`[SafeImage] Failed to load: ${imgSrc}. Falling back to default.`);
             setImgSrc(fallbackSrc);
             setHasError(true);
             setIsLoading(false);
         }
     };
 
-    const finalSrc = imgSrc || fallbackSrc;
-
-    // If fill is true, Next.js Image requires absolute positioning and doesn't want width/height
-    const imageProps = fill
-        ? { fill, priority, quality, className: `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`, alt: alt || "", ...props }
-        : { width, height, priority, quality, className: `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`, alt: alt || "", ...props };
+    // Construct props carefully to avoid passing duplicates or invalid values to next/image
+    const imageProps = {
+        priority,
+        quality,
+        alt: alt || "Travel location",
+        onError: handleError,
+        onLoad: () => setIsLoading(false),
+        className: `${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-700`,
+        ...props
+    };
 
     return (
-        <div className={`relative ${fill ? 'w-full h-full' : ''} bg-white/[0.03] overflow-hidden`}>
+        <div className={`relative ${fill ? 'w-full h-full' : ''} bg-gray-900/10 overflow-hidden`}>
             {isLoading && (
-                <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-white/[0.02] via-white/[0.05] to-white/[0.02]"></div>
+                <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-white/[0.02] via-white/[0.05] to-white/[0.02] z-10"></div>
             )}
-            <Image
-                {...imageProps}
-                src={finalSrc}
-                onError={handleError}
-                onLoad={() => setIsLoading(false)}
-                unoptimized={typeof finalSrc === 'string' && finalSrc.startsWith('http')}
-            />
+            {fill ? (
+                <Image
+                    {...imageProps}
+                    src={imgSrc || fallbackSrc}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: props.style?.objectFit || 'cover' }}
+                />
+            ) : (
+                <Image
+                    {...imageProps}
+                    src={imgSrc || fallbackSrc}
+                    width={width}
+                    height={height}
+                />
+            )}
         </div>
     );
 }

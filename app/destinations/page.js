@@ -196,18 +196,25 @@ export default function DestinationsPage() {
                                         <Link
                                             key={country.name}
                                             href={`/destinations/${country.name.toLowerCase().replace(/ /g, '-')}`}
-                                            className="flex items-center gap-4 text-gray-400 hover:text-white transition-all text-[14px] font-medium group hover:pl-2"
+                                            className="flex items-center gap-4 text-gray-400 hover:text-white transition-all group py-1"
                                         >
-                                            <SafeImage
-                                                src={`https://flagcdn.com/w40/${country.code}.png`}
-                                                alt={country.name}
-                                                className="w-5 h-3.5 object-cover rounded-[2px] opacity-60 group-hover:opacity-100 transition-opacity"
-                                                width={20}
-                                                height={14}
-                                            />
-                                            <span className="group-hover:text-yellow-400 transition-colors uppercase tracking-widest text-[11px] font-black">
-                                                {country.name}
-                                            </span>
+                                            <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center border border-white/5 group-hover:border-yellow-400/30 group-hover:bg-yellow-400/10 transition-all shrink-0 overflow-hidden p-1.5">
+                                                <SafeImage
+                                                    src={`https://flagcdn.com/w40/${country.code}.png`}
+                                                    alt={country.name}
+                                                    className="w-full h-full object-cover rounded-[1px] opacity-60 group-hover:opacity-100 transition-opacity"
+                                                    width={20}
+                                                    height={14}
+                                                />
+                                            </div>
+                                            <div className="flex flex-col">
+                                                <span className="text-[11px] font-black uppercase tracking-[0.25em] group-hover:text-yellow-400 transition-colors">
+                                                    {country.name}
+                                                </span>
+                                                <span className="text-[9px] font-bold text-white/10 uppercase tracking-widest group-hover:text-white/30 transition-colors">
+                                                    Explore
+                                                </span>
+                                            </div>
                                         </Link>
                                     ))}
                                 </div>
