@@ -117,7 +117,7 @@ export default function Navbar() {
                             <div className="w-14 h-14 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-105">
                                 <img src="/logo.png" alt="The Explorer Logo" className="w-full h-full object-cover rounded-full border-2 border-[#FFD700] shadow-[0_0_20px_rgba(255,215,0,0.5)]" />
                             </div>
-                            <span className="text-xl font-bold text-white tracking-tight italic font-serif hidden sm:block">The Explorer</span>
+                            <span className="text-xl font-bold text-white tracking-tight hidden sm:block">The Explorer</span>
                         </Link>
 
                         {/* Search Box - Replaced gray with black/yellow theme */}
@@ -129,10 +129,10 @@ export default function Navbar() {
                                 <input
                                     id="nav-search"
                                     type="text"
-                                    placeholder="SEARCH DESTINATIONS..."
+                                    placeholder="Search the blog..."
                                     value={searchQuery}
                                     onChange={(e) => handleSearch(e.target.value)}
-                                    className="block w-full bg-white/5 border border-white/20 rounded-full py-2.5 pl-10 pr-10 text-[10px] font-black tracking-[0.1em] text-white placeholder-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFD700] focus:border-[#FFD700] focus:bg-white/10 transition-all uppercase"
+                                    className="block w-full bg-white/5 border border-white/20 rounded-full py-2.5 pl-10 pr-10 text-[11px] font-medium tracking-wide text-white placeholder-white/40 focus:outline-none focus:ring-1 focus:ring-[#FFD700] focus:border-[#FFD700] focus:bg-white/10 transition-all font-sans"
                                 />
                             </div>
                         </div>
@@ -148,10 +148,10 @@ export default function Navbar() {
                                         onClick={() => setIsAccountMenuOpen(!isAccountMenuOpen)}
                                         className="flex items-center gap-3 bg-white/10 hover:bg-[#FFD700] px-5 py-2.5 rounded-full border border-white/20 transition-all group hover:text-black"
                                     >
-                                        <div className="w-7 h-7 rounded-full bg-[#FFD700] group-hover:bg-black text-black group-hover:text-[#FFD700] flex items-center justify-center font-black text-xs transition-colors">
+                                        <div className="w-7 h-7 rounded-full bg-[#FFD700] group-hover:bg-black text-black group-hover:text-[#FFD700] flex items-center justify-center font-bold text-xs transition-colors">
                                             {user.name[0]}
                                         </div>
-                                        <span className="text-[11px] font-black text-white group-hover:text-black uppercase tracking-[0.1em]">{user.name}</span>
+                                        <span className="text-[11px] font-bold text-white group-hover:text-black tracking-wide">{user.name}</span>
                                         <ChevronDown size={14} className={`text-[#FFD700] group-hover:text-black transition-transform duration-200 ${isAccountMenuOpen ? 'rotate-180' : ''}`} />
                                     </button>
 
@@ -159,29 +159,29 @@ export default function Navbar() {
                                     {isAccountMenuOpen && (
                                         <div className="absolute top-full right-0 mt-3 w-64 bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] overflow-hidden py-3 animate-in fade-in slide-in-from-top-2 duration-200 ring-2 ring-[#FFD700]">
                                             <div className="px-5 py-4 border-b border-gray-100 mb-2">
-                                                <p className="text-[9px] font-black text-gray-400 uppercase tracking-[0.2em] mb-1">Authenticated</p>
-                                                <p className="text-sm font-black text-black truncate">{user.email || user.name}</p>
+                                                <p className="text-[9px] font-bold text-gray-400 tracking-widest mb-1">Authenticated</p>
+                                                <p className="text-sm font-bold text-black truncate">{user.email || user.name}</p>
                                             </div>
                                             <Link
                                                 href="/my-trips"
                                                 onClick={() => setIsAccountMenuOpen(false)}
                                                 className="w-full text-left px-5 py-3.5 text-xs font-black text-gray-800 hover:bg-[#FFD700] hover:text-black flex items-center gap-3 transition-all group"
                                             >
-                                                <Plane size={16} className="text-[#FFD700] group-hover:text-black" /> MY TRIPS
+                                                <Plane size={16} className="text-[#FFD700] group-hover:text-black" /> My Trips
                                             </Link>
                                             <Link
                                                 href="/settings"
                                                 onClick={() => setIsAccountMenuOpen(false)}
                                                 className="w-full text-left px-5 py-3.5 text-xs font-black text-gray-800 hover:bg-[#FFD700] hover:text-black flex items-center gap-3 transition-all group"
                                             >
-                                                <Shield size={16} className="text-[#FFD700] group-hover:text-black" /> TRAVEL SETTINGS
+                                                <Shield size={16} className="text-[#FFD700] group-hover:text-black" /> Travel Settings
                                             </Link>
                                             <div className="border-t border-gray-100 mt-2 pt-2">
                                                 <button
                                                     onClick={handleLogout}
                                                     className="w-full text-left px-5 py-3.5 text-xs font-black text-red-600 hover:bg-black hover:text-white flex items-center gap-3 transition-all"
                                                 >
-                                                    <X size={16} className="text-red-600" /> LOG OUT
+                                                    <X size={16} className="text-red-600" /> Log Out
                                                 </button>
                                             </div>
                                         </div>
@@ -190,7 +190,7 @@ export default function Navbar() {
                             ) : (
                                 <button
                                     onClick={() => setIsSignInOpen(true)}
-                                    className="px-8 py-3 bg-[#FFD700] hover:bg-white text-black font-black uppercase tracking-[0.1em] text-[11px] rounded-full transition-all shadow-xl active:scale-95 border-2 border-transparent hover:border-black"
+                                    className="px-8 py-3 bg-[#FFD700] hover:bg-white text-black font-bold tracking-wide text-[11px] rounded-full transition-all shadow-xl active:scale-95 border-2 border-transparent hover:border-black"
                                 >
                                     Sign in
                                 </button>
@@ -224,7 +224,7 @@ export default function Navbar() {
                                             setActiveMenu(null);
                                         }
                                     }}
-                                    className={`text-[12px] font-black uppercase tracking-[0.25em] transition-all flex items-center gap-1 ${activeMenu === item.name ? 'text-[#FFD700] scale-105' : 'text-white/80 hover:text-[#FFD700]'}`}
+                                    className={`text-[13px] font-bold tracking-tight transition-all flex items-center gap-1 ${activeMenu === item.name ? 'text-[#FFD700] scale-105' : 'text-white/80 hover:text-white'}`}
                                 >
                                     {item.name}
                                 </Link>
@@ -259,8 +259,8 @@ export default function Navbar() {
                                                     <tool.icon size={28} strokeWidth={2.5} />
                                                 </div>
                                                 <div>
-                                                    <div className="font-black text-[14px] uppercase tracking-[0.1em] text-white group-hover/item:text-[#FFD700] transition-colors">{tool.name}</div>
-                                                    <div className="text-[#FFD700]/40 text-[10px] uppercase font-black tracking-widest mt-2">{tool.sub}</div>
+                                                    <div className="font-bold text-[14px] text-white group-hover/item:text-[#FFD700] transition-colors">{tool.name}</div>
+                                                    <div className="text-[#FFD700]/40 text-[10px] font-bold tracking-widest mt-2">{tool.sub}</div>
                                                 </div>
                                             </Component>
                                         );
@@ -282,7 +282,7 @@ export default function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-4xl font-black uppercase tracking-tighter text-white hover:text-[#FFD700] transition-colors border-b-4 border-white/5 pb-8"
+                                className="text-4xl font-bold tracking-tight text-white hover:text-[#FFD700] transition-colors border-b-4 border-white/5 pb-8"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.name}

@@ -51,7 +51,7 @@ export default function LatestPosts() {
 
                             {/* Content */}
                             <div>
-                                <div className="flex items-center gap-3 text-xs font-medium uppercase tracking-widest text-gray-500 mb-4">
+                                <div className="flex items-center gap-3 text-xs font-bold tracking-widest text-gray-500 mb-4">
                                     <span>{post.date}</span>
                                     <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
                                     <span>{post.readTime}</span>
@@ -64,8 +64,8 @@ export default function LatestPosts() {
                                 <p className="text-gray-400 leading-relaxed mb-6">
                                     {post.excerpt}
                                 </p>
-                                <Link href={`/blog/${post.slug}`} className="text-sm font-bold uppercase tracking-wide border-b border-yellow-400 pb-1 text-white hover:text-yellow-400 hover:border-white transition-all">
-                                    Read Article
+                                <Link href={`/blog/${post.slug}`} className="text-sm font-bold tracking-tight border-b border-yellow-400 pb-1 text-white hover:text-yellow-400 hover:border-white transition-all">
+                                    Read article
                                 </Link>
                             </div>
                         </article>

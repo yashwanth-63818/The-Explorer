@@ -7,8 +7,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                serif: ["var(--font-baskerville)", "var(--font-playfair)", "serif"],
-                sans: ["var(--font-inter)", "sans-serif"],
+                serif: ["var(--font-fraunces)", "serif"],
+                sans: ["var(--font-outfit)", "sans-serif"],
             },
             colors: {
                 // bucketlistly inspired neutral palette

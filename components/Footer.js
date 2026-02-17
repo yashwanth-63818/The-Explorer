@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Brand */}
                     <div className="md:col-span-1">
-                        <h2 className="text-2xl font-serif font-bold mb-6">THE EXPLORER</h2>
+                        <h2 className="text-2xl font-serif font-bold mb-6">The Explorer</h2>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Inspiring travelers to see the world, one story at a time.
                         </p>
@@ -16,7 +16,7 @@ export default function Footer() {
 
                     {/* Links */}
                     <div>
-                        <h3 className="text-sm font-bold uppercase tracking-widest mb-6">Explore</h3>
+                        <h3 className="text-sm font-bold tracking-widest mb-6">Explore</h3>
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li><Link href="/destinations" className="hover:text-white transition-colors">Destinations</Link></li>
                             <li><Link href="/blog" className="hover:text-white transition-colors">Stories</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
 
                     {/* About */}
                     <div>
-                        <h3 className="text-sm font-bold uppercase tracking-widest mb-6">Company</h3>
+                        <h3 className="text-sm font-bold tracking-widest mb-6">Company</h3>
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
                             <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
@@ -37,7 +37,7 @@ export default function Footer() {
 
                     {/* Social */}
                     <div>
-                        <h3 className="text-sm font-bold uppercase tracking-widest mb-6">Follow Us</h3>
+                        <h3 className="text-sm font-bold tracking-widest mb-6">Follow Us</h3>
                         <div className="flex gap-4">
                             <a href="#" className="p-2 bg-gray-900 rounded-full hover:bg-white hover:text-black transition-all">
                                 <Instagram size={18} />

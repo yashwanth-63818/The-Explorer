@@ -37,7 +37,7 @@ export default function CountryHero({
                    Style: Minimal, Editorial, Subtle.
                    Format: Continent › Sub-region › Country (or City)
                 */}
-                <nav className="flex items-center justify-center gap-1 sm:gap-2 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.4em] text-white/30 mb-16 animate-in fade-in duration-1000">
+                <nav className="flex items-center justify-center gap-1 sm:gap-2 text-[9px] sm:text-[10px] font-bold tracking-[0.2em] text-white/30 mb-16 animate-in fade-in duration-1000">
                     {/* Level 1: Continent */}
                     <span className="hover:text-white transition-colors cursor-default">
                         {facts?.region || "World"}
@@ -88,7 +88,7 @@ export default function CountryHero({
                         onClick={scrollToContent}
                         className="group flex flex-col items-center gap-5 transition-all duration-300 hover:scale-105"
                     >
-                        <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white/20 group-hover:text-[#FFD700] transition-colors">
+                        <span className="text-[10px] font-bold tracking-[0.3em] text-white/20 group-hover:text-[#FFD700] transition-colors">
                             Scout {name}
                         </span>
                         <div className="relative h-20 w-px bg-white/5 group-hover:bg-[#FFD700]/30 transition-colors overflow-hidden">

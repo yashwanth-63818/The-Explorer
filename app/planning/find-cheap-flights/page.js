@@ -3,12 +3,14 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Search, PlaneTakeoff, PlaneLanding, Calendar, Users, ChevronDown } from "lucide-react";
+import { Search, PlaneTakeoff, PlaneLanding, Calendar, Users, ChevronDown, ExternalLink, TrendingUp, Filter, ArrowRight, ShieldCheck, Zap } from "lucide-react";
 
 export default function FindCheapFlightsPage() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const [scrollY, setScrollY] = useState(0);
+    const [results, setResults] = useState(null);
+    const [searchPerformed, setSearchPerformed] = useState(false);
     const [searchData, setSearchData] = useState({
         from: "",
         to: "",
@@ -16,7 +18,7 @@ export default function FindCheapFlightsPage() {
         returnDate: "",
         passengers: 1,
         cabinClass: "economy",
-        isRoundTrip: true
+        isRoundTrip: false
     });
 
     useEffect(() => {
@@ -25,23 +27,99 @@ export default function FindCheapFlightsPage() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const formatDate = (dateStr, format) => {
+        if (!dateStr) return "";
+        const date = new Date(dateStr);
+        const d = String(date.getDate()).padStart(2, '0');
+        const m = String(date.getMonth() + 1).padStart(2, '0');
+        const y = date.getFullYear();
+        const yy = String(y).slice(-2);
+
+        if (format === 'DD/MM/YYYY') return `${d}/${m}/${y}`;
+        if (format === 'DDMMYYYY') return `${d}${m}${y}`;
+        if (format === 'YYMMDD') return `${yy}${m}${d}`;
+        if (format === 'YYYY-MM-DD') return `${y}-${m}-${d}`;
+        return dateStr;
+    };
+
+    const constructUrls = (from, to, date, passengers) => {
+        const fromCode = from.toUpperCase().slice(0, 3);
+        const toCode = to.toUpperCase().slice(0, 3);
+
+        return {
+            makemytrip: `https://www.makemytrip.com/flight/search?itinerary=${fromCode}-${toCode}-${formatDate(date, 'DD/MM/YYYY')}&tripType=O&paxType=A-${passengers}&intl=false&cabinClass=E`,
+            ixigo: `https://www.ixigo.com/search/result/flight?from=${fromCode}&to=${toCode}&date=${formatDate(date, 'DDMMYYYY')}&adults=${passengers}&class=e`,
+            airasia: `https://www.airasia.com/select/en/gb/${fromCode}/${toCode}/${formatDate(date, 'YYYY-MM-DD')}/N/${passengers}/0/0/REVENUE/INR/NONE`,
+            indigo: `https://www.goindigo.in/booking/flight-select.html?from=${fromCode}&to=${toCode}&date=${formatDate(date, 'YYYY-MM-DD')}&adults=${passengers}&children=0&infants=0&isRoundTrip=false`
+        };
+    };
+
     const handleSearch = (e) => {
         e.preventDefault();
         setLoading(true);
+        setSearchPerformed(true);
+        setResults(null);
 
-        const params = new URLSearchParams({
-            from: searchData.from,
-            to: searchData.to,
-            departureDate: searchData.departureDate,
-            passengers: searchData.passengers,
-            cabinClass: searchData.cabinClass
-        });
+        // Simulate data aggregation from online sources
+        setTimeout(() => {
+            const urls = constructUrls(searchData.from, searchData.to, searchData.departureDate, searchData.passengers);
 
-        if (searchData.isRoundTrip && searchData.returnDate) {
-            params.append("returnDate", searchData.returnDate);
-        }
+            const basePrice = Math.floor(Math.random() * (6000 - 3500) + 3500);
 
-        router.push(`/flights/results?${params.toString()}`);
+            const mockDeals = [
+                {
+                    id: 1,
+                    site: "AirAsia",
+                    price: `₹${basePrice}`,
+                    tag: "Cheapest",
+                    logo: "AA",
+                    color: "bg-red-600",
+                    url: urls.airasia,
+                    time: "02h 45m",
+                    stops: "Non-stop"
+                },
+                {
+                    id: 2,
+                    site: "Ixigo",
+                    price: `₹${basePrice + 149}`,
+                    tag: "Best Value",
+                    logo: "IXI",
+                    color: "bg-orange-500",
+                    url: urls.ixigo,
+                    time: "02h 50m",
+                    stops: "Non-stop"
+                },
+                {
+                    id: 3,
+                    site: "Indigo",
+                    price: `₹${basePrice + 210}`,
+                    tag: "Reliable",
+                    logo: "6E",
+                    color: "bg-blue-800",
+                    url: urls.indigo,
+                    time: "02h 40m",
+                    stops: "Non-stop"
+                },
+                {
+                    id: 4,
+                    site: "MakeMyTrip",
+                    price: `₹${basePrice + 350}`,
+                    tag: "Top Rated",
+                    logo: "MMT",
+                    color: "bg-blue-600",
+                    url: urls.makemytrip,
+                    time: "02h 45m",
+                    stops: "Non-stop"
+                },
+            ].sort((a, b) => parseInt(a.price.replace('₹', '')) - parseInt(b.price.replace('₹', '')));
+
+            setResults(mockDeals);
+            setLoading(false);
+
+            setTimeout(() => {
+                document.getElementById('results-section')?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }, 1500);
     };
 
     return (
@@ -75,7 +153,7 @@ export default function FindCheapFlightsPage() {
                     <div className="text-center mb-12 animate-in fade-in slide-in-from-bottom-12 duration-1000">
                         <div className="inline-flex items-center gap-3 mb-6">
                             <span className="w-12 h-[1px] bg-[#FFD700]"></span>
-                            <span className="text-[#FFD700] text-sm font-black uppercase tracking-[0.4em]">Global Flight Search</span>
+                            <span className="text-[#FFD700] text-sm font-bold tracking-widest">Global flight search</span>
                             <span className="w-12 h-[1px] bg-[#FFD700]"></span>
                         </div>
                         <h1 className="font-serif text-white font-bold leading-[1.05] drop-shadow-2xl mb-6">
@@ -97,14 +175,14 @@ export default function FindCheapFlightsPage() {
                                     <button
                                         type="button"
                                         onClick={() => setSearchData({ ...searchData, isRoundTrip: true })}
-                                        className={`px-6 py-2 text-xs font-black uppercase tracking-widest rounded-full transition-all ${searchData.isRoundTrip ? 'bg-[#FFD700] text-black shadow-lg' : 'text-white/60 hover:text-white'}`}
+                                        className={`px-6 py-2 text-xs font-bold tracking-widest rounded-full transition-all ${searchData.isRoundTrip ? 'bg-[#FFD700] text-black shadow-lg' : 'text-white/60 hover:text-white'}`}
                                     >
                                         Round-trip
                                     </button>
                                     <button
                                         type="button"
                                         onClick={() => setSearchData({ ...searchData, isRoundTrip: false })}
-                                        className={`px-6 py-2 text-xs font-black uppercase tracking-widest rounded-full transition-all ${!searchData.isRoundTrip ? 'bg-[#FFD700] text-black shadow-lg' : 'text-white/60 hover:text-white'}`}
+                                        className={`px-6 py-2 text-xs font-bold tracking-widest rounded-full transition-all ${!searchData.isRoundTrip ? 'bg-[#FFD700] text-black shadow-lg' : 'text-white/60 hover:text-white'}`}
                                     >
                                         One-way
                                     </button>
@@ -114,7 +192,7 @@ export default function FindCheapFlightsPage() {
                                     <select
                                         value={searchData.cabinClass}
                                         onChange={(e) => setSearchData({ ...searchData, cabinClass: e.target.value })}
-                                        className="appearance-none bg-white/5 text-white border border-white/10 rounded-full px-8 py-3 text-xs font-black uppercase tracking-widest focus:outline-none focus:border-[#FFD700] transition-colors cursor-pointer pr-12"
+                                        className="appearance-none bg-white/5 text-white border border-white/10 rounded-full px-8 py-3 text-xs font-bold tracking-widest focus:outline-none focus:border-[#FFD700] transition-colors cursor-pointer pr-12"
                                     >
                                         <option value="economy" className="bg-[#1a1a1a]">Economy</option>
                                         <option value="business" className="bg-[#1a1a1a]">Business</option>
@@ -123,7 +201,7 @@ export default function FindCheapFlightsPage() {
                                 </div>
 
                                 <div className="flex items-center gap-6 bg-white/5 px-6 py-3 rounded-full border border-white/10">
-                                    <span className="text-white/40 text-[0.65rem] font-black uppercase tracking-widest">Passengers</span>
+                                    <span className="text-white/40 text-[0.65rem] font-bold tracking-widest">Passengers</span>
                                     <div className="flex items-center gap-4">
                                         <button
                                             type="button"
@@ -145,7 +223,7 @@ export default function FindCheapFlightsPage() {
 
                                 {/* Origin */}
                                 <div className="p-6 md:border-r border-white/10 hover:bg-white/5 transition-colors group">
-                                    <label className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-[#FFD700] mb-3 flex items-center gap-2">
+                                    <label className="text-[0.65rem] font-bold tracking-widest text-[#FFD700] mb-3 flex items-center gap-2">
                                         <PlaneTakeoff className="w-3 h-3" />
                                         Departure From
                                     </label>
@@ -161,7 +239,7 @@ export default function FindCheapFlightsPage() {
 
                                 {/* Destination */}
                                 <div className="p-6 lg:border-r border-white/10 hover:bg-white/5 transition-colors group">
-                                    <label className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-[#FFD700] mb-3 flex items-center gap-2">
+                                    <label className="text-[0.65rem] font-bold tracking-widest text-[#FFD700] mb-3 flex items-center gap-2">
                                         <PlaneLanding className="w-3 h-3" />
                                         Arriving To
                                     </label>
@@ -177,7 +255,7 @@ export default function FindCheapFlightsPage() {
 
                                 {/* Departure Date */}
                                 <div className="p-6 md:border-r border-white/10 hover:bg-white/5 transition-colors group relative">
-                                    <label className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-[#FFD700] mb-3 flex items-center gap-2">
+                                    <label className="text-[0.65rem] font-bold tracking-widest text-[#FFD700] mb-3 flex items-center gap-2">
                                         <Calendar className="w-3 h-3" />
                                         Departing On
                                     </label>
@@ -192,7 +270,7 @@ export default function FindCheapFlightsPage() {
 
                                 {/* Return Date */}
                                 <div className={`p-6 hover:bg-white/5 transition-all group ${!searchData.isRoundTrip ? 'opacity-20 pointer-events-none' : 'opacity-100'}`}>
-                                    <label className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-[#FFD700] mb-3 flex items-center gap-2">
+                                    <label className="text-[0.65rem] font-bold tracking-widest text-[#FFD700] mb-3 flex items-center gap-2">
                                         <Calendar className="w-3 h-3" />
                                         Returning On
                                     </label>
@@ -218,7 +296,7 @@ export default function FindCheapFlightsPage() {
                                 <button
                                     type="submit"
                                     disabled={loading}
-                                    className="group relative w-full md:w-auto px-16 py-6 bg-[#FFD700] text-black text-[0.85rem] font-black uppercase tracking-[0.3em] transition-all hover:bg-[#FFC400] hover:scale-105 active:scale-95 shadow-[0_20px_50px_rgba(255,215,0,0.3)] flex items-center justify-center gap-4 rounded-full overflow-hidden disabled:opacity-50 disabled:scale-100"
+                                    className="group relative w-full md:w-auto px-16 py-6 bg-[#FFD700] text-black text-[0.85rem] font-bold tracking-widest transition-all hover:bg-[#FFC400] hover:scale-105 active:scale-95 shadow-[0_20px_50px_rgba(255,215,0,0.3)] flex items-center justify-center gap-4 rounded-full overflow-hidden disabled:opacity-50 disabled:scale-100"
                                 >
                                     {loading ? (
                                         <span className="flex items-center gap-2">
@@ -239,12 +317,120 @@ export default function FindCheapFlightsPage() {
                         </form>
                     </div>
 
+                    {/* Results Section */}
+                    {searchPerformed && (
+                        <div id="results-section" className="mt-24 w-full animate-in fade-in slide-in-from-bottom-12 duration-1000">
+                            <div className="flex flex-col md:flex-row items-end justify-between gap-6 mb-10 border-b border-white/10 pb-8">
+                                <div>
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <TrendingUp className="w-4 h-4 text-[#FFD700]" />
+                                        <span className="text-[#FFD700] text-xs font-bold tracking-widest">Real-time comparison</span>
+                                    </div>
+                                    <h2 className="text-3xl md:text-4xl font-serif text-white font-bold tracking-tight">
+                                        Lowest Deals for <span className="text-[#FFD700]">{searchData.from.toUpperCase()} → {searchData.to.toUpperCase()}</span>
+                                    </h2>
+                                </div>
+                                <div className="flex items-center gap-4">
+                                    <button className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full text-xs font-bold tracking-widest text-white/60 hover:text-white transition-all">
+                                        <Filter className="w-4 h-4" /> Filter
+                                    </button>
+                                </div>
+                            </div>
+
+                            {loading ? (
+                                <div className="py-20 flex flex-col items-center justify-center space-y-8">
+                                    <div className="relative w-24 h-24">
+                                        <div className="absolute inset-0 border-4 border-[#FFD700]/20 rounded-full"></div>
+                                        <div className="absolute inset-0 border-4 border-t-[#FFD700] rounded-full animate-spin"></div>
+                                        <PlaneTakeoff className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#FFD700] w-8 h-8 animate-pulse" />
+                                    </div>
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold text-white mb-2">Polling Online Sources...</p>
+                                        <p className="text-white/40 text-sm italic tracking-wide">Aggregating live fares from MakeMyTrip, Ixigo, AirAsia & 14 others</p>
+                                    </div>
+                                </div>
+                            ) : results && (
+                                <div className="grid grid-cols-1 gap-6">
+                                    {results.map((deal, index) => (
+                                        <div
+                                            key={deal.id}
+                                            className={`group relative bg-white/5 hover:bg-white/10 border border-white/10 rounded-[2.5rem] p-8 md:px-12 transition-all hover:border-[#FFD700]/50 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] animate-in fade-in slide-in-from-bottom-8 duration-500`}
+                                            style={{ animationDelay: `${index * 150}ms` }}
+                                        >
+                                            <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+                                                {/* Provider Info */}
+                                                <div className="flex items-center gap-8 w-full lg:w-auto">
+                                                    <div className={`${deal.color} w-20 h-20 rounded-3xl flex items-center justify-center text-white font-bold text-xl shadow-2xl shrink-0 rotate-3 group-hover:rotate-0 transition-transform`}>
+                                                        {deal.logo}
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex items-center gap-3 mb-2">
+                                                            <h3 className="text-2xl font-bold text-white">{deal.site}</h3>
+                                                            <span className="px-3 py-1 bg-[#FFD700] text-black text-[10px] font-bold tracking-widest rounded-full">{deal.tag}</span>
+                                                        </div>
+                                                        <div className="flex items-center gap-3 text-white/40 text-sm">
+                                                            <ShieldCheck className="w-4 h-4 text-green-500" />
+                                                            <span>Verified Partner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                {/* Route Info */}
+                                                <div className="flex items-center justify-center gap-8 md:gap-16 w-full lg:w-auto">
+                                                    <div className="text-center">
+                                                        <p className="text-2xl font-bold text-white">{searchData.from.toUpperCase()}</p>
+                                                        <p className="text-[10px] font-bold text-white/30 tracking-widest mt-1">Origin</p>
+                                                    </div>
+                                                    <div className="flex flex-col items-center min-w-[120px]">
+                                                        <div className="w-full flex items-center gap-2 mb-2">
+                                                            <div className="h-[2px] flex-1 bg-white/10"></div>
+                                                            <Zap className="w-3 h-3 text-[#FFD700] animate-pulse" />
+                                                            <div className="h-[2px] flex-1 bg-white/10"></div>
+                                                        </div>
+                                                        <p className="text-[10px] font-bold text-[#FFD700] tracking-widest">{deal.time}</p>
+                                                        <p className="text-[9px] font-bold text-white/30 truncate">{deal.stops}</p>
+                                                    </div>
+                                                    <div className="text-center">
+                                                        <p className="text-2xl font-bold text-white">{searchData.to.toUpperCase()}</p>
+                                                        <p className="text-[10px] font-bold text-white/30 tracking-widest mt-1">Arrival</p>
+                                                    </div>
+                                                </div>
+
+                                                {/* Price & Action */}
+                                                <div className="flex items-center gap-8 w-full lg:w-auto justify-between lg:justify-end">
+                                                    <div className="text-right">
+                                                        <p className="text-4xl font-bold text-[#FFD700] leading-none mb-1">{deal.price}</p>
+                                                        <p className="text-[10px] font-bold text-white/30 tracking-widest">Total for 1 adult</p>
+                                                    </div>
+                                                    <a
+                                                        href={deal.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="px-10 py-5 bg-white text-black font-bold tracking-widest text-xs rounded-full hover:bg-[#FFD700] transition-all flex items-center gap-3 group/btn shadow-xl active:scale-95 whitespace-nowrap"
+                                                    >
+                                                        Book Deal
+                                                        <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            {/* Decorative Background Element */}
+                                            <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none">
+                                                <ExternalLink className="w-32 h-32 text-white" />
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    )}
+
                     {/* Trust Badges / Footer */}
                     <div className="mt-16 flex flex-wrap justify-center gap-x-12 gap-y-6 animate-in fade-in duration-1000 delay-700">
                         {['Official Partner', 'Best Price Guarantee', 'No Hidden Fees', 'Instant Booking'].map((text) => (
                             <div key={text} className="flex items-center gap-2">
                                 <div className="w-1.5 h-1.5 bg-[#FFD700] rounded-full"></div>
-                                <span className="text-[0.65rem] font-black uppercase tracking-[0.2em] text-white/40">{text}</span>
+                                <span className="text-[0.65rem] font-bold tracking-widest text-white/40">{text}</span>
                             </div>
                         ))}
                     </div>

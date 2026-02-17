@@ -31,10 +31,10 @@ export default function FeaturedVideo({ video }) {
                             <Play size={32} className="text-black fill-current ml-2" />
                         </div>
                         <div className="mt-8 text-center px-4">
-                            <h2 className="text-2xl md:text-4xl font-serif font-black uppercase text-white tracking-tight mb-2 max-w-2xl drop-shadow-lg">
+                            <h2 className="text-2xl md:text-4xl font-serif font-bold text-white tracking-tight mb-2 max-w-2xl drop-shadow-lg">
                                 {video.title}
                             </h2>
-                            <p className="text-yellow-500 text-xs font-bold uppercase tracking-[0.3em] font-inter">
+                            <p className="text-yellow-500 text-xs font-bold tracking-widest">
                                 Featured Episode • {video.channel}
                             </p>
                         </div>
@@ -71,7 +71,7 @@ export default function FeaturedVideo({ video }) {
                             <h3 className="text-2xl md:text-3xl font-serif font-bold mb-2">
                                 {video.title}
                             </h3>
-                            <p className="text-zinc-400 uppercase tracking-widest text-xs font-bold">
+                            <p className="text-zinc-400 tracking-widest text-xs font-bold">
                                 {video.channel} • {video.viewCount} Views
                             </p>
                         </div>

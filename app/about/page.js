@@ -45,7 +45,7 @@ export default async function AboutPage() {
                 </div>
 
                 <div className="relative z-10 container mx-auto px-4 text-center">
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-black uppercase tracking-tight mb-6 leading-tight drop-shadow-2xl">
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight mb-6 leading-tight drop-shadow-2xl">
                         {hero.title}
                     </h1>
                     <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-300 font-medium leading-relaxed italic opacity-90 px-4">
@@ -57,9 +57,9 @@ export default async function AboutPage() {
             {/* 2. OUR STORY */}
             <section className="py-20 md:py-32 container mx-auto px-4">
                 <div className="max-w-2xl mx-auto">
-                    <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-yellow-500 mb-8 flex items-center gap-4">
+                    <h2 className="text-[10px] tracking-widest font-bold text-yellow-500 mb-8 flex items-center gap-4">
                         <span className="w-10 h-px bg-yellow-500/30"></span>
-                        Our Story
+                        Our story
                     </h2>
                     <div className="space-y-8 text-lg md:text-xl font-serif leading-relaxed text-zinc-300">
                         {story.map((para, i) => (
@@ -75,8 +75,8 @@ export default async function AboutPage() {
             <section className="py-24 bg-zinc-900/40 relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-2xl mx-auto mb-16 text-center">
-                        <h2 className="text-[10px] uppercase tracking-[0.4em] font-bold text-yellow-500 mb-4">The Content</h2>
-                        <h3 className="text-3xl md:text-5xl font-serif font-bold tracking-tight">What You'll Find Here</h3>
+                        <h2 className="text-[10px] tracking-widest font-bold text-yellow-500 mb-4">The content</h2>
+                        <h3 className="text-3xl md:text-5xl font-serif font-bold tracking-tight">What you'll find here</h3>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -110,7 +110,7 @@ export default async function AboutPage() {
                     </div>
                     <div className="mt-8 flex items-center justify-center gap-3">
                         <span className="w-6 h-px bg-zinc-800"></span>
-                        <cite className="not-italic text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold">
+                        <cite className="not-italic text-[10px] tracking-widest text-zinc-500 font-bold">
                             {philosophy.author}
                         </cite>
                         <span className="w-6 h-px bg-zinc-800"></span>
@@ -134,13 +134,13 @@ export default async function AboutPage() {
                             </div>
                         </div>
                         <div className="flex-1 text-center lg:text-left">
-                            <h2 className="text-[10px] uppercase tracking-[0.5em] font-bold text-yellow-500 mb-4 font-inter underline underline-offset-4 decoration-yellow-500/30">Behind the Lens</h2>
-                            <h3 className="text-4xl md:text-5xl font-serif font-black mb-6 tracking-tight text-white">Meet {author.name}</h3>
+                            <h2 className="text-[10px] tracking-widest font-bold text-yellow-500 mb-4 font-inter underline underline-offset-4 decoration-yellow-500/30">Behind the lens</h2>
+                            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 tracking-tight text-white">Meet {author.name}</h3>
                             <p className="text-lg md:text-xl text-zinc-400 font-serif leading-relaxed mb-8 max-w-2xl">
                                 {author.bio}
                             </p>
                             <div className="flex justify-center lg:justify-start gap-6 items-center">
-                                <span className="text-[9px] uppercase tracking-[0.3em] font-black text-zinc-600">Connect</span>
+                                <span className="text-[9px] tracking-widest font-bold text-zinc-600">Connect</span>
                                 <div className="flex gap-4">
                                     <a href={author.socials.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-500 hover:text-white hover:border-white transition-all duration-300">
                                         <Instagram size={18} />
@@ -162,12 +162,12 @@ export default async function AboutPage() {
             <section className="py-28 bg-zinc-900 border-t border-zinc-800 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
                 <div className="container mx-auto px-4 relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-serif font-black uppercase mb-10 tracking-tight">The world is <span className="text-yellow-500 italic">waiting</span>.</h2>
+                    <h2 className="text-4xl md:text-6xl font-serif font-bold mb-10 tracking-tight">The world is <span className="text-yellow-500 italic">waiting</span>.</h2>
                     <Link
                         href="/destinations"
-                        className="inline-flex items-center gap-4 bg-white text-black px-10 py-5 text-[10px] uppercase tracking-[0.4em] font-black hover:bg-yellow-500 transition-all duration-500 group"
+                        className="inline-flex items-center gap-4 bg-white text-black px-10 py-5 text-[10px] tracking-widest font-bold hover:bg-yellow-500 transition-all duration-500 group"
                     >
-                        Start Exploring
+                        Start exploring
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-500" />
                     </Link>
                 </div>

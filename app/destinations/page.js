@@ -125,10 +125,10 @@ export default function DestinationsPage() {
             <section className="py-20 border-b border-white/5 bg-gradient-to-b from-black to-[#0b0b0b]">
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="max-w-4xl">
-                        <h1 className="text-gray-400 text-xs md:text-sm font-bold tracking-[0.4em] uppercase mb-4 flex items-center gap-3">
-                            <Globe size={14} className="text-yellow-400" /> Complete Directory
+                        <h1 className="text-gray-400 text-xs md:text-sm font-bold tracking-widest mb-4 flex items-center gap-3">
+                            <Globe size={14} className="text-yellow-400" /> Complete directory
                         </h1>
-                        <h2 className="text-5xl md:text-7xl font-serif font-black text-white tracking-tight mb-8">
+                        <h2 className="text-5xl md:text-7xl font-serif font-bold text-white tracking-tight mb-8">
                             All <span className="text-yellow-400 italic">Destinations</span>
                         </h2>
                         <p className="text-gray-400 text-lg md:text-xl font-medium max-w-2xl leading-relaxed">
@@ -146,7 +146,7 @@ export default function DestinationsPage() {
                             <div className="w-10 h-10 rounded-xl bg-yellow-400 flex items-center justify-center text-black">
                                 <Compass size={20} />
                             </div>
-                            <h3 className="text-xl font-serif font-bold text-white uppercase tracking-wider">Top Destinations</h3>
+                            <h3 className="text-xl font-serif font-bold text-white tracking-widest">Top destinations</h3>
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
                             {topDestinations.map(dest => (
@@ -174,9 +174,9 @@ export default function DestinationsPage() {
                                                 width={20}
                                                 height={14}
                                             />
-                                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#FFD700]">Explore</span>
+                                            <span className="text-[10px] font-bold tracking-widest text-[#FFD700]">Explore</span>
                                         </div>
-                                        <h4 className="text-xl font-serif font-black text-white group-hover:text-yellow-400 transition-colors uppercase tracking-tight">{dest.name}</h4>
+                                        <h4 className="text-xl font-serif font-bold text-white group-hover:text-yellow-400 transition-colors tracking-tight">{dest.name}</h4>
                                     </div>
                                 </Link>
                             ))}
@@ -188,8 +188,8 @@ export default function DestinationsPage() {
                         {continents.map((continent) => (
                             <div key={continent.name} className="flex flex-col">
                                 <div className="flex items-center justify-between mb-8 pb-3 border-b border-white/10">
-                                    <h3 className="text-sm font-black uppercase tracking-[0.25em] text-gray-400">{continent.name}</h3>
-                                    <span className="text-[10px] font-black bg-white/5 text-yellow-400/60 px-2 py-0.5 rounded-full">{continent.countries.length}</span>
+                                    <h3 className="text-sm font-bold tracking-widest text-gray-400">{continent.name}</h3>
+                                    <span className="text-[10px] font-bold bg-white/5 text-yellow-400/60 px-2 py-0.5 rounded-full">{continent.countries.length}</span>
                                 </div>
                                 <div className="grid grid-cols-1 gap-y-3.5">
                                     {continent.countries.map(country => (
@@ -208,10 +208,10 @@ export default function DestinationsPage() {
                                                 />
                                             </div>
                                             <div className="flex flex-col">
-                                                <span className="text-[11px] font-black uppercase tracking-[0.25em] group-hover:text-yellow-400 transition-colors">
+                                                <span className="text-[11px] font-bold tracking-widest group-hover:text-yellow-400 transition-colors">
                                                     {country.name}
                                                 </span>
-                                                <span className="text-[9px] font-bold text-white/10 uppercase tracking-widest group-hover:text-white/30 transition-colors">
+                                                <span className="text-[9px] font-bold text-white/10 tracking-widest group-hover:text-white/30 transition-colors">
                                                     Explore
                                                 </span>
                                             </div>

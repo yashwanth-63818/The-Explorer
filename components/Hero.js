@@ -73,7 +73,7 @@ export default function Hero({
                     <div className="lg:col-span-8 flex flex-col items-start animate-in fade-in slide-in-from-bottom-12 duration-1000 ease-out">
                         <div className="inline-flex items-center gap-3 mb-6">
                             <span className="w-12 h-[1px] bg-[#FFD700]"></span>
-                            <span className="text-[#FFD700] text-sm font-black uppercase tracking-[0.4em]">The Explorer Magazine</span>
+                            <span className="text-[#FFD700] text-sm font-bold tracking-widest">The Explorer Magazine</span>
                         </div>
 
                         <h1
@@ -104,14 +104,14 @@ export default function Hero({
                         <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-4">
                             <Link
                                 href={primaryCTA.href}
-                                className="group relative px-10 py-5 bg-[#FFD700] text-black text-[0.95rem] font-black uppercase tracking-[0.2em] transition-all hover:bg-white hover:border-white hover:scale-110 active:scale-95 border-[3px] border-[#FFD700] flex items-center justify-center rounded-xl shadow-xl z-40"
+                                className="group relative px-10 py-5 bg-[#FFD700] text-black text-[0.95rem] font-bold tracking-wide transition-all hover:bg-white hover:border-white hover:scale-110 active:scale-95 border-[3px] border-[#FFD700] flex items-center justify-center rounded-xl shadow-xl z-40 font-sans"
                             >
                                 {primaryCTA.text}
                             </Link>
 
                             <Link
                                 href={secondaryCTA.href}
-                                className="group px-10 py-5 bg-transparent border-[3px] border-white text-white text-[0.95rem] font-black uppercase tracking-[0.2em] transition-all hover:bg-white hover:text-black hover:scale-110 active:scale-95 flex items-center justify-center backdrop-blur-md rounded-xl z-40"
+                                className="group px-10 py-5 bg-transparent border-[3px] border-white text-white text-[0.95rem] font-bold tracking-wide transition-all hover:bg-white hover:text-black hover:scale-110 active:scale-95 flex items-center justify-center backdrop-blur-md rounded-xl z-40 font-sans"
                             >
                                 {secondaryCTA.text}
                             </Link>
@@ -143,12 +143,12 @@ export default function Hero({
                             <div className="flex flex-col relative z-10 text-left">
                                 <div className="flex items-center gap-3 mb-4">
                                     <span className="w-10 h-[1px] bg-black group-hover:bg-[#FFD700]"></span>
-                                    <span className="text-black group-hover:text-[#FFD700] text-xs font-black uppercase tracking-[0.3em]">Latest Feature</span>
+                                    <span className="text-black group-hover:text-[#FFD700] text-xs font-bold tracking-widest">Latest Feature</span>
                                 </div>
                                 <h3 className="text-black group-hover:text-white font-serif text-2xl font-bold leading-tight mb-8">
                                     {latestVideo.title}
                                 </h3>
-                                <div className="flex items-center text-black/60 text-[0.7rem] font-black uppercase tracking-[0.25em] group-hover:text-[#FFD700] transition-colors">
+                                <div className="flex items-center text-black/60 text-[0.7rem] font-bold tracking-widest group-hover:text-[#FFD700] transition-colors">
                                     <span>Watch now</span>
                                     <svg className="ml-4 w-5 h-5 transform group-hover:translate-x-3 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -33,8 +33,8 @@ export default function FeaturedPosts() {
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="flex justify-between items-end mb-12">
                     <h2 className="text-4xl lg:text-5xl font-serif font-bold text-white">Featured Stories</h2>
-                    <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-medium uppercase tracking-wide hover:gap-3 transition-all text-white hover:text-yellow-400">
-                        View All <ArrowRight size={16} />
+                    <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-bold tracking-tight hover:gap-3 transition-all text-white hover:text-yellow-400">
+                        View all <ArrowRight size={16} />
                     </Link>
                 </div>
 
@@ -49,7 +49,7 @@ export default function FeaturedPosts() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
                         <div className="absolute bottom-0 left-0 p-8 lg:p-12 text-white">
-                            <span className="inline-block px-3 py-1 bg-white text-black text-xs font-bold uppercase tracking-widest mb-4">
+                            <span className="inline-block px-3 py-1 bg-white text-black text-[10px] font-bold tracking-widest mb-4 uppercase">
                                 {featuredPosts[0].category}
                             </span>
                             <h3 className="text-3xl lg:text-5xl font-serif font-bold mb-4 leading-tight group-hover:underline decoration-1 underline-offset-4">
@@ -73,7 +73,7 @@ export default function FeaturedPosts() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
                                 <div className="absolute bottom-0 left-0 p-6 lg:p-8 text-white">
-                                    <span className="inline-block px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-widest mb-3 border border-white/30">
+                                    <span className="inline-block px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-[10px] font-bold tracking-widest mb-3 border border-white/30 uppercase">
                                         {post.category}
                                     </span>
                                     <h3 className="text-2xl lg:text-3xl font-serif font-bold leading-tight group-hover:underline decoration-1 underline-offset-4">

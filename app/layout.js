@@ -1,24 +1,17 @@
-import { Playfair_Display, Inter, Libre_Baskerville } from "next/font/google";
+import { Outfit, Fraunces } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-outfit",
   display: "swap",
 });
 
-const inter = Inter({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const baskerville = Libre_Baskerville({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-baskerville",
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -29,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} ${baskerville.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${outfit.variable} ${fraunces.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased bg-black text-white min-h-screen relative">
         <Navbar />
         <main>

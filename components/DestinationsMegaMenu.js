@@ -138,7 +138,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                 {/* Top Section: Highlights */}
                 <div className="flex flex-col xl:flex-row gap-8 pb-8 border-b border-white/5 mb-10 items-start xl:items-center shrink-0">
                     <div className="flex flex-wrap items-center gap-4">
-                        <span className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] mr-2">Top Destinations</span>
+                        <span className="text-xs font-bold tracking-widest text-[#9CA3AF] mr-2">Top Destinations</span>
                         {topDestinations.map(dest => (
                             <Link
                                 key={dest.name}
@@ -163,7 +163,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                     <div className="hidden xl:block w-px h-6 bg-white/10"></div>
 
                     <div className="flex flex-wrap items-center gap-4">
-                        <span className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] mr-2">Top Regions</span>
+                        <span className="text-xs font-bold tracking-widest text-[#9CA3AF] mr-2">Top Regions</span>
                         {topRegions.map(region => (
                             <Link
                                 key={region}
@@ -183,7 +183,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                     {/* Column 1: Africa */}
                     <div>
                         <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                            <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[0].name}</h3>
+                            <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[0].name}</h3>
                             <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                         </div>
                         <div className="grid grid-cols-1 gap-y-2.5">
@@ -211,7 +211,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                     {/* Column 2: Asia */}
                     <div>
                         <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                            <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[1].name}</h3>
+                            <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[1].name}</h3>
                             <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                         </div>
                         <div className="grid grid-cols-1 gap-y-2.5">
@@ -236,7 +236,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                     {/* Column 3: Europe */}
                     <div>
                         <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                            <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[2].name}</h3>
+                            <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[2].name}</h3>
                             <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                         </div>
                         <div className="grid grid-cols-1 gap-y-2.5">
@@ -263,7 +263,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                         {/* North America */}
                         <div>
                             <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[3].name}</h3>
+                                <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[3].name}</h3>
                                 <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
@@ -288,7 +288,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                         {/* South America */}
                         <div>
                             <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[4].name}</h3>
+                                <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[4].name}</h3>
                                 <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
@@ -313,7 +313,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                         {/* Oceania */}
                         <div>
                             <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[5].name}</h3>
+                                <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[5].name}</h3>
                                 <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
@@ -338,7 +338,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                         {/* Antarctica */}
                         <div>
                             <div className="flex items-center justify-between mb-5 group cursor-pointer border-b border-white/5 pb-2 sticky top-0 bg-[#1a1a1a] z-10">
-                                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[6].name}</h3>
+                                <h3 className="text-sm font-bold tracking-widest text-gray-400 group-hover:text-[#FFD700] transition-colors">{continents[6].name}</h3>
                                 <ChevronRight size={14} className="text-gray-600 group-hover:text-[#FFD700] transition-colors" />
                             </div>
                             <div className="grid grid-cols-1 gap-y-2.5">
@@ -371,7 +371,7 @@ export default function DestinationsMegaMenu({ onClose }) {
                     onClick={onClose}
                     className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] hover:text-[#FFD700] transition-colors flex items-center justify-center gap-2"
                 >
-                    View All Destinations <ChevronRight size={12} />
+                    View all destinations <ChevronRight size={12} />
                 </Link>
             </div>
         </div>

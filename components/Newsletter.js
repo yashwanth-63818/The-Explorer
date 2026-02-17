@@ -33,13 +33,13 @@ export default function Newsletter() {
                     />
                     <button
                         type="submit"
-                        className="px-8 py-4 bg-yellow-400 text-black hover:bg-white transition-all flex items-center justify-center gap-3 font-black uppercase tracking-widest text-xs rounded-xl shadow-xl"
+                        className="px-8 py-4 bg-yellow-400 text-black hover:bg-white transition-all flex items-center justify-center gap-3 font-bold tracking-widest text-xs rounded-xl shadow-xl"
                     >
                         Subscribe
                         <Send size={16} strokeWidth={3} />
                     </button>
                 </form>
-                <p className="text-[10px] text-gray-500 mt-6 font-bold uppercase tracking-[0.2em]">
+                <p className="text-[10px] text-gray-500 mt-6 font-bold tracking-widest uppercase">
                     🔒 No spam, unsubscribe anytime.
                 </p>
             </div>

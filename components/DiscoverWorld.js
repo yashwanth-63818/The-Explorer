@@ -45,9 +45,9 @@ export default function DiscoverWorld() {
                     {/* Right: Editorial Content */}
                     <div className="relative z-10 animate-in fade-in slide-in-from-right duration-1000 delay-300 text-right lg:text-right flex flex-col items-end">
                         <h2 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.85] mb-6">
-                            <span className="text-gray-400 block">DISCOVER</span>
-                            <span className="text-gray-400 block">THE</span>
-                            <span className="text-[#FBBF24]">WORLD</span>
+                            <span className="text-gray-400 block">Discover</span>
+                            <span className="text-gray-400 block">the</span>
+                            <span className="text-yellow-400 block">World</span>
                         </h2>
 
                         <p className="text-gray-400 mb-10 leading-relaxed font-light max-w-md text-lg text-right">
@@ -56,9 +56,9 @@ export default function DiscoverWorld() {
 
                         <Link
                             href="/destinations"
-                            className="inline-flex items-center justify-center px-8 py-3 border border-white/30 rounded-full text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-all group"
+                            className="inline-flex items-center justify-center px-8 py-3 border border-white/30 rounded-full text-white font-bold text-sm tracking-widest hover:bg-white hover:text-black hover:border-white transition-all group"
                         >
-                            Explore Destinations <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            Explore destinations <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
 
